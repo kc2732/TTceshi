@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='lib/cupertino/jquery-ui.min.css' />
+    <link href='fullcalendar.css' rel='stylesheet' />
+    <link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <script src='lib/moment.min.js'></script>
+    <script src='lib/jquery.min.js'></script>
+    <script src='fullcalendar.min.js'></script>
+    <script src='lang-all.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="polyfill.js"></script>
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+        }
+        form {
+            max-width: 480px;
+            margin: auto;
+        }
+        .form-group >[class*="col-"] + .ws-errorbox {
+            padding: 0 15px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    (function () {
+        webshim.setOptions('forms', {
+            lazyCustomMessages: true,
+            iVal: {
+                sel: '.ws-validate',
+                handleBubble: 'hide', // hide error bubble
+
+                //add bootstrap specific classes
+                errorMessageClass: 'help-block',
+                successWrapperClass: 'has-success',
+                errorWrapperClass: 'has-error',
+
+                //add config to find right wrapper
+                fieldWrapper: '.form-group'
+            }
+        });
+
+        //load forms polyfill + iVal feature
+        webshim.polyfill('forms');
+    })();
+
+</script>
+<form action="#" class="form-horizontal ws-validate">
+    <div class="form-group">
+        <label for="inputEmail3" class="control-label">Email*</label>
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required />
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="control-label">Password*</label>
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required />
+    </div>
+    <div class="form-group">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" required="" />Remember me</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+</form>
+</body>
+</html>
