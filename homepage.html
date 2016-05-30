@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='lib/cupertino/jquery-ui.min.css' />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <script src='lib/moment.min.js'></script>
+    <script src='lib/jquery.min.js'></script>
+    <script src='fullcalendar.min.js'></script>
+    <script src='lang-all.js'></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="polyfill.js"></script>
+</head>
+<body>
+
+<div class="top-bar">
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Solutions</a>
+        </li>
+        <li>
+            <a href="#">Data</a>
+        </li>
+        <li>
+            <a href="#">Lecture</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+        <li>
+            <a class="button-submit" href="http://www.google.com">Sign in</a>
+        </li>
+    </ul>
+
+</div>
+
+<div class="content-top">
+
+    Create your own helping account!
+
+</div>
+<div class="body-container">
+    <div class="col-sm-7 col-md-7 col-lg-8 content-left">
+
+
+        <img src="images/content_left.jpg"style="width: 80%; margin:0 10% 5% 10%;">
+
+        It's time to enjoy a new life!
+
+    </div>
+    <script>
+        webshim.setOptions('forms', {
+            lazyCustomMessages: true
+        });
+
+        //start polyfilling
+        webshim.polyfill('forms');
+
+    </script>
+    <div class="col-sm-5 col-md-5 col-lg-4 content-right" style="">
+        <div style="padding: 25px;">
+            <form action="parts/update.php" method="post" class="ws-validate">
+                <fieldset>
+                    <legend style="">
+                        <strong>username:</strong>
+                    </legend>
+                    <input type="text" name="username" required>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend><strong>password</strong></legend>
+                    <input type="password" id="password1" name="password" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend><strong>re-enter password</strong></legend>
+                    <input type="password" id="password2" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend><strong>phone number</strong></legend>
+                    <input type="text" name="phone" required>
+
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" required> I understand the conditions and terms.
+                </fieldset>
+
+                <input type="hidden" name="option" value="insert">
+                <fieldset>
+                    <input class="button-submit button-register" type="submit" name="submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+</body></html>

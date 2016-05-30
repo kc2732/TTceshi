@@ -1,9 +1,10 @@
 @media (min-width: 1200px) {
-.top-bar{
-    background:url("../images/logo_70.png");
-    height:93px;
-    background-position:5%;
-}
+    /*--------------------header--------------------------*/
+    .top-bar{
+        background:url("../images/logo_70.png");
+        height:93px;
+        background-position:5%;
+    }
     .button-submit{
         margin-top: 30px;
         min-width: 80px;
@@ -11,6 +12,35 @@
         height: 35px;
         line-height: 35px;
     }
+    .top-bar ul li{
+        display: inline-block;
+    }
+    ul{
+        float:right;
+    }
+    ul li a{
+        color:black;
+        font-size: 28px;
+    }
+    ul li:nth-child(1) a{
+        margin-right:100px;
+    }
+    ul li:nth-child(2) a{
+        margin-right:100px;
+    }
+    ul li:nth-child(3) a{
+        margin-right:100px;
+    }
+    ul li:nth-child(4) a{
+        margin-right:100px;
+    }
+    ul li:nth-child(5) a{
+        margin-right:180px;
+    }
+    ul li:nth-child(6) a{
+        margin-right: 40px;
+    }
+
 }
 
 @media (min-width:992px) and (max-width: 1199px) {
@@ -90,17 +120,6 @@
     background-repeat: no-repeat;
 }
 
-body {
-    margin:0;
-    color:#b1b1b1;
-    /*font-family:brandon_grotesque_regularRg;*/
-    font-size:12px
-}
-
-legend{
-    font-size: 18px !important;
-    margin-bottom: 5px!important;
-}
 
 .button-submit{
     display: inline-block;
@@ -167,20 +186,24 @@ legend{
     background-color: #f1f1f1;
 }
 
-input[type="text"], input[type="password"]{
-    width:100%;
+.button-register{
+    width:90%;
 }
 
 fieldset{
     margin-bottom: 15px!important;
 }
-
-.button-register{
-    width:90%;
+legend{
+    font-size: 18px !important;
+    margin-bottom: 5px!important;
+}
+input[type="text"], input[type="password"]{
+    width:100%;
+}
+body {
+    margin:0;
+    color:#b1b1b1;
+    /*font-family:brandon_grotesque_regularRg;*/
+    font-size:12px
 }
 
-#calendar {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 10px;
-}
