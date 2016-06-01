@@ -1,73 +1,33 @@
-<div class="content-top">
-
-   创建您的运动医生账户
-
+<div class="slidebar">
+    <img src="images/fit-im-sport.png" >
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-8 col-md-push-2 col-lg-8 col-lg-push-2 index-story">
+            糖糖运动医生是一家互联网医疗公司，以软件作为平台，致力于结合临床医疗和运动处方，建立循证医学的诊断标准。为中老年糖尿病患者，心血管疾病患者提供全方位的个性化运动、营养康复服务。 糖糖运动医生由国内外顶尖专家团队指导，依据国内外最新研究成果，将运动员级别的运动科学技术推广至普通大众，根据每个患者的情况，为患者制定正确的运动和营养处方，恢复健康的生活。
+            <br>
+            <a class="index-join" href="#">我要参与</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="images/detect.jpg">
+                    运动处方
+                </div>
+                <div class="col-xs-12 col-sm-5 col-sm-push-2 col-md-5 col-md-push-2 col-lg-5 col-lg-push-2">
+                    <img src="images/eating-solution.jpg">
+                    营养处方
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <img src="images/workout-solution.png">
+                    数据监测
+                </div>
+                <div class="col-xs-12 col-sm-5 col-sm-push-2 col-md-5 col-md-push-2 col-lg-5 col-lg-push-2">
+                    <img src="images/lecture.jpg">
+                    健康讲堂
 
-<div class="body-container">
-    <div class="col-sm-7 col-md-7 col-lg-8 content-left">
+                </div>
+            </div>
 
-
-        <img src="../images/content_left.jpg"style="width: 80%; margin:0 10% 5% 10%;">
-
-        个性化生活调优计划从现在开始
-
-    </div>
-    <div class="col-sm-5 col-md-5 col-lg-4 content-right" style="">
-        <div style="padding: 25px;">
-            <form action="../pages/success.php" method="post" class="ws-validate">
-                <fieldset>
-                    <legend style="">
-                        <strong>用户名</strong>
-                    </legend>
-                    <input type="text" name="username" required>
-                </fieldset>
-
-                <fieldset>
-
-                    <legend><strong>密码</strong></legend>
-                    <input type="password" id="password1" name="password" required="required">
-
-                </fieldset>
-
-                <fieldset>
-
-                    <legend><strong>重新输入</strong></legend>
-                    <input type="password" id="password2" name="password1" required="required">
-
-                </fieldset>
-
-                <fieldset>
-
-                    <legend><strong>电话号码</strong></legend>
-                    <input type="text" name="phone" required>
-
-                </fieldset>
-                <fieldset>
-                    <input type="checkbox" name="check" required style="margin-left: 15px;">我已阅读并同意<a href="../termsandconditions.pdf">运动处方试用协议</a>.
-                </fieldset>
-
-                <input type="hidden" name="option" value="insert">
-                <fieldset>
-                    <input class="button-submit button-register" type="submit" name="submit" value="注册">
-                </fieldset>
-            </form>
         </div>
+
     </div>
-</div>
-
-<script>
-
-    webshim.setOptions('forms', {
-        lazyCustomMessages: true
-    });
-
-    //start polyfilling
-    webshim.polyfill('forms');
-
-
-</script>
-
-
-
 </div>

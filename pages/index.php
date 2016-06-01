@@ -1,15 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: PC
+ * Date: 2016/6/1
+ * Time: 19:06
+ */
 include '../parts/head.php';
 include '../parts/top-bar.php';
 include '../parts/index-content.php';
+include '../parts/footer.php';
 ?>
-
-<!--<body>-->
-<!--    <form action="workout.php" method="post">-->
-<!--        Please enter your user name:<input type="text" name="username">-->
-<!--        password:<input type="text" name="password">-->
-<!---->
-<!--        <input type="submit">-->
-<!--    </form>-->
-<!---->
-<!--</body>-->

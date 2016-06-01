@@ -28,7 +28,7 @@ $num = mysql_num_rows($result);
 //        $userId = $row['Id'];
 //    }
 //} else{
-//    header("index.php");
+//    header("signup.php");
 //}
 
 include 'footer.php';
