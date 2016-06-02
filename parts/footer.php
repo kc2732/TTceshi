@@ -1,8 +1,12 @@
 <div class="index-footer">
-
-    <b>团队介绍</b>  Email:guoshacao@gmail.com<br>
-    <b>加入我们</b>
-    <b>联系我们</b>  Tel:+1(203)502-9540
+    <table class="footer-table">
+        <tr>
+            <td style="min-width: 150px;">团队介绍</td>
+            <td> Email:guoshacao@gmail.com</td>
+        </tr>
+        <tr><td>加入我们</td></tr>
+        <tr><td style="min-width: 150px;">联系我们</td><td>Tel:+1(203)502-9540</td></tr>
+    </table>
 </div>
 
 <script type="text/javascript">

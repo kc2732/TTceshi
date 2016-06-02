@@ -18,25 +18,25 @@
     ul li a{
         color:black;
         font-size: 28px;
-        font-size:2.1vw;
+        font-size:1.5vw;
     }
     ul li:nth-child(1) a{
-        margin-right:3vw;
+        margin-right:4vw;
     }
     ul li:nth-child(2) a{
-        margin-right:3vw;
+        margin-right:4vw;
     }
     ul li:nth-child(3) a{
-        margin-right:3vw;
+        margin-right:4vw;
     }
     ul li:nth-child(4) a{
-        margin-right:3vw;
+        margin-right:4vw;
     }
     ul li:nth-child(5) a{
         margin-right:16vw;
     }
     ul li:nth-child(6) a{
-        margin-right: 40px;
+        margin-right: 60px;
     }
 }
 
@@ -60,7 +60,7 @@
     ul li a{
         color:black;
         font-size: 28px;
-        font-size:2.5vw;
+        font-size:2.0vw;
     }
     ul li:nth-child(1) a{
         margin-right:3vw;
@@ -75,10 +75,10 @@
         margin-right:3vw;
     }
     ul li:nth-child(5) a{
-        margin-right:9vw;
+        margin-right:11vw;
     }
     ul li:nth-child(6) a{
-        margin-right: 40px;
+        margin-right: 60px;
     }
 }
 
@@ -101,7 +101,7 @@
     ul li a{
         color:black;
         font-size: 28px;
-        font-size:2.7vw;
+        font-size:2.5vw;
     }
     ul li:nth-child(1) a{
         margin-right:2vw;
@@ -123,19 +123,7 @@
     }
 }
 
-@media (max-width: 767px){
-    .top-bar{
-        background:url("../images/logo_40.png");
-        height:50px;
-        background-position:5%;
-    }
-    .button-submit{
-        margin-top: 10px;
-        min-width: 46px;
-        font-size: 11px;
-        height: 27px;
-        line-height: 27px;
-    }
+@media (max-width:767px) and (min-width: 441px) {
     .top-bar ul{
         float:right;
     }
@@ -154,15 +142,63 @@
         margin-right:2vw;
     }
     ul li:nth-child(4) a{
-        margin-right:2vw;
+        margin-right:6vw;
     }
     ul li:nth-child(5) a{
         margin-right:6vw;
+        display:none;
     }
     ul li:nth-child(6) a{
         margin-right: 40px;
     }
 }
+
+@media(max-width:440px ){
+    .top-bar ul{
+        float:right;
+    }
+    ul li a{
+        color:black;
+        font-size: 28px;
+        font-size:3.8vw;
+    }
+    ul li:nth-child(1) a{
+        margin-right:2vw;
+    }
+    ul li:nth-child(2) a{
+        margin-right:2vw;
+    }
+    ul li:nth-child(3) a{
+        margin-right:2vw;
+        display: none;
+    }
+    ul li:nth-child(4) a{
+        margin-right:2vw;
+    }
+    ul li:nth-child(5) a{
+        margin-right:6vw;
+        display: none;
+    }
+    ul li:nth-child(6) a{
+        margin-right: 40px;
+    }
+}
+@media (max-width: 767px){
+    .top-bar{
+        background:url("../images/logo_40.png");
+        height:50px;
+        background-position:5%;
+    }
+    .button-submit{
+        margin-top: 10px;
+        min-width: 46px;
+        font-size: 11px;
+        height: 27px;
+        line-height: 27px;
+    }
+
+}
+
 
 
 @media (min-width: 768px) {
@@ -194,7 +230,13 @@
         margin-top: 20px;
     }
     .content-left{ display: none;}
-
+    .index-join{
+        background-color:#B78442;
+        padding: 10px 50px;
+        line-height: 80px;
+        font-size: 30px;
+        color: white;
+    }
 }
 
 
@@ -205,13 +247,29 @@
 }
 
 .index-story{
+    margin-bottom:23px;
+    font-size:12pt;
     text-align: center;
+    margin-top: 20px;
+    color: #180202;
+    line-height: 40px;
 }
 
+.image-featured{
+    margin-top:35px;
+}
 .index-footer{
     background-color: #f1f1f1;
-    text-align: center;
+    padding:28px;
 }
+.footer-table{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+
+}
+
+
 .button-submit{
     display: inline-block;
     text-align: center;
