@@ -391,4 +391,23 @@ body {
     display: inline-block;
 }
 
+.panel-heading{
+    background-color: rgb(247,229,196)!important;
+}
+.panel-default{
+    background-color: rgb(247,229,196)!important;
+    text-align:center;
+}
 
+.workout-content{
+    margin-top:20px;
+    color:rgb(134,58,32);
+}
+.workout-content-details{
+    margin-left:5%;
+}
+
+.error_page{
+    text-align: center;
+    font-size:30px;
+}
