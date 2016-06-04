@@ -3,7 +3,6 @@
 <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width" />
-
     <link rel='stylesheet' href='../lib/cupertino/jquery-ui.min.css' />
     <link href='../fullcalendar.css' rel='stylesheet' />
     <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
@@ -16,5 +15,11 @@
     <script src='../lang-all.js'></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/polyfill.js"></script>
-
 </head>
+<?php
+function php_self(){
+    $php_self = substr($_SERVER['PHP_SELF'],strrpos($_SERVER['PHP_SELF'], '/')+1);
+    return $php_self;
+}
+$phpself = php_self();
+?>
