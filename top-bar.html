@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel='stylesheet' href='lib/cupertino/jquery-ui.min.css' />
     <link href='fullcalendar.css' rel='stylesheet' />
     <link href='fullcalendar.print.css' rel='stylesheet' media='print' />
@@ -15,6 +16,7 @@
     <script src="/js/bootstrap.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <script src="polyfill.js"></script>
+    <script src="js/script.js"></script>
     <style>
         /*body {*/
         /*margin: 0;*/
@@ -134,8 +136,8 @@
     </script>
 <div class="col-sm-5 col-md-5 col-lg-4 content-right" style="">
     <div style="padding: 25px;">
-    <form action="parts/update.php" method="post" class="ws-validate">
-       <fieldset>
+    <form action="parts/update.php" method="post" class="ws-validate" id="sign-up-main">
+        <fieldset>
            <legend style="">
                <strong>username:</strong>
            </legend>
@@ -162,16 +164,48 @@
             <input type="text" name="phone" required>
 
         </fieldset>
+
         <fieldset>
         <input type="checkbox" required> I understand the conditions and terms.
         </fieldset>
 
         <input type="hidden" name="option" value="insert">
         <fieldset>
-        <input class="button-submit button-register" type="submit" name="submit">
+        <input class="button-submit button-register" type="submit" name="submit" value="注册">
+        </fieldset>
+        <fieldset>
+
+            已有账号？点击<a id="show-sign-in" href="#">这里</a>登录
+
+        </fieldset>
+    </form>
+    <form action="parts/update.php" method="post" class="ws-validate" id="sign-in-main">
+        <fieldset>
+            <legend style="">
+                <strong>用户名</strong>
+            </legend>
+            <input type="text" name="username" required>
+        </fieldset>
+
+        <fieldset>
+
+            <legend><strong>密码</strong></legend>
+            <input type="password" id="password" name="password" required>
+
+        </fieldset>
+
+        <input type="hidden" name="option" value="login">
+        <fieldset>
+            <input class="button-submit button-register" type="submit" name="submit" value="登录">
+        </fieldset>
+        <fieldset>
+
+            还没有帐号？点击<a id="show-sign-up" href="#">这里</a>登录
+
         </fieldset>
     </form>
     </div>
+    <div class="sign-in-main"></div>
 </div>
 </div>
 </body></html>

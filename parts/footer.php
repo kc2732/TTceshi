@@ -1,4 +1,4 @@
-<div class="index-footer">
+<div class="index-footer" id = "all-footer">
     <table class="footer-table">
         <tr>
             <td style="min-width: 150px;">团队介绍</td>

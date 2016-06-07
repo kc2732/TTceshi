@@ -411,3 +411,11 @@ body {
     text-align: center;
     font-size:30px;
 }
+
+#sign-in-main{
+    display: none;
+}
+
+#sign-up-main{
+    display: inline;
+}

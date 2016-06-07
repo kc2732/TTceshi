@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="../favicon.ico">
     <link rel='stylesheet' href='../lib/cupertino/jquery-ui.min.css' />
     <link href='../fullcalendar.css' rel='stylesheet' />
     <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
@@ -15,6 +16,7 @@
     <script src='../lang-all.js'></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/polyfill.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <?php
 function php_self(){

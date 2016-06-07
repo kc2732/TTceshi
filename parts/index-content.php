@@ -10,7 +10,7 @@
             <div class="row image-featured">
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
                     <img src="../images/detect.jpg">
-                    运动处方
+                    <a href="../pages/plan.php">运动处方</a>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-sm-push-2 col-md-5 col-md-push-2 col-lg-5 col-lg-push-2">
                     <img src="../images/eating-solution.jpg">
@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
                     <img src="../images/workout-solution.png">
-                    数据监测
+                    <a href="../pages/data.php"> 数据监测</a>
                 </div>
                 <div class="col-xs-12 col-sm-5 col-sm-push-2 col-md-5 col-md-push-2 col-lg-5 col-lg-push-2">
                     <img src="../images/lecture.jpg">
