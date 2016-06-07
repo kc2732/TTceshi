@@ -2,31 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec7d8c9-3ac1-4705-aad9-29f5f20b8e76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/detect-slide-show.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parts/contact-content.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contact-us.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parts/data-content.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jiance.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parts/lecture-content.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/lecture.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lianxi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/termsandconditions.pdf" afterPath="$PROJECT_DIR$/termsandconditions.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/footer.php" afterPath="$PROJECT_DIR$/parts/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/head.php" afterPath="$PROJECT_DIR$/parts/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage.html" afterPath="$PROJECT_DIR$/homepage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image002.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image003.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image004.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image005.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image006.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image007.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image008.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image009.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image010.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image011.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image012.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image013.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image014.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image015.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image016.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image017.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image018.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image019.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image020.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image021.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image022.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image023.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/expo/image024.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/index-content.php" afterPath="$PROJECT_DIR$/parts/index-content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/plan-content.php" afterPath="$PROJECT_DIR$/parts/plan-content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/signup-content.php" afterPath="$PROJECT_DIR$/parts/signup-content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/top-bar.html" afterPath="$PROJECT_DIR$/top-bar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/lecture-content.php" afterPath="$PROJECT_DIR$/parts/lecture-content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lianxi.html" afterPath="$PROJECT_DIR$/lianxi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/top-bar.php" afterPath="$PROJECT_DIR$/parts/top-bar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/update.php" afterPath="$PROJECT_DIR$/parts/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/workout-content.php" afterPath="$PROJECT_DIR$/parts/workout-content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TTceshi.iws" />
@@ -55,8 +58,8 @@
       <file leaf-file-name="top-bar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/top-bar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="570">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="570">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -65,31 +68,19 @@
       <file leaf-file-name="lecture-content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/lecture-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="1197">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="index-content.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parts/index-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="285">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.41125542" vertical-offset="0" max-vertical-offset="722">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lianxi.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lianxi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7532467" vertical-offset="488" max-vertical-offset="1178">
-              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +88,8 @@
       <file leaf-file-name="lecture.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/lecture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="323">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="323">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -144,14 +135,14 @@
         <option value="$PROJECT_DIR$/pages/data.php" />
         <option value="$PROJECT_DIR$/jiance.html" />
         <option value="$PROJECT_DIR$/parts/footer.php" />
-        <option value="$PROJECT_DIR$/parts/top-bar.php" />
         <option value="$PROJECT_DIR$/parts/data-content.php" />
         <option value="$PROJECT_DIR$/parts/workout-content.php" />
         <option value="$PROJECT_DIR$/parts/plan-content.php" />
-        <option value="$PROJECT_DIR$/parts/index-content.php" />
         <option value="$PROJECT_DIR$/pages/lecture.php" />
-        <option value="$PROJECT_DIR$/parts/lecture-content.php" />
         <option value="$PROJECT_DIR$/lianxi.html" />
+        <option value="$PROJECT_DIR$/parts/top-bar.php" />
+        <option value="$PROJECT_DIR$/parts/lecture-content.php" />
+        <option value="$PROJECT_DIR$/parts/index-content.php" />
       </list>
     </option>
   </component>
@@ -248,6 +239,9 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\TTceshi\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\TTceshi\images" />
       <recent name="E:\TTceshi\fonts" />
@@ -736,42 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parts/index-content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54761904" vertical-offset="32" max-vertical-offset="741">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parts/top-bar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="570">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/lecture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="323">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parts/lecture-content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -786,11 +748,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lianxi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7532467" vertical-offset="488" max-vertical-offset="1178">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        <state vertical-scroll-proportion="-12.428572" vertical-offset="469" max-vertical-offset="2223">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="100" selection-end-column="6" />
           <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/lecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="323">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/top-bar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="570">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/lecture-content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="1197">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/index-content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41125542" vertical-offset="0" max-vertical-offset="722">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>

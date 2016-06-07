@@ -22,8 +22,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-5 col-sm-push-2 col-md-5 col-md-push-2 col-lg-5 col-lg-push-2">
                     <img src="../images/lecture.jpg">
-                    健康讲堂
-
+                    <a href="../pages/lecture.php">健康讲堂</a>
                 </div>
             </div>
 

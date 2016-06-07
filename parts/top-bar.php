@@ -12,7 +12,7 @@
             <a href="../pages/data.php" <?php if($phpself == 'Data.php') echo "style='font-weight:600'"; ?>>数据监测</a>
         </li>
         <li>
-            <a href="../pages/error.php" <?php if($phpself == 'lecture.php') echo "style='font-weight:600'"; ?>>健康讲堂</a>
+            <a href="../pages/lecture.php" <?php if($phpself == 'lecture.php') echo "style='font-weight:600'"; ?>>健康讲堂</a>
         </li>
         <li>
             <a href="#all-footer" <?php if($phpself == 'contact-us.php') echo "style='font-weight:600'"; ?>>联系我们</a>
