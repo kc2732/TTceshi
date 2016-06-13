@@ -7,8 +7,9 @@ $uname = 'chenkun';
 $pwd = 'chenkun';
 $mysql = mysql_connect($hostname,$uname,$pwd);
 mysql_select_db('tangyisheng',$mysql);
-if(isset($_SESSION['id'])){
-    session_start();
+session_start();
+
+if($_SESSION['id']!=null){
     $uid = $_SESSION['id'];
     $getInformation = "SELECT * FROM DataCollection WHERE userId = '$uid'";
     $res_Information = mysql_query($getInformation);
@@ -465,6 +466,7 @@ if(isset($_SESSION['id'])){
     }
 } else{
     echo "请先登录";
+
 }
 
 ?>

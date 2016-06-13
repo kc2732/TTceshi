@@ -36,12 +36,16 @@ if($option == 'insert'){
                             if($checkbox!=""){
                                 mysql_query("set names utf8");
                                 $sql = "INSERT INTO users (username,password,phone) VALUES('$username','$password','$phone')";
+
                                 mysql_query($sql) or die(mysql_error());
                                 mysql_query("set names utf8");
                                 $get_currentId = "SELECT * FROM users WHERE username='$username'";
                                 $get_userid = mysql_query($get_currentId);
                                 while($row=mysql_fetch_assoc($get_userid)){
                                     $_SESSION['id'] = $row['id'];
+                                    $uid = $row['id'];
+                                    $prework = "INSERT INTO DataCollection(userId)VALUES('$uid')";
+                                    mysql_query($prework);
                                 }
                                 echo "您的信息已经成功提交！！！接下来完成我们的问答，专家会根据您的回答来给您带来正确的治疗方案。</br>";
                                 ?>
@@ -212,13 +216,14 @@ if($option == 'insert'){
     $question117 = $_POST['question117'];
     $question118 = $_POST['question118'];
     $question119 = $_POST['question119'];
-
+    $userId_session = $_SESSION['id'];
     $check_exist = "SELECT * FROM DataCollection WHERE name='$name'";
     mysql_query("set names utf8");
     $result_check_exist = mysql_query($check_exist);
     $num_check_exist = mysql_num_rows($result_check_exist);
     if($num_check_exist == 0){
-        $Insert_Data_Collection = "INSERT INTO DataCollection VALUES ('$username','$name','$gender','$age','$phone','$height','$weight','$waist','$question8','$question9','$question10','$question11','$question0111','$question12','$question0112','$question13','$question14','$question15','$question151','$question16','$question152','$question17','$question18',
+
+        $Insert_Data_Collection = "INSERT INTO DataCollection VALUES ('$userId_session','$name','$gender','$age','$phone','$height','$weight','$waist','$question8','$question9','$question10','$question11','$question0111','$question12','$question0112','$question13','$question14','$question15','$question151','$question16','$question152','$question17','$question18',
 '$question19','$question191','$question20','$question192','$question21','$question22','$question23','$question231','$question24','$question232','$question25','$question26','$question27','$question271','$question28','$question272','$question29',
 '$question30','$question31','$question311','$question32','$question312','$question33','$question34','$question35','$question351','$question36','$question352','$question37','$question38','$question39','$question40','$question41','$question42','$question43','$question44',
 '$question45','$question46','$question47','$question48','$question49','$question50','$question51','$question52','$question53','$question54','$question55','$question56','$question57','$question58','$question59',
@@ -265,7 +270,7 @@ question104='$question104',question105='$question105',question106='$question106'
 question107='$question107',question1071='$question1071',question108='$question108',question109='$question109',
 question110='$question110',question111='$question111',question112='$question112',question113='$question113',
 question114='$question114',question115='$question115',question116='$question116',question117='$question117',
-question118='$question118',question119='$question119',question050='$question050' WHERE name = '$name'";
+question118='$question118',question119='$question119',question050='$question050' WHERE userId = '$userId_session'";
 
         mysql_query($update_Date_Collection) or die(mysql_error());
         echo "您的信息已经成功更新";
