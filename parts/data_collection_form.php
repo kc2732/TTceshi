@@ -19,7 +19,7 @@ if($_SESSION['id']!=null){
     <form action="../pages/success.php" method="post" class="dataCollection">
         <input type="hidden" name="option" value="dataCollection">
         <h4>姓名</h4>
-        <?php $utf8_name = iconv("GB2312", 'UTF-8', $row['name']);?>
+        <?php $utf8_name = iconv("GBK", 'UTF-8', $row['name']);?>
         <input type="text" name="name" value="<?php echo $utf8_name;?>">
         <h4>性别</h4>
         <input type="radio" name="gender" value="1" <?php if($row['gender']==1) echo "checked"; ?> >男
