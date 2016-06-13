@@ -236,7 +236,7 @@ if($option == 'insert'){
         mysql_query($Insert_Data_Collection) or die(mysql_error());
         echo "您的数据已经成功保存在我们的系统中！";
     }else{
-        $update_Date_Collection = "UPDATE DataCollection Set
+        $update_Date_Collection = "UPDATE DataCollection Set name='$name',
 gender='$gender',age='$age',phone='$phone',height='$height',weight='$weight',
 waist='$waist',question8='$question8',question9='$question9',question10='$question10',
 question11='$question11',question0111='$question0111',question12='$question12',question0112='$question0112',
