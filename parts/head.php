@@ -10,6 +10,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/responsive.css" rel="stylesheet" />
+    <link href="../css/form_style.css" rel="stylesheet"/>
     <script src='../lib/moment.min.js'></script>
     <script src='../lib/jquery.min.js'></script>
     <script src='../fullcalendar.min.js'></script>
@@ -17,6 +18,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/polyfill.js"></script>
     <script src="../js/script.js"></script>
+
 </head>
 <?php
 function php_self(){

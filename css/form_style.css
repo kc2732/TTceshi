@@ -1,0 +1,19 @@
+.question81, .question101, .question111, .question112,
+.question141, .question151, .question152, .question181, .question191,
+.question192, .question221, .question231, .question232, .question261, .question271, .question272
+, .question301, .question311, .question312, .question341, .question351, .question352, .question381
+,.question611,.question671,.question711,.question791,.question841,.question901,.question921,.question931,.question932,.question961,.question1001,.question1041,.question1042,.question1071,.question1091,.question1141
+{
+    display: none;
+}
+
+.dataCollection{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.dataCollection input[type=text], .dataCollection input[type=number]{
+    width:70%;
+    min-width: 200px;
+
+}

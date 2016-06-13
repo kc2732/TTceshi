@@ -1,69 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel='stylesheet' href='lib/cupertino/jquery-ui.min.css' />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link href="css/form_style.css" rel="stylesheet" />
-    <script src='lib/moment.min.js'></script>
-    <script src='lib/jquery.min.js'></script>
-    <script src='fullcalendar.min.js'></script>
-    <script src='lang-all.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <script src="js/polyfill.js"></script>
-    <script src="js/script.js"></script>
-</head>
-<body>
-
-<div class="top-bar">
-    <ul>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Solutions</a>
-        </li>
-        <li>
-            <a href="#">Data</a>
-        </li>
-        <li>
-            <a href="#">Lecture</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-        <li>
-            <a class="button-submit" href="http://www.google.com">Sign in</a>
-        </li>
-    </ul>
-
-</div>
 <div class="slidebar">
-    <img src="images/detect-slide-show.png" >
+    <img src="../images/detect-slide-show.png" >
 </div>
-<div class="container" style="background-color: rgb(235,214,165)">
-    <form action="InsertDate.php" method="post" class="dataCollection">
+<?php
+$hostname = 'localhost';
+$uname = 'chenkun';
+$pwd = 'chenkun';
+$mysql = mysql_connect($hostname,$uname,$pwd);
+mysql_select_db('tangyisheng',$mysql);
+
+?>
+<div class="container" style="background-color: rgb(235,214,165); color:black;">
+    <form action="../pages/success.php" method="post" class="dataCollection">
+        <input type="hidden" name="option" value="dataCollection">
         <h4>姓名</h4>
         <input type="text" name="name" >
         <h4>性别</h4>
-        <input type="radio" name="gender" value="Male" checked >男
-        <input type="radio" name="gender" value="Female">女
+        <input type="radio" name="gender" value="1" >男
+        <input type="radio" name="gender" value="2">女
         <h4>年龄</h4>
-        <input type="number" name="age" >
+        <input type="number" name="age" max="100" >
         <h4>联系方式</h4>
         <input type="text" name="phone">
         <h4>身高(cm)</h4>
-        <input type="number" name="height" >
+        <input type="number" name="height" max="250" >
         <h4>体重(kg)</h4>
-        <input type="number" name="weight" >
+        <input type="number" name="weight" max="500">
         <h4>腰围(cm)</h4>
-        <input type="number" name="waist">
+        <input type="number" name="waist" max="500">
         <h4>您是否曾经做过任何心血管测试</h4>
-        <input type="radio" name="question8" id="question81" value="yes" >是
-        <input type="radio" name="question8" id="question82" value="no">否
+        <input type="radio" name="question8" id="question81" value="1" >是
+        <input type="radio" name="question8" id="question82" value="2">否
         <div class="question81">
             <h4>你做完心血管测试后的诊断结果是</h4>
             <input type="text" name="question9" >
@@ -71,40 +37,40 @@
         <div>
             <h4>家族史</h4>
             <h4>家族成员是否有亲属有心脏病突发史</h4>
-            <input type="radio" name="question10" id="question101" value="yes" >是
-            <input type="radio" name="question10" id="question102" value="no">否
+            <input type="radio" name="question10" id="question101" value="1" >是
+            <input type="radio" name="question10" id="question102" value="2">否
             <div class="question101">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question11" id="question11" value="1">父亲，或者亲哥哥、亲弟弟
                 <div class="question111">
-                    患病年龄<input type="number" name="question111">
+                    患病年龄<input type="number" name="question0111" max="100">
                 </div>
                 <input type="checkbox" name="question12" id="question12" value="2">母亲，或者亲姐姐、亲妹妹
                 <div class="question112">
-                    患病年龄<input type="number" name="question112">
+                    患病年龄<input type="number" name="question0112" max="100">
                 </div>
                 <input type="checkbox" name="question13" id="question13" value="3">其他亲属
             </div>
 
             <h4>家族成员是否有亲属有先天性心脏病</h4>
-            <input type="radio" name="question14" id="question141" value="yes" >是
-            <input type="radio" name="question14" id="question142" value="no">否
+            <input type="radio" name="question14" id="question141" value="1" >是
+            <input type="radio" name="question14" id="question142" value="2">否
             <div class="question141">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question15" id="question15" value="1">父亲，或者亲哥哥、亲弟弟
                 <div class="question151">
-                    患病年龄<input type="number" name="question151">
+                    患病年龄<input type="number" name="question151" max="100">
                 </div>
                 <input type="checkbox" name="question16" id="question16" value="2">母亲，或者亲姐姐、亲妹妹
                 <div class="question152">
-                    患病年龄<input type="number" name="question152">
+                    患病年龄<input type="number" name="question152" max="100">
                 </div>
                 <input type="checkbox" name="question17" id="question17" value="3">其他亲属
             </div>
 
             <h4>家族成员中是否有亲属做过心脏手术？</h4>
-            <input type="radio" name="question18" id="question181" value="yes" >是
-            <input type="radio" name="question18" id="question182" value="no">否
+            <input type="radio" name="question18" id="question181" value="1" >是
+            <input type="radio" name="question18" id="question182" value="2">否
             <div class="question181">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question19" id="question19" value="1">父亲，或者亲哥哥、亲弟弟
@@ -119,8 +85,8 @@
             </div>
 
             <h4>家族成员中是否有亲属冠状动脉支架？</h4>
-            <input type="radio" name="question22" id="question221" value="yes" >是
-            <input type="radio" name="question22" id="question222" value="no">否
+            <input type="radio" name="question22" id="question221" value="1" >是
+            <input type="radio" name="question22" id="question222" value="2">否
             <div class="question221">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question23" id="question23" value="1">父亲，或者亲哥哥、亲弟弟
@@ -136,8 +102,8 @@
 
 
             <h4>家族成员中是否有做过心脏导管手术？</h4>
-            <input type="radio" name="question26" id="question261" value="yes" >是
-            <input type="radio" name="question26" id="question262" value="no">否
+            <input type="radio" name="question26" id="question261" value="1" >是
+            <input type="radio" name="question26" id="question262" value="2">否
             <div class="question261">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question27" id="question27" value="1">父亲，或者亲哥哥、亲弟弟
@@ -152,8 +118,8 @@
             </div>
 
             <h4>家族成员中是否有脑血管意外病史(脑溢血，中风，栓塞)？</h4>
-            <input type="radio" name="question30" id="question301" value="yes" >是
-            <input type="radio" name="question30" id="question302" value="no">否
+            <input type="radio" name="question30" id="question301" value="1" >是
+            <input type="radio" name="question30" id="question302" value="2">否
             <div class="question301">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question31" id="question31" value="1">父亲，或者亲哥哥、亲弟弟
@@ -168,8 +134,8 @@
             </div>
 
             <h4>家族成员中是否有人猝死？</h4>
-            <input type="radio" name="question34" id="question341" value="yes" >是
-            <input type="radio" name="question34" id="question342" value="no">否
+            <input type="radio" name="question34" id="question341" value="1" >是
+            <input type="radio" name="question34" id="question342" value="2">否
             <div class="question341">
                 <h4>该患病亲属与你的关系是</h4>
                 <input type="checkbox" name="question35" id="question35" value="1">父亲，或者亲哥哥、亲弟弟
@@ -184,8 +150,8 @@
             </div>
 
             <h4>家族成员中是否有亲属有其他慢性疾病？</h4>
-            <input type="radio" name="question38" id="question381" value="yes" >是
-            <input type="radio" name="question38" id="question382" value="no">否
+            <input type="radio" name="question38" id="question381" value="1" >是
+            <input type="radio" name="question38" id="question382" value="2">否
             <div class="question381">
                 <h4>是哪一种慢性病？</h4>
                 <input type="text" name="question39" >
@@ -194,39 +160,39 @@
         <div>
             <h4>个人史</h4>
             <h4>你曾经是否有过高血压？</h4>
-            <input type="radio" name="question40" id="question401" value="yes" >是
-            <input type="radio" name="question40" id="question402" value="no">否
+            <input type="radio" name="question40" id="question401" value="1" >是
+            <input type="radio" name="question40" id="question402" value="2">否
             <h4>你曾经是否有过高胆固醇</h4>
-            <input type="radio" name="question41" id="question411" value="yes" >是
-            <input type="radio" name="question41" id="question412" value="no">否
+            <input type="radio" name="question41" id="question411" value="1" >是
+            <input type="radio" name="question41" id="question412" value="2">否
 
             <h4>你曾经是否有过糖尿病？</h4>
-            <input type="radio" name="question42" id="question421" value="yes" >是
-            <input type="radio" name="question42" id="question422" value="no">否
+            <input type="radio" name="question42" id="question421" value="1" >是
+            <input type="radio" name="question42" id="question422" value="2">否
             <h4>你曾经是否有过动脉疾病</h4>
-            <input type="radio" name="question43" id="question431" value="yes" >是
-            <input type="radio" name="question43" id="question432" value="no">否
+            <input type="radio" name="question43" id="question431" value="1" >是
+            <input type="radio" name="question43" id="question432" value="2">否
 
             <h4>你曾经是否有过甲状腺疾病？</h4>
-            <input type="radio" name="question44" id="question441" value="yes" >是
-            <input type="radio" name="question44" id="question442" value="no">否
+            <input type="radio" name="question44" id="question441" value="1" >是
+            <input type="radio" name="question44" id="question442" value="2">否
             <h4>你曾经是否有过肺部疾病</h4>
-            <input type="radio" name="question45" id="question451" value="yes" >是
-            <input type="radio" name="question45" id="question452" value="no">否
+            <input type="radio" name="question45" id="question451" value="1" >是
+            <input type="radio" name="question45" id="question452" value="2">否
 
             <h4>你曾经是否有过哮喘？</h4>
-            <input type="radio" name="question46" id="question461" value="yes" >是
-            <input type="radio" name="question46" id="question462" value="no">否
+            <input type="radio" name="question46" id="question461" value="1" >是
+            <input type="radio" name="question46" id="question462" value="2">否
             <h4>你曾经是否有过癌症</h4>
-            <input type="radio" name="question47" id="question471" value="yes" >是
-            <input type="radio" name="question47" id="question472" value="no">否
+            <input type="radio" name="question47" id="question471" value="1" >是
+            <input type="radio" name="question47" id="question472" value="2">否
 
             <h4>你曾经是否有过肾脏疾病？</h4>
-            <input type="radio" name="question48" id="question481" value="yes" >是
-            <input type="radio" name="question48" id="question482" value="no">否
+            <input type="radio" name="question48" id="question481" value="1" >是
+            <input type="radio" name="question48" id="question482" value="2">否
             <h4>你曾经是否有过肝病？</h4>
-            <input type="radio" name="question49" id="question491" value="yes" >是
-            <input type="radio" name="question49" id="question492" value="no">否
+            <input type="radio" name="question49" id="question491" value="1" >是
+            <input type="radio" name="question49" id="question492" value="2">否
 
             <h4>你是否有过除以上列出疾病之外的疾病，如果有，请列出</h4>
             <input type="text" name="question50">
@@ -236,51 +202,51 @@
         <div>
             <h4>症状</h4>
             <h4>你曾经是否有过胸部疼痛？</h4>
-            <input type="radio" name="question50" id="question501" value="yes" >是
-            <input type="radio" name="question50" id="question502" value="no">否
+            <input type="radio" name="question50" id="question501" value="1" >是
+            <input type="radio" name="question50" id="question502" value="2">否
             <h4>你曾经是否有过呼吸短促</h4>
-            <input type="radio" name="question51" id="question511" value="yes" >是
-            <input type="radio" name="question51" id="question512" value="no">否
+            <input type="radio" name="question51" id="question511" value="1" >是
+            <input type="radio" name="question51" id="question512" value="2">否
             <h4>你曾经是否有过心悸？</h4>
-            <input type="radio" name="question52" id="question521" value="yes" >是
-            <input type="radio" name="question52" id="question522" value="no">否
+            <input type="radio" name="question52" id="question521" value="1" >是
+            <input type="radio" name="question52" id="question522" value="2">否
             <h4>你曾经是否有过心律不齐</h4>
-            <input type="radio" name="question53" id="question531" value="yes" >是
-            <input type="radio" name="question53" id="question532" value="no">否
+            <input type="radio" name="question53" id="question531" value="1" >是
+            <input type="radio" name="question53" id="question532" value="2">否
 
             <h4>你曾经是否有过心脏杂音？</h4>
-            <input type="radio" name="question54" id="question541" value="yes" >是
-            <input type="radio" name="question54" id="question542" value="no">否
+            <input type="radio" name="question54" id="question541" value="1" >是
+            <input type="radio" name="question54" id="question542" value="2">否
             <h4>你曾经是否有过间歇性腿部疼痛</h4>
-            <input type="radio" name="question55" id="question551" value="yes" >是
-            <input type="radio" name="question55" id="question552" value="no">否
+            <input type="radio" name="question55" id="question551" value="1" >是
+            <input type="radio" name="question55" id="question552" value="2">否
 
             <h4>你曾经是否有过眩晕或者昏倒？</h4>
-            <input type="radio" name="question56" id="question561" value="yes" >是
-            <input type="radio" name="question56" id="question562" value="no">否
+            <input type="radio" name="question56" id="question561" value="1" >是
+            <input type="radio" name="question56" id="question562" value="2">否
             <h4>你曾经是否在日常生活中易感到疲倦？</h4>
-            <input type="radio" name="question57" id="question571" value="yes" >是
-            <input type="radio" name="question57" id="question572" value="no">否
+            <input type="radio" name="question57" id="question571" value="1" >是
+            <input type="radio" name="question57" id="question572" value="2">否
 
             <h4>你曾经是否有过睡眠时打鼾的情况？</h4>
-            <input type="radio" name="question58" id="question581" value="yes" >是
-            <input type="radio" name="question58" id="question582" value="no">否
+            <input type="radio" name="question58" id="question581" value="1" >是
+            <input type="radio" name="question58" id="question582" value="2">否
             <h4>你曾经是否有过背部疼痛问题</h4>
-            <input type="radio" name="question59" id="question591" value="yes" >是
-            <input type="radio" name="question59" id="question592" value="no">否
+            <input type="radio" name="question59" id="question591" value="1" >是
+            <input type="radio" name="question59" id="question592" value="2">否
 
             <h4>你曾经是否有过骨科问题？</h4>
-            <input type="radio" name="question60" id="question601" value="yes" >是
-            <input type="radio" name="question60" id="question602" value="no">否
+            <input type="radio" name="question60" id="question601" value="1" >是
+            <input type="radio" name="question60" id="question602" value="2">否
             <h4>你曾经是否有过除以上列出症状之外的不适症状，如果有是哪种不适症状？</h4>
-            <input type="text" name="question61">
+            <input type="text" name="question601">
 
 
         </div>
 
         <h4>你是否测过你的胆固醇水平</h4>
-        <input type="radio" name="question61" id="question611" value="yes" >是
-        <input type="radio" name="question61" id="question612" value="no">否
+        <input type="radio" name="question61" id="question611" value="1" >是
+        <input type="radio" name="question61" id="question612" value="2">否
         <div class="question611">
             <h4>测试人的姓名或者测试医院的名称</h4>
             <input type="text" name="question62">
@@ -295,8 +261,8 @@
         </div>
 
         <h4>你是否测过你的胆固醇水平</h4>
-        <input type="radio" name="question67" id="question671" value="yes" >是
-        <input type="radio" name="question67" id="question672" value="no">否
+        <input type="radio" name="question67" id="question671" value="1" >是
+        <input type="radio" name="question67" id="question672" value="2">否
         <div class="question671">
             <h4>测试人的姓名或者测试医院的名称</h4>
             <input type="text" name="question68">
@@ -307,8 +273,8 @@
         </div>
 
         <h4>你是否测过你的血糖水平</h4>
-        <input type="radio" name="question71" id="question711" value="yes" >是
-        <input type="radio" name="question71" id="question712" value="no">否
+        <input type="radio" name="question71" id="question711" value="1" >是
+        <input type="radio" name="question71" id="question712" value="2">否
         <div class="question711">
             <h4>餐前30分钟的血糖水平：</h4>
             <input type="text" name="question72">
@@ -327,8 +293,8 @@
         </div>
 
         <h4>你是否正在吃任何处方药或者非处方药？*</h4>
-        <input type="radio" name="question79" id="question791" value="yes" >是
-        <input type="radio" name="question79" id="question792" value="no">否
+        <input type="radio" name="question79" id="question791" value="1" >是
+        <input type="radio" name="question79" id="question792" value="2">否
         <div class="question791">
             <h4>药品名称</h4>
             <input type="text" name="question80">
@@ -341,8 +307,8 @@
         </div>
 
         <h4>您近3个月是否住过医院？*</h4>
-        <input type="radio" name="question84" id="question841" value="yes" >是
-        <input type="radio" name="question84" id="question842" value="no">否
+        <input type="radio" name="question84" id="question841" value="1" >是
+        <input type="radio" name="question84" id="question842" value="2">否
         <div class="question841">
             <h4>住院时间</h4>
             <input type="text" name="question85">
@@ -358,43 +324,43 @@
         <h4>生活模式和兴趣</h4>
 
         <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
-        <input type="radio" name="question89" id="question891" value="yes" >是
-        <input type="radio" name="question89" id="question892" value="no">否
+        <input type="radio" name="question89" id="question891" value="1" >是
+        <input type="radio" name="question89" id="question892" value="2">否
 
         <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
-        <input type="radio" name="question90" id="question901" value="yes" >是
-        <input type="radio" name="question90" id="question902" value="no">否
+        <input type="radio" name="question90" id="question901" value="1" >是
+        <input type="radio" name="question90" id="question902" value="2">否
         <div class="question901">
             <h4>这种不舒服会不会因为运动的停止而消失？*</h4>
-            <input type="radio" name="question91" id="question911" value="yes" >是
-            <input type="radio" name="question91" id="question912" value="no">否
+            <input type="radio" name="question91" id="question911" value="1" >是
+            <input type="radio" name="question91" id="question912" value="2">否
         </div>
 
 
         <h4>你是否有过吸烟史</h4>
-        <input type="radio" name="question92" id="question921" value="yes" >是
-        <input type="radio" name="question92" id="question922" value="no">否
+        <input type="radio" name="question92" id="question921" value="1" >是
+        <input type="radio" name="question92" id="question922" value="2">否
         <div class="question921">
             <h4>你是否戒烟了</h4>
-            <input type="radio" name="question93" id="question931" value="yes" >是
-            <input type="radio" name="question93" id="question932" value="no">否
+            <input type="radio" name="question93" id="question931" value="1" >是
+            <input type="radio" name="question93" id="question932" value="2">否
             <div class="question931">
                 <h4>你是什么时候戒烟的</h4>
-                <input type="radio" name="question94" id="question941" value="yes" >六个月之内刚刚戒烟
-                <input type="radio" name="question94" id="question942" value="no">在六个月前戒烟
+                <input type="radio" name="question94" id="question941" value="1" >六个月之内刚刚戒烟
+                <input type="radio" name="question94" id="question942" value="0">在六个月前戒烟
             </div>
             <div class="question932">
                 <h4>你平时吸烟的种类</h4>
-                <input type="radio" name="question93" id="question951" value="yes" >香烟
-                <input type="radio" name="question93" id="question952" value="no">雪茄
-                <input type="radio" name="question93" id="question953" value="no">烟斗
+                <input type="radio" name="question95" id="question951" value="1" >香烟
+                <input type="radio" name="question95" id="question952" value="0">雪茄
+                <input type="radio" name="question95" id="question953" value="0">烟斗
             </div>
 
         </div>
 
         <h4>你平时喝酒吗？</h4>
-        <input type="radio" name="question96" id="question961" value="yes" >是
-        <input type="radio" name="question96" id="question962" value="no">否
+        <input type="radio" name="question96" id="question961" value="1" >是
+        <input type="radio" name="question96" id="question962" value="2">否
         <div class="question961">
             <h4>一周大约喝多少瓶啤酒</h4>
             <input type="text" name="question97">
@@ -405,8 +371,8 @@
         </div>
 
         <h4>你平时喝含咖啡因的饮品吗？</h4>
-        <input type="radio" name="question100" id="question1001" value="yes" >是
-        <input type="radio" name="question100" id="question1002" value="no">否
+        <input type="radio" name="question100" id="question1001" value="1" >是
+        <input type="radio" name="question100" id="question1002" value="2">否
         <div class="question1001">
             <h4>一周大约喝多少杯咖啡</h4>
             <input type="text" name="question101">
@@ -418,8 +384,8 @@
 
 
         <h4>你最近有在吃减肥餐吗</h4>
-        <input type="radio" name="question104" id="question1041" value="yes" >是
-        <input type="radio" name="question104" id="question1042" value="no">否
+        <input type="radio" name="question104" id="question1041" value="1" >是
+        <input type="radio" name="question104" id="question1042" value="2">否
         <div class="question1041">
             <h4>你已经吃了几个月的减肥餐？</h4>
             <input type="text" name="question105">
@@ -428,11 +394,11 @@
         </div>
         <div class="question1042">
             你曾经有试过减肥餐吗？
-            <input type="radio" name="question107" id="question1071" value="yes" >是
-            <input type="radio" name="question107" id="question1072" value="no">否
+            <input type="radio" name="question107" id="question1071" value="1" >是
+            <input type="radio" name="question107" id="question1072" value="2">否
             <div class="question1071">
                 <h4>减肥餐持续了多久，请描述一下减肥餐的类型。</h4>
-                <input type="text" name="question107">
+                <input type="text" name="question1071">
             </div>
 
         </div>
@@ -445,8 +411,8 @@
         <input type="radio" name="question108" id="question1084" value="4">重体力运动（体力劳动者，每周去三次以上健身房）
 
         <h4>你最近是否有在日常生活中经常地做一些非常剧烈的运动（频繁的搬重物，快跑，健身等）？*</h4>
-        <input type="radio" name="question109" id="question1091" value="yes" >是
-        <input type="radio" name="question109" id="question1092" value="no">否
+        <input type="radio" name="question109" id="question1091" value="1" >是
+        <input type="radio" name="question109" id="question1092" value="2">否
 
         <div class="question1091">
             <h4>是怎样的剧烈运动？</h4>
@@ -465,8 +431,8 @@
         </div>
 
         <h4>你最近是否有经常地做一些娱乐，休闲运动（太极拳，钓鱼，广场舞，高尔夫等）？</h4>
-        <input type="radio" name="question114" id="question1141" value="yes" >是
-        <input type="radio" name="question114" id="question1142" value="no">否
+        <input type="radio" name="question114" id="question1141" value="1" >是
+        <input type="radio" name="question114" id="question1142" value="2">否
         <div class="question1141">
             <h4>是怎样的休闲运动</h4>
             <input type="text" name="question115">
@@ -488,12 +454,3 @@
         <input type="submit" value="提交！">
     </form>
 </div>
-<div class="index-footer">
-
-    Team Description  Email:guoshacao@gmail.com<br>
-
-</div>
-
-
-</body>
-</html>
