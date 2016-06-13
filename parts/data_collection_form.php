@@ -7,164 +7,168 @@ $uname = 'chenkun';
 $pwd = 'chenkun';
 $mysql = mysql_connect($hostname,$uname,$pwd);
 mysql_select_db('tangyisheng',$mysql);
-
+if(isset($_SESSION['id'])){
+    $uid = $_SESSION['id'];
+    $getInformation = "SELECT * FROM DataCollection WHERE userId = '$uid'";
+    $res_Information = mysql_query($getInformation);
+    while($row = mysql_fetch_assoc($res_Information)){
 ?>
 <div class="container" style="background-color: rgb(235,214,165); color:black;">
     <form action="../pages/success.php" method="post" class="dataCollection">
         <input type="hidden" name="option" value="dataCollection">
         <h4>姓名</h4>
-        <input type="text" name="name" >
+        <input type="text" name="name" value="<?php echo $row['name']; ?>">
         <h4>性别</h4>
-        <input type="radio" name="gender" value="1" >男
-        <input type="radio" name="gender" value="2">女
+        <input type="radio" name="gender" value="1" <?php if($row['gender']==1) echo "checked"; ?> >男
+        <input type="radio" name="gender" value="2" <?php if($row['gender']==2) echo "checked"; ?> >女
         <h4>年龄</h4>
-        <input type="number" name="age" max="100" >
+        <input type="number" name="age" max="100" value="<?php echo $row['age']; ?>">
         <h4>联系方式</h4>
-        <input type="text" name="phone">
+        <input type="text" name="phone" value="<?php echo $row['phone']; ?>">
         <h4>身高(cm)</h4>
-        <input type="number" name="height" max="250" >
+        <input type="number" name="height" max="250" value="<?php echo $row['height']; ?>">
         <h4>体重(kg)</h4>
-        <input type="number" name="weight" max="500">
+        <input type="number" name="weight" max="500" value="<?php echo $row['weight']; ?>">
         <h4>腰围(cm)</h4>
-        <input type="number" name="waist" max="500">
+        <input type="number" name="waist" max="500" value="<?php echo $row['waist']; ?>">
         <h4>您是否曾经做过任何心血管测试</h4>
-        <input type="radio" name="question8" id="question81" value="1" >是
-        <input type="radio" name="question8" id="question82" value="2">否
+        <input type="radio" name="question8" id="question81" value="1" <?php if($row['question8']==1) echo "checked";?> >是
+        <input type="radio" name="question8" id="question82" value="2" <?php if($row['question8']==2) echo "checked";?>>否
         <div class="question81">
             <h4>你做完心血管测试后的诊断结果是</h4>
-            <input type="text" name="question9" >
+            <input type="text" name="question9" value="<?php echo $row['question9'];?>" >
         </div>
         <div>
             <h4>家族史</h4>
             <h4>家族成员是否有亲属有心脏病突发史</h4>
-            <input type="radio" name="question10" id="question101" value="1" >是
-            <input type="radio" name="question10" id="question102" value="2">否
+            <input type="radio" name="question10" id="question101" value="1"  <?php if($row['question10']==1) echo "checked";?>>是
+            <input type="radio" name="question10" id="question102" value="2"  <?php if($row['question10']==2) echo "checked";?>>否
             <div class="question101">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question11" id="question11" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question11" id="question11" value="1"  <?php if($row['question11']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question111">
-                    患病年龄<input type="number" name="question0111" max="100">
+                    患病年龄<input type="number" name="question0111" max="100" value="<?php echo $row['question0111'];?>">
                 </div>
-                <input type="checkbox" name="question12" id="question12" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question12" id="question12" value="2"  <?php if($row['question11']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question112">
-                    患病年龄<input type="number" name="question0112" max="100">
+                    患病年龄<input type="number" name="question0112" max="100" value="<?php echo $row['question0112'];?>">
                 </div>
-                <input type="checkbox" name="question13" id="question13" value="3">其他亲属
+                <input type="checkbox" name="question13" id="question13" value="3"  <?php if($row['question11']==3) echo "checked";?>>其他亲属
             </div>
 
             <h4>家族成员是否有亲属有先天性心脏病</h4>
-            <input type="radio" name="question14" id="question141" value="1" >是
-            <input type="radio" name="question14" id="question142" value="2">否
+            <input type="radio" name="question14" id="question141" value="1"  <?php if($row['question14']==1) echo "checked";?>>是
+            <input type="radio" name="question14" id="question142" value="2"  <?php if($row['question14']==2) echo "checked";?>>否
             <div class="question141">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question15" id="question15" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question15" id="question15" value="1" <?php if($row['question15']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question151">
-                    患病年龄<input type="number" name="question151" max="100">
+                    患病年龄<input type="number" name="question151" max="100" value="<?php echo $row['question151'];?>">
                 </div>
-                <input type="checkbox" name="question16" id="question16" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question16" id="question16" value="2" <?php if($row['question16']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question152">
-                    患病年龄<input type="number" name="question152" max="100">
+                    患病年龄<input type="number" name="question152" max="100" value="<?php echo $row['question152'];?>">
                 </div>
-                <input type="checkbox" name="question17" id="question17" value="3">其他亲属
+                <input type="checkbox" name="question17" id="question17" value="3" <?php if($row['question17']==3) echo "checked";?>>其他亲属
             </div>
 
             <h4>家族成员中是否有亲属做过心脏手术？</h4>
-            <input type="radio" name="question18" id="question181" value="1" >是
-            <input type="radio" name="question18" id="question182" value="2">否
+            <input type="radio" name="question18" id="question181" value="1" <?php if($row['question18']==1) echo "checked";?>>是
+            <input type="radio" name="question18" id="question182" value="2" <?php if($row['question18']==2) echo "checked";?>>否
             <div class="question181">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question19" id="question19" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question19" id="question19" value="1" <?php if($row['question19']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question191">
-                    患病年龄<input type="number" name="question191">
+                    患病年龄<input type="number" name="question191" value="<?php echo $row['question191'];?>">
                 </div>
-                <input type="checkbox" name="question20" id="question20" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question20" id="question20" value="2" <?php if($row['question20']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question192">
-                    患病年龄<input type="number" name="question192">
+                    患病年龄<input type="number" name="question192" value="<?php echo $row['question192'];?>">
                 </div>
-                <input type="checkbox" name="question21" id="question21" value="3">其他亲属
+                <input type="checkbox" name="question21" id="question21" value="3" <?php if($row['question21']==3) echo "checked";?>>其他亲属
             </div>
 
             <h4>家族成员中是否有亲属冠状动脉支架？</h4>
-            <input type="radio" name="question22" id="question221" value="1" >是
-            <input type="radio" name="question22" id="question222" value="2">否
+            <input type="radio" name="question22" id="question221" value="1" <?php if($row['question22']==1) echo "checked";?> >是
+            <input type="radio" name="question22" id="question222" value="2" <?php if($row['question22']==2) echo "checked";?>>否
             <div class="question221">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question23" id="question23" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question23" id="question23" value="1" <?php if($row['question23']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question231">
-                    患病年龄<input type="number" name="question231">
+                    患病年龄<input type="number" name="question231" value="<?php echo $row['question231'];?>">
                 </div>
-                <input type="checkbox" name="question24" id="question24" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question24" id="question24" value="2" <?php if($row['question24']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question232">
-                    患病年龄<input type="number" name="question232">
+                    患病年龄<input type="number" name="question232" value="<?php echo $row['question232'];?>">
                 </div>
-                <input type="checkbox" name="question25" id="question25" value="3">其他亲属
+                <input type="checkbox" name="question25" id="question25" value="3" <?php if($row['question25']==3) echo "checked";?>>其他亲属
             </div>
 
 
             <h4>家族成员中是否有做过心脏导管手术？</h4>
-            <input type="radio" name="question26" id="question261" value="1" >是
-            <input type="radio" name="question26" id="question262" value="2">否
+            <input type="radio" name="question26" id="question261" value="1" <?php if($row['question26']==1) echo "checked";?> >是
+            <input type="radio" name="question26" id="question262" value="2" <?php if($row['question26']==2) echo "checked";?>>否
             <div class="question261">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question27" id="question27" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question27" id="question27" value="1" <?php if($row['question27']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question271">
-                    患病年龄<input type="number" name="question271">
+                    患病年龄<input type="number" name="question271" value="<?php echo $row['question271'];?>">
                 </div>
-                <input type="checkbox" name="question28" id="question28" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question28" id="question28" value="2" <?php if($row['question28']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question272">
-                    患病年龄<input type="number" name="question272">
+                    患病年龄<input type="number" name="question272" value="<?php echo $row['272'];?>">
                 </div>
-                <input type="checkbox" name="question29" id="question29" value="3">其他亲属
+                <input type="checkbox" name="question29" id="question29" value="3" <?php if($row['question29']==3) echo "checked";?>>其他亲属
             </div>
 
             <h4>家族成员中是否有脑血管意外病史(脑溢血，中风，栓塞)？</h4>
-            <input type="radio" name="question30" id="question301" value="1" >是
-            <input type="radio" name="question30" id="question302" value="2">否
+            <input type="radio" name="question30" id="question301" value="1" <?php if($row['question30']==1) echo "checked";?>>是
+            <input type="radio" name="question30" id="question302" value="2" <?php if($row['question30']==2) echo "checked";?>>否
             <div class="question301">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question31" id="question31" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question31" id="question31" value="1" <?php if($row['question31']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question311">
-                    患病年龄<input type="number" name="question311">
+                    患病年龄<input type="number" name="question311" value="<?php echo $row['question311'];?>">
                 </div>
-                <input type="checkbox" name="question32" id="question32" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question32" id="question32" value="2" <?php if($row['question32']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question312">
-                    患病年龄<input type="number" name="question312">
+                    患病年龄<input type="number" name="question312" value="<?php echo $row['question312'];?>">
                 </div>
-                <input type="checkbox" name="question33" id="question33" value="3">其他亲属
+                <input type="checkbox" name="question33" id="question33" value="3" <?php if($row['question33']==3) echo "checked";?>>其他亲属
             </div>
 
             <h4>家族成员中是否有人猝死？</h4>
-            <input type="radio" name="question34" id="question341" value="1" >是
-            <input type="radio" name="question34" id="question342" value="2">否
+            <input type="radio" name="question34" id="question341" value="1" <?php if($row['question34']==1) echo "checked";?>>是
+            <input type="radio" name="question34" id="question342" value="2" <?php if($row['question34']==2) echo "checked";?>>否
             <div class="question341">
                 <h4>该患病亲属与你的关系是</h4>
-                <input type="checkbox" name="question35" id="question35" value="1">父亲，或者亲哥哥、亲弟弟
+                <input type="checkbox" name="question35" id="question35" value="1" <?php if($row['question35']==1) echo "checked";?>>父亲，或者亲哥哥、亲弟弟
                 <div class="question351">
-                    患病年龄<input type="number" name="question351">
+                    患病年龄<input type="number" name="question351" value="<?php echo $row['question351'];?>">
                 </div>
-                <input type="checkbox" name="question36" id="question36" value="2">母亲，或者亲姐姐、亲妹妹
+                <input type="checkbox" name="question36" id="question36" value="2" <?php if($row['question36']==2) echo "checked";?>>母亲，或者亲姐姐、亲妹妹
                 <div class="question352">
-                    患病年龄<input type="number" name="question352">
+                    患病年龄<input type="number" name="question352" value="<?php echo $row['question352'];?>">
                 </div>
-                <input type="checkbox" name="question37" id="question37" value="3">其他亲属
+                <input type="checkbox" name="question37" id="question37" value="3" <?php if($row['question37']==3) echo "checked";?>>其他亲属
             </div>
 
             <h4>家族成员中是否有亲属有其他慢性疾病？</h4>
-            <input type="radio" name="question38" id="question381" value="1" >是
-            <input type="radio" name="question38" id="question382" value="2">否
+            <input type="radio" name="question38" id="question381" value="1" <?php if($row['question38']==1) echo "checked";?>>是
+            <input type="radio" name="question38" id="question382" value="2" <?php if($row['question38']==2) echo "checked";?>>否
             <div class="question381">
                 <h4>是哪一种慢性病？</h4>
-                <input type="text" name="question39" >
+                <input type="text" name="question39" value="<?php echo $row['question39'];?>">
             </div>
         </div>
         <div>
             <h4>个人史</h4>
             <h4>你曾经是否有过高血压？</h4>
-            <input type="radio" name="question40" id="question401" value="1" >是
-            <input type="radio" name="question40" id="question402" value="2">否
+            <input type="radio" name="question40" id="question401" value="1" <?php if($row['question40']==1) echo "checked";?>>是
+            <input type="radio" name="question40" id="question402" value="2" <?php if($row['question40']==2) echo "checked";?>>否
             <h4>你曾经是否有过高胆固醇</h4>
-            <input type="radio" name="question41" id="question411" value="1" >是
-            <input type="radio" name="question41" id="question412" value="2">否
+            <input type="radio" name="question41" id="question411" value="1" <?php if($row['question41']==1) echo "checked";?>>是
+            <input type="radio" name="question41" id="question412" value="2" <?php if($row['question14']==2) echo "checked";?>>否
 
             <h4>你曾经是否有过糖尿病？</h4>
             <input type="radio" name="question42" id="question421" value="1" >是
@@ -260,7 +264,7 @@ mysql_select_db('tangyisheng',$mysql);
             <input type="text" name="question66">
         </div>
 
-        <h4>你是否测过你的胆固醇水平</h4>
+        <h4>你是否测过你的血压水平</h4>
         <input type="radio" name="question67" id="question671" value="1" >是
         <input type="radio" name="question67" id="question672" value="2">否
         <div class="question671">
@@ -454,3 +458,12 @@ mysql_select_db('tangyisheng',$mysql);
         <input type="submit" value="提交！">
     </form>
 </div>
+
+<?php
+
+    }
+} else{
+
+}
+
+?>

@@ -60,6 +60,10 @@ if($option == 'insert'){
     if($res_login_query == 0){
         echo "您的用户名或密码不正确，请确认后重新输入";
     } else{
+        while($row = mysql_fetch_assoc($login_query)){
+            session_start();
+            $_SESSION['id'] = $row['id'];
+        }
         echo "登录成功！</br>(若您已经完成问答，请耐心等待，我们的专家会尽快为您设计出最适合您的方案)</br>";
         echo '<a style="width:30%;margin-right:35%" class="button-submit " href="https://guowei.typeform.com/to/aovyxK">开始问答</a>';
     }
@@ -70,6 +74,7 @@ if($option == 'insert'){
     $age = $_POST['age'];
     $phone = $_POST['phone'];
     $height = $_POST['height'];
+    $weight = $_POST['weight'];
     $waist = $_POST['waist'];
     $question8 = $_POST['question8'];
     $question9 = $_POST['question9'];
@@ -205,7 +210,7 @@ if($option == 'insert'){
     $result_check_exist = mysql_query($check_exist);
     $num_check_exist = mysql_num_rows($result_check_exist);
     if($num_check_exist == 0){
-        $Insert_Data_Collection = "INSERT INTO DataCollection VALUES ('$username','$name','$gender','$age','$phone','$height','$waist','$question8','$question9','$question10','$question11','$question0111','$question12','$question0112','$question13','$question14','$question15','$question151','$question16','$question152','$question17','$question18',
+        $Insert_Data_Collection = "INSERT INTO DataCollection VALUES ('$username','$name','$gender','$age','$phone','$height','$weight','$waist','$question8','$question9','$question10','$question11','$question0111','$question12','$question0112','$question13','$question14','$question15','$question151','$question16','$question152','$question17','$question18',
 '$question19','$question191','$question20','$question192','$question21','$question22','$question23','$question231','$question24','$question232','$question25','$question26','$question27','$question271','$question28','$question272','$question29',
 '$question30','$question31','$question311','$question32','$question312','$question33','$question34','$question35','$question351','$question36','$question352','$question37','$question38','$question39','$question40','$question41','$question42','$question43','$question44',
 '$question45','$question46','$question47','$question48','$question49','$question50','$question51','$question52','$question53','$question54','$question55','$question56','$question57','$question58','$question59',
@@ -219,7 +224,7 @@ if($option == 'insert'){
         echo "您的数据已经成功保存在我们的系统中！";
     }else{
         $update_Date_Collection = "UPDATE DataCollection Set
-gender='$gender',age='$age',phone='$phone',height='$height',
+gender='$gender',age='$age',phone='$phone',height='$height',weight='$weight',
 waist='$waist',question8='$question8',question9='$question9',question10='$question10',
 question11='$question11',question0111='$question0111',question12='$question12',question0112='$question0112',
 question13='$question13',question14='$question14',question15='$question15',question151='$question151',
