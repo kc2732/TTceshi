@@ -47,17 +47,17 @@
       <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parts/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6832642" vertical-offset="798" max-vertical-offset="5396">
-              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+            <state vertical-scroll-proportion="-0.39695713" vertical-offset="1028" max-vertical-offset="5415">
+              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
               <folding>
-                <marker date="1465800874774" expanded="true" signature="740:788" placeholder="SELECT * FRO..users..." />
-                <marker date="1465800874774" expanded="true" signature="1236:1320" placeholder="INSERT INTO ..." />
-                <marker date="1465800874774" expanded="true" signature="1446:1492" placeholder="SELECT * FRO..users..." />
-                <marker date="1465800874774" expanded="true" signature="2475:2550" placeholder="SELECT * FRO..users..." />
-                <marker date="1465800874774" expanded="true" signature="2968:2994" placeholder="..." />
-                <marker date="1465800874774" expanded="true" signature="8585:8632" placeholder="SELECT * FRO..DataCollection..." />
-                <marker date="1465800874774" expanded="true" signature="8849:10811" placeholder="INSERT INTO ..." />
-                <marker date="1465800874774" expanded="true" signature="11002:14474" placeholder="UPDATE DataC..." />
+                <marker date="1465801018075" expanded="true" signature="740:788" placeholder="SELECT * FRO..users..." />
+                <marker date="1465801018075" expanded="true" signature="1236:1320" placeholder="INSERT INTO ..." />
+                <marker date="1465801018075" expanded="true" signature="1509:1555" placeholder="SELECT * FRO..users..." />
+                <marker date="1465801018075" expanded="true" signature="2538:2613" placeholder="SELECT * FRO..users..." />
+                <marker date="1465801018075" expanded="true" signature="3031:3057" placeholder="..." />
+                <marker date="1465801018075" expanded="true" signature="8639:8686" placeholder="SELECT * FRO..DataCollection..." />
+                <marker date="1465801018075" expanded="true" signature="8903:10865" placeholder="INSERT INTO ..." />
+                <marker date="1465801018075" expanded="true" signature="11056:14528" placeholder="UPDATE DataC..." />
               </folding>
             </state>
           </provider>
@@ -724,17 +724,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6832642" vertical-offset="798" max-vertical-offset="5396">
-          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        <state vertical-scroll-proportion="-0.39695713" vertical-offset="1028" max-vertical-offset="5415">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
           <folding>
-            <marker date="1465800874774" expanded="true" signature="740:788" placeholder="SELECT * FRO..users..." />
-            <marker date="1465800874774" expanded="true" signature="1236:1320" placeholder="INSERT INTO ..." />
-            <marker date="1465800874774" expanded="true" signature="1446:1492" placeholder="SELECT * FRO..users..." />
-            <marker date="1465800874774" expanded="true" signature="2475:2550" placeholder="SELECT * FRO..users..." />
-            <marker date="1465800874774" expanded="true" signature="2968:2994" placeholder="..." />
-            <marker date="1465800874774" expanded="true" signature="8585:8632" placeholder="SELECT * FRO..DataCollection..." />
-            <marker date="1465800874774" expanded="true" signature="8849:10811" placeholder="INSERT INTO ..." />
-            <marker date="1465800874774" expanded="true" signature="11002:14474" placeholder="UPDATE DataC..." />
+            <marker date="1465801018075" expanded="true" signature="740:788" placeholder="SELECT * FRO..users..." />
+            <marker date="1465801018075" expanded="true" signature="1236:1320" placeholder="INSERT INTO ..." />
+            <marker date="1465801018075" expanded="true" signature="1509:1555" placeholder="SELECT * FRO..users..." />
+            <marker date="1465801018075" expanded="true" signature="2538:2613" placeholder="SELECT * FRO..users..." />
+            <marker date="1465801018075" expanded="true" signature="3031:3057" placeholder="..." />
+            <marker date="1465801018075" expanded="true" signature="8639:8686" placeholder="SELECT * FRO..DataCollection..." />
+            <marker date="1465801018075" expanded="true" signature="8903:10865" placeholder="INSERT INTO ..." />
+            <marker date="1465801018075" expanded="true" signature="11056:14528" placeholder="UPDATE DataC..." />
           </folding>
         </state>
       </provider>

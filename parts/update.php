@@ -37,6 +37,7 @@ if($option == 'insert'){
                                 mysql_query("set names utf8");
                                 $sql = "INSERT INTO users (username,password,phone) VALUES('$username','$password','$phone')";
                                 mysql_query($sql) or die(mysql_error());
+                                mysql_query("set names utf8");
                                 $get_currentId = "SELECT * FROM users WHERE username='$username'";
                                 $get_userid = mysql_query($get_currentId);
                                 while($row=mysql_fetch_assoc($get_userid)){
@@ -71,7 +72,7 @@ if($option == 'insert'){
             $_SESSION['id'] = $row['id'];
         }
         echo "登录成功！</br>(若您已经完成问答，请耐心等待，我们的专家会尽快为您设计出最适合您的方案)</br>";
-        echo '<a style="width:30%;margin-right:35%" class="button-submit " href="https://guowei.typeform.com/to/aovyxK">开始问答</a>';
+        echo '<a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>';
     }
 } elseif($option='dataCollection'){
 
