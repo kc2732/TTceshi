@@ -19,7 +19,7 @@ mysql_select_db('tangyisheng',$mysql);
 $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 $phone = mysql_real_escape_string($phone);
-
+session_start();
 ?>
 <div style="width:60%; margin-top:10%; margin-left: auto; margin-right: auto; text-align: center; font-size: 32px;">
 <?php
@@ -37,9 +37,14 @@ if($option == 'insert'){
                                 mysql_query("set names utf8");
                                 $sql = "INSERT INTO users (username,password,phone) VALUES('$username','$password','$phone')";
                                 mysql_query($sql) or die(mysql_error());
+                                $get_currentId = "SELECT * FROM users WHERE username='$username'";
+                                $get_userid = mysql_query($get_currentId);
+                                while($row=mysql_fetch_assoc($get_userid)){
+                                    $_SESSION['id'] = $row['id'];
+                                }
                                 echo "您的信息已经成功提交！！！接下来完成我们的问答，专家会根据您的回答来给您带来正确的治疗方案。</br>";
                                 ?>
-                                <a style="width:30%;margin-right:35%" class="button-submit " href="https://guowei.typeform.com/to/aovyxK">开始问答</a>
+                                <a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>
                             <?php
                             }else echo "您还未同意我们的服务条款，请确认后重新提交";
                         } else echo "请输入您的联系方式";
@@ -61,7 +66,7 @@ if($option == 'insert'){
         echo "您的用户名或密码不正确，请确认后重新输入";
     } else{
         while($row = mysql_fetch_assoc($login_query)){
-            session_start();
+
             $_SESSION['id'] = $row['id'];
         }
         echo "登录成功！</br>(若您已经完成问答，请耐心等待，我们的专家会尽快为您设计出最适合您的方案)</br>";
@@ -133,6 +138,7 @@ if($option == 'insert'){
     $question48 = $_POST['question48'];
     $question49 = $_POST['question49'];
     $question50 = $_POST['question50'];
+    $question050 = $_POST['question050'];
     $question51 = $_POST['question51'];
     $question52 = $_POST['question52'];
     $question53 = $_POST['question53'];
@@ -217,7 +223,7 @@ if($option == 'insert'){
 '$question60','$question601','$question61','$question62','$question63','$question64','$question65','$question66','$question67','$question68','$question69','$question70','$question71','$question72','$question73','$question74',
 '$question75','$question76','$question77','$question78','$question79','$question80','$question81','$question82','$question83','$question84','$question85','$question86','$question87','$question88','$question89','$question90','$question91',
 '$question92','$question93','$question94','$question95','$question96','$question97','$question98','$question99','$question100',
-'$question101','$question102','$question103','$question104','$question105','$question106','$question107','$question1071','$question108','$question109','$question110','$question111','$question112','$question113','$question114','$question115','$question116','$question117','$question118','$question119'
+'$question101','$question102','$question103','$question104','$question105','$question106','$question107','$question1071','$question108','$question109','$question110','$question111','$question112','$question113','$question114','$question115','$question116','$question117','$question118','$question119','$question050'
 )";
         mysql_query("set names utf8");
         mysql_query($Insert_Data_Collection) or die(mysql_error());
@@ -257,7 +263,7 @@ question104='$question104',question105='$question105',question106='$question106'
 question107='$question107',question1071='$question1071',question108='$question108',question109='$question109',
 question110='$question110',question111='$question111',question112='$question112',question113='$question113',
 question114='$question114',question115='$question115',question116='$question116',question117='$question117',
-question118='$question118',question119='$question119' WHERE name = '$name'";
+question118='$question118',question119='$question119',question050='$question050' WHERE name = '$name'";
 
         mysql_query($update_Date_Collection) or die(mysql_error());
         echo "您的信息已经成功更新";
