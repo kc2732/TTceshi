@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec7d8c9-3ac1-4705-aad9-29f5f20b8e76" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/update.php" afterPath="$PROJECT_DIR$/parts/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/data_collection_form.php" afterPath="$PROJECT_DIR$/parts/data_collection_form.php" />
     </list>
     <ignored path="TTceshi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,28 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0" vertical-offset="171" max-vertical-offset="9006">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.21902017" vertical-offset="0" max-vertical-offset="9025">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding>
-                <element signature="e#500#556#0#HTML" expanded="true" />
-                <marker date="1465800513396" expanded="true" signature="313:358" placeholder="SELECT * FRO..DataCollection..." />
-                <marker date="1465800513396" expanded="true" signature="313:363" placeholder="SELECT * FRO..DataCollection..." />
-                <marker date="1465800513396" expanded="true" signature="2039:2127" placeholder="..." />
-                <marker date="1465800513396" expanded="true" signature="10788:10871" placeholder="..." />
-                <marker date="1465800513396" expanded="true" signature="13900:13983" placeholder="..." />
+                <element signature="e#521#577#0#HTML" expanded="true" />
+                <marker date="1465801074437" expanded="true" signature="334:379" placeholder="SELECT * FRO..DataCollection..." />
+                <marker date="1465801074437" expanded="true" signature="334:384" placeholder="SELECT * FRO..DataCollection..." />
+                <marker date="1465801074437" expanded="true" signature="2060:2148" placeholder="..." />
+                <marker date="1465801074437" expanded="true" signature="10809:10892" placeholder="..." />
+                <marker date="1465801074437" expanded="true" signature="13921:14004" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.39695713" vertical-offset="1028" max-vertical-offset="5415">
-              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+            <state vertical-scroll-proportion="-48.17857" vertical-offset="0" max-vertical-offset="5415">
+              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
               <folding>
                 <marker date="1465801018075" expanded="true" signature="740:788" placeholder="SELECT * FRO..users..." />
                 <marker date="1465801018075" expanded="true" signature="1236:1320" placeholder="INSERT INTO ..." />
@@ -103,8 +103,8 @@
         <option value="$PROJECT_DIR$/parts/head.php" />
         <option value="$PROJECT_DIR$/pages/data-collection.php" />
         <option value="$PROJECT_DIR$/jiance.html" />
-        <option value="$PROJECT_DIR$/parts/data_collection_form.php" />
         <option value="$PROJECT_DIR$/parts/update.php" />
+        <option value="$PROJECT_DIR$/parts/data_collection_form.php" />
       </list>
     </option>
   </component>
@@ -707,25 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="171" max-vertical-offset="9006">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="e#500#556#0#HTML" expanded="true" />
-            <marker date="1465800513396" expanded="true" signature="313:358" placeholder="SELECT * FRO..DataCollection..." />
-            <marker date="1465800513396" expanded="true" signature="313:363" placeholder="SELECT * FRO..DataCollection..." />
-            <marker date="1465800513396" expanded="true" signature="2039:2127" placeholder="..." />
-            <marker date="1465800513396" expanded="true" signature="10788:10871" placeholder="..." />
-            <marker date="1465800513396" expanded="true" signature="13900:13983" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parts/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.39695713" vertical-offset="1028" max-vertical-offset="5415">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        <state vertical-scroll-proportion="-48.17857" vertical-offset="0" max-vertical-offset="5415">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
           <folding>
             <marker date="1465801018075" expanded="true" signature="740:788" placeholder="SELECT * FRO..users..." />
             <marker date="1465801018075" expanded="true" signature="1236:1320" placeholder="INSERT INTO ..." />
@@ -735,6 +720,21 @@
             <marker date="1465801018075" expanded="true" signature="8639:8686" placeholder="SELECT * FRO..DataCollection..." />
             <marker date="1465801018075" expanded="true" signature="8903:10865" placeholder="INSERT INTO ..." />
             <marker date="1465801018075" expanded="true" signature="11056:14528" placeholder="UPDATE DataC..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21902017" vertical-offset="0" max-vertical-offset="9025">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#521#577#0#HTML" expanded="true" />
+            <marker date="1465801074437" expanded="true" signature="334:379" placeholder="SELECT * FRO..DataCollection..." />
+            <marker date="1465801074437" expanded="true" signature="334:384" placeholder="SELECT * FRO..DataCollection..." />
+            <marker date="1465801074437" expanded="true" signature="2060:2148" placeholder="..." />
+            <marker date="1465801074437" expanded="true" signature="10809:10892" placeholder="..." />
+            <marker date="1465801074437" expanded="true" signature="13921:14004" placeholder="..." />
           </folding>
         </state>
       </provider>

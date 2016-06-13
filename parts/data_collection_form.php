@@ -8,6 +8,7 @@ $pwd = 'chenkun';
 $mysql = mysql_connect($hostname,$uname,$pwd);
 mysql_select_db('tangyisheng',$mysql);
 if(isset($_SESSION['id'])){
+    session_start();
     $uid = $_SESSION['id'];
     $getInformation = "SELECT * FROM DataCollection WHERE userId = '$uid'";
     $res_Information = mysql_query($getInformation);
