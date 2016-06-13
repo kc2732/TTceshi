@@ -8,10 +8,10 @@ $pwd = 'chenkun';
 $mysql = mysql_connect($hostname,$uname,$pwd);
 mysql_select_db('tangyisheng',$mysql);
 session_start();
-
 if($_SESSION['id']!=null){
     $uid = $_SESSION['id'];
     $getInformation = "SELECT * FROM DataCollection WHERE userId = '$uid'";
+    mysql_query("set names utf8");
     $res_Information = mysql_query($getInformation);
     while($row = mysql_fetch_assoc($res_Information)){
 ?>
@@ -19,7 +19,6 @@ if($_SESSION['id']!=null){
     <form action="../pages/success.php" method="post" class="dataCollection">
         <input type="hidden" name="option" value="dataCollection">
         <h4>姓名</h4>
-        <?php echo $row['name'];?>
         <input type="text" name="name" value="<?php echo $row['name'];?>">
         <h4>性别</h4>
         <input type="radio" name="gender" value="1" <?php if($row['gender']==1) echo "checked"; ?> >男
