@@ -60,6 +60,7 @@ if($option == 'insert'){
     echo '该站点正在开发中，敬请期待！';
 } elseif($option == 'login'){
     $login_check = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
+    mysql_query("set names utf8");
     $login_query = mysql_query($login_check);
     $res_login_query = mysql_num_rows($login_query);
     if($res_login_query == 0){
