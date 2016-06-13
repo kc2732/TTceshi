@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec7d8c9-3ac1-4705-aad9-29f5f20b8e76" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/data_collection_form.php" afterPath="$PROJECT_DIR$/parts/data_collection_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/head.php" afterPath="$PROJECT_DIR$/parts/head.php" />
     </list>
     <ignored path="TTceshi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27377522" vertical-offset="190" max-vertical-offset="9063">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state vertical-scroll-proportion="-4.0" vertical-offset="190" max-vertical-offset="9063">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#517#573#0#HTML" expanded="true" />
                 <marker date="1465805627491" expanded="true" signature="330:380" placeholder="SELECT * FRO..DataCollection..." />
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parts/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="684">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.07883818" vertical-offset="0" max-vertical-offset="723">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -120,11 +120,11 @@
         <option value="$PROJECT_DIR$/forms_new.html" />
         <option value="$PROJECT_DIR$/css/form_style.css" />
         <option value="$PROJECT_DIR$/jiance.html" />
-        <option value="$PROJECT_DIR$/parts/head.php" />
         <option value="$PROJECT_DIR$/pages/index.php" />
         <option value="$PROJECT_DIR$/pages/data-collection.php" />
         <option value="$PROJECT_DIR$/parts/update.php" />
         <option value="$PROJECT_DIR$/parts/data_collection_form.php" />
+        <option value="$PROJECT_DIR$/parts/head.php" />
       </list>
     </option>
   </component>
@@ -704,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parts/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="684">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/data-collection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="361">
@@ -752,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27377522" vertical-offset="190" max-vertical-offset="9063">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state vertical-scroll-proportion="-4.0" vertical-offset="190" max-vertical-offset="9063">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
             <element signature="e#517#573#0#HTML" expanded="true" />
             <marker date="1465805627491" expanded="true" signature="330:380" placeholder="SELECT * FRO..DataCollection..." />
@@ -761,6 +753,14 @@
             <marker date="1465805627491" expanded="true" signature="10804:10887" placeholder="..." />
             <marker date="1465805627491" expanded="true" signature="13916:13999" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07883818" vertical-offset="0" max-vertical-offset="723">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
