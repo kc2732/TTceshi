@@ -217,7 +217,7 @@ if($option == 'insert'){
     $question118 = $_POST['question118'];
     $question119 = $_POST['question119'];
     $userId_session = $_SESSION['id'];
-    $check_exist = "SELECT * FROM DataCollection WHERE name='$name'";
+    $check_exist = "SELECT * FROM DataCollection WHERE userId='$userId_session'";
     mysql_query("set names utf8");
     $result_check_exist = mysql_query($check_exist);
     $num_check_exist = mysql_num_rows($result_check_exist);
