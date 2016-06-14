@@ -25,6 +25,7 @@ session_start();
 <?php
 if($option == 'insert'){
     $check = "SELECT * FROM users WHERE username = '$username'";
+    mysql_query("set names utf8");
     $check_res = mysql_query($check);
     $num_row = mysql_num_rows($check_res);
     if($num_row == 0){
