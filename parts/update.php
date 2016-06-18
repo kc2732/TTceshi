@@ -272,9 +272,12 @@ question107='$question107',question1071='$question1071',question108='$question10
 question110='$question110',question111='$question111',question112='$question112',question113='$question113',
 question114='$question114',question115='$question115',question116='$question116',question117='$question117',
 question118='$question118',question119='$question119',question050='$question050' WHERE userId = '$userId_session'";
-
+        mysql_query("set names utf8");
         mysql_query($update_Date_Collection) or die(mysql_error());
         echo "您的信息已经成功更新";
+        ?>
+        <div>如果需要更改或者查看您的病例数据，请点击<a href="../pages/data-collection.php">这里</a></div>
+    <?php
     }
 
 
