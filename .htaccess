@@ -1,4 +1,4 @@
 AuthType Basic
-AuthName "Admin"
-AuthUserFile /var/www/TTceshi/demos/.htpasswd
+AuthName "Administrator area"
+AuthUserFile  /var/www/TTceshi/demos/.htpasswd
 Require valid-user
