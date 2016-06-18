@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin"
+AuthUserFile /var/www/TTceshi/demos
+Require valid-user
