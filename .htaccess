@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "My Protected Area"
-AuthUserFile /var/www/TTceshi/demos/.htpasswd
+AuthUserFile /demos/.htpasswd
 Require valid-user
