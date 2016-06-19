@@ -76,7 +76,9 @@ if($option == 'insert'){
 
             $_SESSION['id'] = $row['id'];
         }
-        echo "登录成功！</br>(若您已经完成问答，请耐心等待，我们的专家会尽快为您设计出最适合您的方案)</br>";
+        echo "登录成功！欢迎回来</br>
+                您的问题完成度为：";
+
         echo '<a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>';
     }
 } elseif($option='dataCollection'){
@@ -218,6 +220,7 @@ if($option == 'insert'){
     $question118 = $_POST['question118'];
     $question119 = $_POST['question119'];
     $userId_session = $_SESSION['id'];
+    $ershouyan = $_POST['ershouyan'];
     $check_exist = "SELECT * FROM DataCollection WHERE userId='$userId_session'";
     mysql_query("set names utf8");
     $result_check_exist = mysql_query($check_exist);
@@ -231,7 +234,7 @@ if($option == 'insert'){
 '$question60','$question601','$question61','$question62','$question63','$question64','$question65','$question66','$question67','$question68','$question69','$question70','$question71','$question72','$question73','$question74',
 '$question75','$question76','$question77','$question78','$question79','$question80','$question81','$question82','$question83','$question84','$question85','$question86','$question87','$question88','$question89','$question90','$question91',
 '$question92','$question93','$question94','$question95','$question96','$question97','$question98','$question99','$question100',
-'$question101','$question102','$question103','$question104','$question105','$question106','$question107','$question1071','$question108','$question109','$question110','$question111','$question112','$question113','$question114','$question115','$question116','$question117','$question118','$question119','$question050'
+'$question101','$question102','$question103','$question104','$question105','$question106','$question107','$question1071','$question108','$question109','$question110','$question111','$question112','$question113','$question114','$question115','$question116','$question117','$question118','$question119','$question050','$ershouyan'
 )";
         mysql_query("set names utf8");
         mysql_query($Insert_Data_Collection) or die(mysql_error());
@@ -271,7 +274,7 @@ question104='$question104',question105='$question105',question106='$question106'
 question107='$question107',question1071='$question1071',question108='$question108',question109='$question109',
 question110='$question110',question111='$question111',question112='$question112',question113='$question113',
 question114='$question114',question115='$question115',question116='$question116',question117='$question117',
-question118='$question118',question119='$question119',question050='$question050' WHERE userId = '$userId_session'";
+question118='$question118',question119='$question119',question050='$question050',ershouyan = '$ershouyan' WHERE userId = '$userId_session'";
         mysql_query("set names utf8");
         mysql_query($update_Date_Collection) or die(mysql_error());
         echo "您的信息已经成功更新";
