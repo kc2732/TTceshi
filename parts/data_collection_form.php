@@ -329,9 +329,9 @@ if($_SESSION['id']!=null){
 
         <h4>生活模式和兴趣</h4>
 
-        <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
-        <input type="radio" name="question89" id="question891" value="1" <?php if($row['question89']==1) echo "checked";?>>是
-        <input type="radio" name="question89" id="question892" value="2" <?php if($row['question89']==2) echo "checked";?>>否
+<!--        <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>-->
+<!--        <input type="radio" name="question89" id="question891" value="1" --><?php //if($row['question89']==1) echo "checked";?><!-->是-->
+<!--        <input type="radio" name="question89" id="question892" value="2" --><?php //if($row['question89']==2) echo "checked";?><!-->否-->
 
         <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
         <input type="radio" name="question90" id="question901" value="1" <?php if($row['question90']==1) echo "checked";?>>是
@@ -418,7 +418,7 @@ if($_SESSION['id']!=null){
         <h4>大部分情况下，你的运动水平是*</h4>
         <input type="radio" name="question108" id="question1081" value="1" <?php if($row['question108']==1) echo "checked";?>>主要是坐着<br>
         <input type="radio" name="question108" id="question1082" value="2" <?php if($row['question108']==2) echo "checked";?>>轻微的运动（散步）<br>
-        <input type="radio" name="question108" id="question1083" value="3" <?php if($row['question108']==3) echo "checked";?>>中毒运动（快速上下楼梯，快走）<br>
+        <input type="radio" name="question108" id="question1083" value="3" <?php if($row['question108']==3) echo "checked";?>>中度运动（快速上下楼梯，快走）<br>
         <input type="radio" name="question108" id="question1084" value="4" <?php if($row['question108']==4) echo "checked";?>>重体力运动（体力劳动者，每周去三次以上健身房）
 
         <h4>你最近是否有在日常生活中经常地做一些非常剧烈的运动（频繁的搬重物，快跑，健身等）？*</h4>
