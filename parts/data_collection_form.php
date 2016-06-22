@@ -330,8 +330,8 @@ if($_SESSION['id']!=null){
         <h4>生活模式和兴趣</h4>
 
 <!--        <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>-->
-<!--        <input type="radio" name="question89" id="question891" value="1" --><?php //if($row['question89']==1) echo "checked";?><!-->是-->
-<!--        <input type="radio" name="question89" id="question892" value="2" --><?php //if($row['question89']==2) echo "checked";?><!-->否-->
+<!--        <input type="radio" name="question89" id="question891" value="1" --><?php //if($row['question89']==1) echo "checked";?>
+<!--        <input type="radio" name="question89" id="question892" value="2" --><?php //if($row['question89']==2) echo "checked";?>
 
         <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
         <input type="radio" name="question90" id="question901" value="1" <?php if($row['question90']==1) echo "checked";?>>是
