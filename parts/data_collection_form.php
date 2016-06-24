@@ -365,8 +365,8 @@ if($_SESSION['id']!=null){
         </div>
         <div class="question922">
             <h4>您是否经常会暴露在二手烟环境中？</h4>
-            <input type="radio" name="ershouyan" id="ershouyan" value="1" >是
-            <input type="radio" name="ershouyan" id="ershouyan1" value="2">否
+            <input type="radio" name="ershouyan" id="ershouyan" value="1" <?php if($row['ershouyan'] == 1) echo "checked";?> >是
+            <input type="radio" name="ershouyan" id="ershouyan1" value="2" <?php if($row['ershouyan'] ==2) echo 'checked';?>>否
         </div>
 
         <h4>你平时喝酒吗？*</h4>

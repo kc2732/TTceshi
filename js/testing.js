@@ -42,7 +42,7 @@ $(function(){
 
     $("input[name=FuXiongDi]").click(
         function () {
-            if($("input[name=FuXiongDi]::checked")){
+            if($("input[name=FuXiongDi]:checked")){
                 $(".FXDAge").show();
             }else{
                 $(".FXDAge").hide();
@@ -52,7 +52,7 @@ $(function(){
 
     $("input[name=MuJieMei]").click(
         function () {
-            if($("input[name=MuJieMei]::checked")){
+            if($("input[name=MuJieMei]:checked")){
                 $(".MJMAge").show();
             }else{
                 $(".MJMAge").hide();
