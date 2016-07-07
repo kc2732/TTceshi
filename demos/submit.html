@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <title></title>
+</head>
+<body>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        font-size: 1.2em;
+    }
+    body input, body button {
+        font-size: 1.2em;
+    }
+
+    form > div {
+        margin: 1em;
+    }
+    form button {
+        width: 100%;
+    }
+    label { display: block; }
+    input {
+        width: 100%;
+        padding: 0.2em;
+    }
+    button {
+        padding: 0.2em;
+    }
+
+    input.error {
+        background: red;
+        color: white;
+    }
+    label.error {
+        color: red;
+    }
+
+</style>
+
+<script>
+    $(document).ready(function () {
+        $("form").validate({
+            messages: {
+                name: "Name is required.",
+                email: {
+                    required: "Email is required.",
+                    email: "You must provide a valid email address."
+                },
+//                cb:"this is a required part"
+            },
+            focusInvalid: false,
+            submitHandler: function () {
+                alert("Successful submission");
+            }
+        });
+
+    });
+
+</script>
+<form>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" ng-required="true">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+        <!--<label for="cb">Email:</label>-->
+        <input type="text" name="cb" required>
+    </div>
+
+
+    <div>
+        <button>Submit</button>
+
+</body>
+</html>

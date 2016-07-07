@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec7d8c9-3ac1-4705-aad9-29f5f20b8e76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Basic_Form.html" afterPath="$PROJECT_DIR$/Basic_Form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/data_collection_form.php" afterPath="$PROJECT_DIR$/parts/data_collection_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms_new.html" afterPath="$PROJECT_DIR$/forms_new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/head.php" afterPath="$PROJECT_DIR$/parts/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/testing.css" afterPath="$PROJECT_DIR$/css/testing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/update.php" afterPath="$PROJECT_DIR$/parts/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="6ec7d8c9-3ac1-4705-aad9-29f5f20b8e76" name="Default" comment="" />
     <ignored path="TTceshi.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -72,8 +61,8 @@
       <file leaf-file-name="head.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parts/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2839674" vertical-offset="0" max-vertical-offset="736">
-              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.6195652" vertical-offset="0" max-vertical-offset="736">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -323,7 +312,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="800" height="900" extended-state="0" />
+    <frame x="0" y="0" width="800" height="900" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -760,8 +749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2839674" vertical-offset="0" max-vertical-offset="736">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.6195652" vertical-offset="0" max-vertical-offset="736">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
