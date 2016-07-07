@@ -419,3 +419,9 @@ body {
 #sign-up-main{
     display: inline;
 }
+
+label { display: block; }
+label.error {
+    color: red;
+    float:right;
+}

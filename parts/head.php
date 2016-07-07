@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html ng-app>
+<head >
     <meta charset='utf-8' />
+    <title>糖糖运动医生</title>
     <meta name="viewport" content="width=device-width" />
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel='stylesheet' href='../lib/cupertino/jquery-ui.min.css' />
@@ -18,7 +19,8 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/polyfill.js"></script>
     <script src="../js/script.js"></script>
-
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/jquery.validate.min.js"></script>
 </head>
 <?php
 function php_self(){

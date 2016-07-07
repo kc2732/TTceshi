@@ -674,3 +674,14 @@ $(function(){
     });
 
 });
+
+$(document).ready(function () {
+    $("form").validate({
+        focusInvalid: false
+    });
+
+});
+
+
+
+
