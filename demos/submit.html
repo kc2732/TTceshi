@@ -1,110 +1,644 @@
+
 <!DOCTYPE html>
 <html ng-app>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
-    <script src="../lib/jquery.min.js"></script>
+<head >
+    <meta charset='utf-8' />
+    <title>糖糖运动医生</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel='stylesheet' href='../lib/cupertino/jquery-ui.min.css' />
+    <link href='../fullcalendar.css' rel='stylesheet' />
+    <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
+    <link href="../css/form_style.css" rel="stylesheet"/>
+    <script src='../lib/moment.min.js'></script>
+    <script src='../lib/jquery.min.js'></script>
+    <script src='../fullcalendar.min.js'></script>
+    <script src='../lang-all.js'></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/polyfill.js"></script>
+    <script src="../js/script.js"></script>
     <script src="../lib/angular.min.js"></script>
     <script src="../lib/jquery.validate.min.js"></script>
-    <!--<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>-->
-    <title></title>
 </head>
-<body>
-<style>
-    * { box-sizing: border-box; }
-    body {
-        font-size: 1.2em;
-    }
-    body input, body button {
-        font-size: 1.2em;
-    }
 
-    form > div {
-        margin: 1em;
-    }
-    form button {
-        width: 100%;
-    }
-    label { display: block; }
-    input {
-        width: 100%;
-        padding: 0.2em;
-    }
-    button {
-        padding: 0.2em;
-    }
+<div class="top-bar">
+    <ul>
+        <li>
 
-    input.error {
-        background: red;
-        color: white;
-    }
-    label.error {
-        color: red;
-    }
+            <a href="../pages/index.php" >首页</a>
+        </li>
+        <li>
+            <a href="../pages/plan.php" >运动处方</a>
+        </li>
+        <li>
+            <a href="../pages/data.php" >数据监测</a>
+        </li>
+        <li>
+            <a href="../pages/lecture.php" >健康讲堂</a>
+        </li>
+        <li>
+            <a href="#all-footer" >联系我们</a>
+        </li>
+        <li>
+            <a class="button-submit" href="../pages/signup.php">注册/登录</a>
+        </li>
+    </ul>
 
-</style>
+</div><div class="slidebar">
+    <img src="../images/detect-slide-show.png" >
+</div>
+<div class="container" style="background-color: rgb(235,214,165); color:black;">
+    <form action="../pages/success.php" method="post" class="dataCollection">
+        <input type="hidden" name="option" value="dataCollection">
 
-<script>
-    $(document).ready(function () {
-        $("form").validate({
-            messages: {
-                name: "Name is required.",
-                email: {
-                    required: "Email is required.",
-                    email: "You must provide a valid email address."
-                },
-//                cb:"this is a required part"
-            },
-            focusInvalid: false,
-            submitHandler: function () {
-                alert("Successful submission");
+        <fieldset>
+            <legend>个人基本信息</legend>
+            <h4>姓名</h4>*
+            <input type="text" name="name" value="kun" ng-required="true">
+            <h4>性别</h4>*
+            <input type="radio" name="gender" value="1" ng-checked='true' ng-required="true">男
+            <input type="radio" name="gender" value="2"  ng-required="true">女
+            <h4>年龄</h4>*
+            <input type="number" name="age" max="100" value="24" ng-required="true">
+            <h4>联系方式</h4>*
+            <input type="text" name="phone" value="3475717762" ng-required="true">
+            <h4>身高(cm)</h4>*
+            <input type="number" name="height" max="250" value="175" ng-required="true" >
+            <h4>体重(kg)</h4>*
+            <input type="number" name="weight" max="500" value="68" ng-required="true">
+            <h4>腰围(cm)</h4>*
+            <input type="number" name="waist" max="500" value="88" ng-required="true">
+
+        </fieldset>
+        <fieldset >
+            <legend>个人历史数据</legend>
+            <h4>血糖值(1mmol/L = 18mg/dL)</h4>
+            <h4>餐前30分钟的血糖水平(mmol/L)：</h4>
+            <input type="text" name="question72"  ng-required="true">
+            <h4>餐后两小时的血糖水平(mmol/L)：</h4>
+            <input type="text" name="question73" value="餐后两小时" ng-required="true">
+            <h4>空腹血糖的血糖水平(mmol/L)：</h4>
+            <input type="text" name="question74" value="空腹血糖的" ng-required="true">
+            <h4>血糖测量地点：</h4>
+            <input type="text" name="question75" value="血糖测量" ng-required="true">
+            <h4>血糖测量人：</h4>
+            <input type="text" name="question76" value="血糖测量" ng-required="true">
+            <h4>糖化血红蛋白[A1C]（%）：</h4>
+            <input type="text" name="question77" value="糖化血红蛋" ng-required="true">
+            <h4>测量糖化血红蛋白[A1C]的测试人的名字或者测试医院的名称</h4>
+            <input type="text" name="question78" value="测量糖化血红蛋" ng-required="true">
+
+            <h4>您是否做过糖耐量实验</h4>
+            <input type="radio" name="TNL" ng-model="tnlyes" value="1"  ng-required="true">是
+            <input type="radio" name="TNL" ng-model="tnlyes" value="2" ng-checked='true' ng-required="true">否
+            <fieldset ng-if="tnlyes == 1">
+
+                <legend>糖耐量实验</legend>
+                餐前血糖值 (mmol/L)
+                <input type="text" name="TNL1" value="" ng-required="tnlyes == 1">
+                实验一小时后血糖值(mmol/L)
+                <input type="text" name="TNL2" value="" ng-required="tnlyes == 1">
+                实验两小时后血糖值(mmol/L)
+                <input type="text" name="TNL3" value="2" ng-required="tnlyes == 1">
+
+            </fieldset>
+
+            <h4>您是否正在使用胰岛素</h4>
+            <input type="radio" name="YDS" ng-model="YDS" value="1" ng-checked='true' ng-required="true">是
+            <input type="radio" name="YDS" ng-model="YDS"value="2"   ng-required="true">否
+
+            <div ng-if="YDS==1">
+                <h4>名称</h4>
+                <input type="text" name="YDS1" value="" ng-required="YDS == 1">
+                <h4>品牌</h4>
+                <input type="text" name="YDS2" value="" ng-required="YDS == 1">
+                <h4>每日剂量（IU）</h4>
+                <input type="text" name="YDS3" value="" ng-required="YDS == 1">
+                <h4>每天什么时候使用</h4>
+                <input type="text" name="YDS4" value="" ng-required="YDS == 1">
+            </div>
+
+
+
+            <h4>你是否测过你的血压水平*</h4>
+            <input type="radio" ng-model="q67" name="question67" id="question671" value="1" ng-checked='true' ng-required="true">是
+            <input type="radio" ng-model="q67" name="question67" id="question672" value="2"  ng-required="true">否
+            <div ng-if="q67==1">
+                <h4>测试人的姓名或者测试医院的名称*</h4>
+                <input type="text" name="question68" value="" ng-required="q67==1">
+                <h4>收缩压（高压） mmhg：*</h4>
+                <input type="text" name="question69" value="" ng-required="q67==1">
+                <h4>舒张压（低压） mmhg：*</h4>
+                <input type="text" name="question70" value="" ng-required="q67==1">
+            </div>
+
+            <h4>你是否测过你的胆固醇水平*</h4>
+            <input type="radio" ng-model="q61" name="question61" id="question611" value="1"  ng-required="true">是
+            <input type="radio" ng-model="q61" name="question61" id="question612" value="2" ng-checked='true'  ng-required="true">否
+            <div ng-if="q61==1">
+                <h4>测试人的姓名或者测试医院的名称*</h4>
+                <input type="text" name="question62" value="" ng-required="q61==1">
+                <h4>总胆固醇(TC)水平具体数值（mmol/L）：*</h4>
+                <input type="text" name="question63" value="" ng-required="q61==1">
+                <h4>甘油三酯(TG)具体数值（mmol/L）：*</h4>
+                <input type="text" name="question64" value="" ng-required="q61==1">
+                <h4>高密度脂蛋白（HDL）具体数值（mmol/L）：*</h4>
+                <input type="text" name="question65" value="" ng-required="q61==1">
+                <h4>低密度脂蛋白(LDL)具体数值（mmol/L）：*</h4>
+                <input type="text" name="question66" value="" ng-required="q61==1">
+            </div>
+
+
+            <h4>你是否正在吃任何处方药或者非处方药？*</h4>
+            <input type="radio" ng-model="q79"  name="question79" id="question791" value="1"   ng-required="true">是
+            <input type="radio" ng-model="q79" name="question79" id="question792" value="2"  ng-checked='true' ng-required="true">否
+            <div ng-if="q79==1">
+                <h4>药品名称：*</h4>
+                <input type="text" name="question80"value="" ng-required="q79==1">
+                <h4>药品剂量：*</h4>
+                <input type="text" name="question81" value="" ng-required="q79==1">
+                <h4>使用药品的时间：*</h4>
+                <input type="text" name="question82" value="" ng-required="q79==1">
+                <h4>为什么要服用该药品？*</h4>
+                <input type="text" name="question83" value="" ng-required="q79==1">
+            </div>
+
+            <h4>您近3个月是否住过医院？*</h4>
+            <input type="radio" ng-model="q84"  name="question84" id="question841" value="1"  ng-required="true">是
+            <input type="radio" ng-model="q84" name="question84" id="question842" value="2" ng-checked='true' ng-required="true">否
+            <div ng-if="q84==1">
+                <h4>住院时间*</h4>
+                <input type="text" name="question85" value="" ng-required="q84==1">
+                <h4>住院地点*</h4>
+                <input type="text" name="question86" value="" ng-required="q84==1">
+                <h4>住院原因*</h4>
+                <input type="text" name="question87" value="" ng-required="q84==1">
+            </div>
+
+            <h4>您是否曾经做过任何心血管测试</h4>*
+            <input type="radio" ng-model="q8" name="question8" id="question81" value="1"  ng-required="true" >是
+            <input type="radio" ng-model="q8" name="question8" id="question82" value="2" ng-checked='true' ng-required="true">否
+            <div ng-if="q8=='1'">
+                <h4>你做完心血管测试后的诊断结果是</h4>*
+                <input type="text" name="question9" value="" ng-required="q8==1">
+            </div>
+            <h4>您其他已经确诊的疾病和担心的地方</h4>
+            <input type="text" name="question88" value="">
+
+
+        </fieldset>
+
+
+        <h4 ng-if="part2!=1">个人史，开始作答！</h4>
+        <h4 ng-if="part2==1">个人史，放弃作答！（只有当您完成了所有问题，我们的专家才能够给您得出精确的诊断结果和治疗方案）</h4>
+        <input type="checkbox" name="part2" ng-model="part2" value="1" ng-checked='true'>
+        <fieldset>            <legend>个人史</legend>
+            <h4>你曾经是否有过高血压？*</h4>
+            <input type="radio" name="question40" id="question401" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question40" id="question402" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过高胆固醇*</h4>
+            <input type="radio" name="question41" id="question411" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question41" id="question412" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过动脉疾病?*</h4>
+            <input type="radio" name="question43" id="question431" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question43" id="question432" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过甲状腺疾病？*</h4>
+            <input type="radio" name="question44" id="question441" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question44" id="question442" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过肺部疾病?*</h4>
+            <input type="radio" name="question45" id="question451" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question45" id="question452" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过哮喘？*</h4>
+            <input type="radio" name="question46" id="question461" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question46" id="question462" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过癌症?*</h4>
+            <input type="radio" name="question47" id="question471" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question47" id="question472" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过肾脏疾病？*</h4>
+            <input type="radio" name="question48" id="question481" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question48" id="question482" value="2" ng-checked='true' ng-required="part2==1">否
+            <h4>你曾经是否有过肝病？*</h4>
+            <input type="radio" name="question49" id="question491" value="1"  ng-required="part2==1">是
+            <input type="radio" name="question49" id="question492" value="2" ng-checked='true' ng-required="part2==1">否
+
+
+            <h4>你曾经是否有过骨质疏松和关节炎</h4>
+            <input type="radio" name="GZSS" value="1"  ng-required="part2==1">是
+            <input type="radio" name="GZSS" value="2" ng-checked='true' ng-required="part2==1">否
+
+            <h4>周围神经病变</h4>
+            <input type="radio" name="ZWSJBB" value="1"  ng-required="part2==1">是
+            <input type="radio" name="ZWSJBB" value="2" ng-checked='true' ng-required="part2==1">否
+
+            <h4>自主神经病变</h4>
+            <input type="radio" name="ZZSJBB" value="1"  ng-required="part2==1">是
+            <input type="radio" name="ZZSJBB" value="2" ng-checked='true' ng-required="part2==1">否
+
+            <h4>视网膜病变</h4>
+            <input type="radio" name="SWMBB" value="1"  ng-required="part2==1">是
+            <input type="radio" name="SWMBB" value="2" ng-checked='true' ng-required="part2==1">否
+
+
+
+
+            <h4>你是否有过除以上列出疾病之外的疾病，如果有，请列出</h4>
+            <input type="text" name="question050"  value="">
+
+            <fieldset>
+                <legend>症状</legend>
+                <h4>你曾经是否有过胸部疼痛？*</h4>
+                <input type="radio" name="question50" id="question501" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question50" id="question502" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否有过呼吸短促*</h4>
+                <input type="radio" name="question51" id="question511" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question51" id="question512" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否有过心悸？*</h4>
+                <input type="radio" name="question52" id="question521" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question52" id="question522" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否有过心律不齐?*</h4>
+                <input type="radio" name="question53" id="question531" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question53" id="question532" value="2" ng-checked='true' ng-required="part2==1">否
+
+                <h4>你曾经是否有过心脏杂音？*</h4>
+                <input type="radio" name="question54" id="question541" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question54" id="question542" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否有过间歇性腿部疼痛？*</h4>
+                <input type="radio" name="question55" id="question551" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question55" id="question552" value="2" ng-checked='true' ng-required="part2==1">否
+
+                <h4>你曾经是否有过眩晕或者昏倒？*</h4>
+                <input type="radio" name="question56" id="question561" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question56" id="question562" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否在日常生活中易感到疲倦？*</h4>
+                <input type="radio" name="question57" id="question571" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question57" id="question572" value="2" ng-checked='true' ng-required="part2==1">否
+
+                <h4>你曾经是否有过睡眠时打鼾的情况？*</h4>
+                <input type="radio" name="question58" id="question581" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question58" id="question582" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否有过背部疼痛问题？*</h4>
+                <input type="radio" name="question59" id="question591" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question59" id="question592" value="2" ng-checked='true' ng-required="part2==1">否
+
+                <h4>你曾经是否有过骨科问题？*</h4>
+                <input type="radio" name="question60" id="question601" value="1"  ng-required="part2==1">是
+                <input type="radio" name="question60" id="question602" value="2" ng-checked='true' ng-required="part2==1">否
+                <h4>你曾经是否有过除以上列出症状之外的不适症状，如果有是哪种不适症状？</h4>
+                <input type="text" name="question601" value="">
+
+            </fieldset>
+
+        </fieldset>
+
+
+        <h4 ng-if="part3!=1">家族史，开始作答！</h4>
+        <h4 ng-if="part3==1">家族史，放弃作答！（只有当您完成了所有问题，我们的专家才能够给您得出精确的诊断结果和治疗方案）</h4>
+        <input type="checkbox" name="part3" ng-model="part3" value="1"  >
+        <fieldset ng-if="part3==1">
+            <legend>家族史</legend>
+            <h4>家族成员是否有亲属有心脏病突发史*</h4>
+            <input type="radio" ng-model="q10" name="question10" id="question101" value="1"   ng-required="part3==1">是
+            <input type="radio" ng-model="q10" name="question10" id="question102" value="2"   ng-required="part3==1">否
+            <div ng-if="q10==1">
+                <h4>该患病亲属与你的关系是</h4>*
+                <input type="checkbox" ng-model="q11" name="question11" id="question11"   >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q11==1">
+                    患病年龄*<input type="number" name="question0111" max="100" value="0" ng-required="q11==1">
+                </div>
+                <input type="checkbox" ng-model="q12" name="question12" id="question12"  >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q12==1">
+                    患病年龄*<input type="number" name="question0112" max="100" value="0" ng-required="q12==2">
+                </div>
+                <input type="checkbox" name="question13" id="question13" >其他亲属
+            </div>
+
+            <h4>家族成员是否有亲属有先天性心脏病*</h4>
+            <input type="radio" ng-model="q14" name="question14" id="question141" value="1"    ng-required="part3==1">是
+            <input type="radio" ng-model="q14" name="question14" id="question142" value="2"   ng-required="part3==1">否
+            <div ng-if="q14==1">
+                <h4>该患病亲属与你的关系是*</h4>
+                <input type="checkbox" ng-model="q15" name="question15" id="question15" value="1" >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q15==1">
+                    患病年龄*<input type="number" name="question151" max="100" value="0" ng-required="q15==1">
+                </div>
+                <input type="checkbox" ng-model="q16" name="question16" id="question16" value="2" >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q16==1">
+                    患病年龄*<input type="number" name="question152" max="100" value="0" ng-required="q16==2">
+                </div>
+                <input type="checkbox" name="question17" id="question17" value="3" >其他亲属
+            </div>
+
+
+            <h4>家族成员中是否有亲属做过心脏手术？*</h4>
+            <input type="radio" ng-model="q18" name="question18" id="question181" value="1"  ng-required="part3==1" >是
+            <input type="radio" ng-model="q18" name="question18" id="question182" value="2"  ng-required="part3==1">否
+            <div ng-if="q18 == 1">
+                <h4>该患病亲属与你的关系是*</h4>
+                <input type="checkbox" ng-model="q19" name="question19" id="question19" value="1"  >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q19==1">
+                    患病年龄*<input type="number" name="question191" value="0" ng-required="q19==1">
+                </div>
+                <input type="checkbox" ng-model="q20"name="question20" id="question20" value="2" >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q20==2">
+                    患病年龄*<input type="number" name="question192" value="0" ng-required="q20==2">
+                </div>
+                <input type="checkbox" name="question21" id="question21" value="3" >其他亲属
+            </div>
+
+
+
+            <h4>家族成员中是否有亲属冠状动脉支架？*</h4>
+            <input type="radio" ng-model="q22" name="question22" id="question221" value="1"  ng-required="part3==1" >是
+            <input type="radio" ng-model="q22" name="question22" id="question222" value="2"  ng-required="part3==1">否
+            <div ng-if="q22 == 1">
+                <h4>该患病亲属与你的关系是*</h4>
+                <input type="checkbox" ng-model="q23" name="question23" id="question23" value="1"  >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q23==1">
+                    患病年龄*<input type="number" name="question231" value="0" ng-required="q23==1">
+                </div>
+                <input type="checkbox" ng-model="q24"name="question24" id="question24" value="2" >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q24==2">
+                    患病年龄*<input type="number" name="question232" value="0" ng-required="q24==2">
+                </div>
+                <input type="checkbox" name="question25" id="question25" value="3" >其他亲属
+            </div>
+
+
+            <h4>家族成员中是否有做过心脏导管手术？*</h4>
+            <input type="radio" ng-model="q26" name="question26" id="question261" value="1"  ng-required="part3==1">是
+            <input type="radio" ng-model="q26" name="question26" id="question262" value="2"  ng-required="part3==1">否
+            <div ng-if="q26 == 1">
+                <h4>该患病亲属与你的关系是*</h4>
+                <input type="checkbox" ng-model="q27" name="question27" id="question27" value="1"  >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q27==1">
+                    患病年龄*<input type="number" name="question271" value="0" ng-required="q27==1">
+                </div>
+                <input type="checkbox" ng-model="q28"name="question28" id="question28" value="2" >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q28==2">
+                    患病年龄*<input type="number" name="question272" value="0" ng-required="q28==2">
+                </div>
+                <input type="checkbox" name="question29" id="question29" value="3" >其他亲属
+            </div>
+
+            <h4>家族成员中是否有脑血管意外病史(脑溢血，中风，栓塞)？*</h4>
+            <input type="radio" ng-model="q30" name="question30" id="question301" value="1"  ng-required="part3==1" >是
+            <input type="radio" ng-model="q30" name="question30" id="question302" value="2"  ng-required="part3==1">否
+            <div ng-if="q30 == 1">
+                <h4>该患病亲属与你的关系是*</h4>
+                <input type="checkbox" ng-model="q31" name="question31" id="question31" value="1"  >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q31==1">
+                    患病年龄*<input type="number" name="question311" value="0" ng-required="q31==1">
+                </div>
+                <input type="checkbox" ng-model="q32"name="question32" id="question32" value="2" >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q32==2">
+                    患病年龄*<input type="number" name="question312" value="0" ng-required="q32==2">
+                </div>
+                <input type="checkbox" name="question33" id="question33" value="3" >其他亲属
+            </div>
+
+            <h4>家族成员中是否有人猝死？*</h4>
+            <input type="radio" ng-model="q34" name="question34" id="question341" value="1"  ng-required="part3==1" >是
+            <input type="radio" ng-model="q34" name="question34" id="question342" value="2"  ng-required="part3==1">否
+            <div ng-if="q34 == 1">
+                <h4>该患病亲属与你的关系是*</h4>
+                <input type="checkbox" ng-model="q35" name="question35" id="question35" value="1"  >父亲，或者亲哥哥、亲弟弟
+                <div ng-if="q35==1">
+                    患病年龄*<input type="number" name="question351" value="0" ng-required="q35==1">
+                </div>
+                <input type="checkbox" ng-model="q36"name="question36" id="question36" value="2" >母亲，或者亲姐姐、亲妹妹
+                <div ng-if="q36==2">
+                    患病年龄*<input type="number" name="question352" value="0" ng-required="q36==2">
+                </div>
+                <input type="checkbox" name="question37" id="question37" value="3" >其他亲属
+            </div>
+
+            <h4>家族成员中是否有亲属有其他慢性疾病？*</h4>
+            <input type="radio" ng-model="q38" name="question38" id="question381" value="1"  ng-required="part3==1">是
+            <input type="radio" ng-model="q38" name="question38" id="question382" value="2"  ng-required="part3==1">否
+            <div ng-if="q38==1">
+                <h4>是哪一种慢性病？*</h4>
+                <input type="text" name="question39" value="" ng-required="q38==1">
+            </div>
+
+        </fieldset>
+
+
+
+        <h4 ng-if="part4!=1">生活模式和兴趣，开始作答！</h4>
+        <h4 ng-if="part4==1">生活模式和兴趣，放弃作答！（只有当您完成了所有问题，我们的专家才能够给您得出精确的诊断结果和治疗方案）</h4>
+        <input type="checkbox" name="part4" ng-model="part4" value="1"  >
+        <fieldset ng-if="part4==1">
+            <!--        <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>-->
+            <!--        <input type="radio" name="question89" id="question891" value="1" --><!--        <input type="radio" name="question89" id="question892" value="2" -->
+            <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
+            <input type="radio" ng-model="q90" name="question90" id="question901" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q90" name="question90" id="question902" value="2"  ng-required="part4==1">否
+            <div ng-if="q90==1">
+                <h4>这种不舒服会不会因为运动的停止而消失？*</h4>
+                <input type="radio" name="question91" id="question911" value="1"  ng-required="part4==1">是
+                <input type="radio" name="question91" id="question912" value="2"  ng-required="q90==1">否
+            </div>
+
+
+            <h4>你是否有过吸烟史*</h4>
+            <input type="radio" ng-model="q92" name="question92" id="question921" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q92" name="question92" id="question922" value="2"  ng-required="part4==1">否
+            <div ng-if="q92==1">
+                <h4>你是否戒烟了*</h4>
+                <input type="radio" ng-model="q93" name="question93" id="question931" value="1"   ng-required="q92==1">是
+                <input type="radio" ng-model="q93" name="question93" id="question932" value="2"  ng-required="q92==1">否
+                <div ng-if="q93==1">
+                    <h4>你是什么时候戒烟的*</h4>
+                    <input type="radio" name="question94" id="question941" value="1"  ng-required="q93==1">六个月之内刚刚戒烟
+                    <input type="radio" name="question94" id="question942" value="2"  ng-required="q93==1">在六个月前戒烟
+                </div>
+                <div ng-if="q93==1">
+                    <h4>你平时吸烟的种类*</h4>
+                    <input type="radio" name="question95" id="question951" value="1"  ng-required="q93==1">香烟
+                    <input type="radio" name="question95" id="question952" value="2"   ng-required="q93==1">雪茄
+                    <input type="radio" name="question95" id="question953" value="3"  ng-required="q93==1">烟斗
+                </div>
+
+            </div>
+            <div class="question922">
+                <h4>您是否经常会暴露在二手烟环境中？</h4>
+                <input type="radio" name="ershouyan" id="ershouyan" value="1"  ng-required="part4==1" >是
+                <input type="radio" name="ershouyan" id="ershouyan1" value="2"  ng-required="part4==1"> 否
+            </div>
+
+            <h4>你平时喝酒吗？*</h4>
+            <input type="radio" ng-model="q96" name="question96" id="question961" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q96" name="question96" id="question962" value="2"  ng-required="part4==1">否
+            <div ng-if="q96==1">
+                <h4>一周大约喝多少瓶啤酒*</h4>
+                <input type="text" name="question97" value="" ng-required="q96==1">
+                <h4>一周大约喝多少斤白酒*</h4>
+                <input type="text" name="question98" value="" ng-required="q96==1">
+                <h4>一周大约喝多少杯红酒*</h4>
+                <input type="text" name="question99" value="" ng-required="q96==1">
+            </div>
+
+            <h4>你平时喝含咖啡因的饮品吗？*</h4>
+            <input type="radio" ng-model="q100" name="question100" id="question1001" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q100" name="question100" id="question1002" value="2"  ng-required="part4==1">否
+            <div ng-if="q100==1">
+                <h4>一周大约喝多少杯咖啡*</h4>
+                <input type="text" name="question101" value="" ng-required="q100==1">
+                <h4>一周大约喝多少杯茶*</h4>
+                <input type="text" name="question102" value="" ng-required="q100==1">
+                <h4>一周大约喝多少瓶含咖啡因的软饮（可乐、运动饮料等）*</h4>
+                <input type="text" name="question103" value="" ng-required="q100==1">
+            </div>
+
+
+            <h4>你最近有在吃减肥餐吗*</h4>
+            <input type="radio" ng-model="q104" name="question104" id="question1041" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q104" name="question104" id="question1042" value="2"  ng-required="part4==1">否
+            <div ng-if="q104==1">
+                <h4>你已经吃了几个月的减肥餐？*</h4>
+                <input type="text" name="question105" value="" ng-required="q104==1">
+                <h4>这个减肥餐计划是否你的医生给你开的？*</h4>
+                <input type="text" name="question106" value="" ng-required="q104==1">
+            </div>
+            <div ng-if="q104==2">
+                你曾经有试过减肥餐吗？*
+                <input type="radio" ng-model="q107" name="question107" id="question1071" value="1"  ng-required="q104==2">是
+                <input type="radio" ng-model="q107" name="question107" id="question1072" value="2"  ng-required="q104==2">否
+                <div ng-if="q107==1">
+                    <h4>减肥餐持续了多久，请描述一下减肥餐的类型*</h4>
+                    <input type="text" name="question1071" value=""  ng-required="q107==1">
+                </div>
+
+            </div>
+
+            <h4> 活动水平调查</h4>
+            <h4>大部分情况下，你的运动水平是*</h4>
+            <input type="radio" name="question108" id="question1081" value="1"  ng-required="part4==1">主要是坐着<br>
+            <input type="radio" name="question108" id="question1082" value="2"  ng-required="part4==1">轻微的运动（散步）<br>
+            <input type="radio" name="question108" id="question1083" value="3"  ng-required="part4==1">中度运动（快速上下楼梯，快走）<br>
+            <input type="radio" name="question108" id="question1084" value="4"  ng-required="part4==1">重体力运动（体力劳动者，每周去三次以上健身房）
+
+            <h4>你最近是否有在日常生活中经常地做一些非常剧烈的运动（频繁的搬重物，快跑，健身等）？*</h4>
+            <input type="radio" ng-model="q109" name="question109" id="question1091" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q109" name="question109" id="question1092" value="2"  ng-required="part4==1">否
+
+            <div  ng-if="q109==1">
+                <h4>是怎样的剧烈运动？*</h4>
+                <input type="text" name="question110" value="" ng-required="q109==1">
+                <h4>运动频率为一周几次？*</h4>
+                <input type="text" name="question111" value="" ng-required="q109==1">
+                <h4>每次运动多长时间*</h4>
+                <input type="radio" name="question112" id="question1121" value="1"  ng-required="q109==1">小于15分钟<br>
+                <input type="radio" name="question112" id="question1122" value="2"  ng-required="q109==1">15至30分钟<br>
+                <input type="radio" name="question112" id="question1123" value="3"  ng-required="q109==1">31至60分钟<br>
+                <input type="radio" name="question112" id="question1124" value="4"  ng-required="q109==1">60分钟以上
+                <h4>这项运动你坚持了多久*</h4>
+                <input type="radio" name="question113" id="question1131" value="1"  ng-required="q109==1">小于3个月<br>
+                <input type="radio" name="question113" id="question1132" value="2"  ng-required="q109==1">3至12个月<br>
+                <input type="radio" name="question113" id="question1133" value="3"  ng-required="q109==1">大于12个月
+            </div>
+
+            <h4>你最近是否有经常地做一些娱乐，休闲运动（太极拳，钓鱼，广场舞，高尔夫等）？*</h4>
+            <input type="radio" ng-model="q114" name="question114" id="question1141" value="1"  ng-required="part4==1">是
+            <input type="radio" ng-model="q114" name="question114" id="question1142" value="2"  ng-required="part4==1">否
+            <div  ng-if="q114==1">
+                <h4>是怎样的休闲运动*</h4>
+                <input type="text" name="question115" value="" ng-required="q114==1">
+                <h4>运动频率为一周几次？*</h4>
+                <input type="text" name="question116" value="" ng-required="q114==1">
+                <h4>每次运动多长时间*</h4>
+                <input type="radio" name="question117" id="question1171" value="1"  ng-required="q114==1">小于15分钟<br>
+                <input type="radio" name="question117" id="question1172" value="2"  ng-required="q114==1">15至30分钟<br>
+                <input type="radio" name="question117" id="question1173" value="3"  ng-required="q114==1">31至60分钟<br>
+                <input type="radio" name="question117" id="question1174" value="4"  ng-required="q114==1">60分钟以上
+                <h4>这项运动你坚持了多久*</h4>
+                <input type="radio" name="question118" id="question1181" value="1"  ng-required="q114==1">小于3个月<br>
+                <input type="radio" name="question118" id="question1182" value="2"  ng-required="q114==1">3至12个月<br>
+                <input type="radio" name="question118" id="question1183" value="3"  ng-required="q114==1">大于12个月
+            </div>
+        </fieldset>
+        <h4>你的康复目标是</h4>
+        <input type="text" name="question119" value="" ><br>
+        <input type="submit" value="提交！">
+    </form>
+</div>
+
+<div class="index-footer" id = "all-footer">
+    <table class="footer-table">
+        <tr>
+            <td style="min-width: 150px;">团队介绍</td>
+            <td> Email:guoshacao@gmail.com</td>
+        </tr>
+        <tr><td>加入我们</td></tr>
+        <tr><td style="min-width: 150px;">联系我们</td><td>Tel:+1(203)502-9540</td></tr>
+    </table>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        var currentLangCode = 'zh-cn';
+
+        // build the language selector's options
+        $.each($.fullCalendar.langs, function(langCode) {
+            $('#lang-selector').append(
+                    $('<option/>')
+                            .attr('value', langCode)
+                            .prop('selected', langCode == currentLangCode)
+                            .text(langCode)
+            );
+        });
+
+        // rerender the calendar when the selected option changes
+        $('#lang-selector').on('change', function() {
+            if (this.value) {
+                currentLangCode = this.value;
+                $('#calendar').fullCalendar('destroy');
+                renderCalendar();
             }
         });
 
+        function renderCalendar() {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+//				defaultDate: '2016-05-12',
+                lang: currentLangCode,
+                buttonIcons: false, // show the prev/next text
+                weekNumbers: true,
+                editable: true,
+                eventLimit: true,// allow "more" link when too many events
+                dayClick: function(date, jsEvent, view) {
+                    console.log(date.format());
+                    var day = new Date(date.format());
+                    var day_right = day.getDay()+1;
+                    window.location.assign('index.php?date='+ day_right);
+//                        alert('Clicked on: ' + date.format());
+//
+//                        alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+//
+//                        alert('Current view: ' + view.name);
+
+                    // change the day's background color just for fun
+                    $(this).css('background-color', 'grey');
+
+                }
+            });
+        }
+
+        renderCalendar();
     });
 
+    $('#calendar').fullCalendar({
+
+    });
 </script>
-<form>
-            <input type="hidden" name="option" value="dataCollection">
-
-
-            <fieldset>
-            <legend>个人基本信息</legend>
-            <h4>姓名</h4>*
-            <input type="text" name="name" ng-required="true">
-            <h4>性别</h4>*
-            <input type="radio" name="gender" value="1"  ng-required="true">男
-            <input type="radio" name="gender" value="2"  ng-required="true">女
-            <h4>年龄</h4>*
-            <input type="number" name="age" max="100"ng-required="true">
-            <h4>联系方式</h4>*
-            <input type="text" name="phone" ng-required="true">
-            <h4>身高(cm)</h4>*
-            <input type="number" name="height" max="250" ng-required="true" >
-            <h4>体重(kg)</h4>*
-            <input type="number" name="weight" max="500"  ng-required="true">
-            <h4>腰围(cm)</h4>*
-            <input type="number" name="waist" max="500" ng-required="true">
-
-        </fieldset>
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" ng-required="true">
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-    </div>
-    <div>
-        <!--<label for="cb">Email:</label>-->
-        <input type="text" name="cb" required>
-    </div>
-
-
-    <div>
-        <button>Submit</button>
 
 </body>
 </html>

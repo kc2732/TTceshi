@@ -62,11 +62,11 @@ if($_SESSION['id']!=null){
             <fieldset ng-if="tnlyes == 1">
 
                 <legend>糖耐量实验</legend>
-                餐前血糖值 (mmol/L)
+                <h4>餐前血糖值 (mmol/L)</h4>
                 <input type="text" name="TNL1" value="<?php echo $row['TNL1']; ?>" ng-required="tnlyes == 1">
-                实验一小时后血糖值(mmol/L)
+                <h4>实验一小时后血糖值(mmol/L)</h4>
                 <input type="text" name="TNL2" value="<?php echo $row['TNL2']; ?>" ng-required="tnlyes == 1">
-                实验两小时后血糖值(mmol/L)
+                <h4>实验两小时后血糖值(mmol/L)</h4>
                 <input type="text" name="TNL3" value="<?php echo $row['TNL']; ?>" ng-required="tnlyes == 1">
 
             </fieldset>
