@@ -1,12 +1,5 @@
 
 
-<div class="slidebar">
-    <img src="../images/fit-im.png" >
-    <div class="a_plan_div">
-        <a class="a_plan" href="../pages/workout.php">开始运动！</a>
-    </div>
-
-</div>
 
 <?php
 $hostname = 'localhost';
@@ -28,6 +21,14 @@ while($row = mysql_fetch_assoc($res_Information)){
     if($check_num ==3){
 
 ?>
+
+<div class="slidebar">
+            <img src="../images/fit-im.png" >
+            <div class="a_plan_div">
+                <a class="a_plan" href="../pages/workout.php">开始运动！</a>
+            </div>
+
+        </div>
 <div class="container" style="margin-top:20px;">
     <div class="panel-group" id="accordion">
             <div class="panel panel-default">

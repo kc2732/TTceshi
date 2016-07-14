@@ -25,7 +25,7 @@
       <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="628">
               <caret line="411" column="24" selection-start-line="411" selection-start-column="19" selection-end-line="411" selection-end-column="24" />
               <folding>
                 <marker date="1468450999220" expanded="true" signature="329:379" ph="SELECT * FRO..DataCollection..." />
@@ -44,17 +44,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plan-content.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plan-content.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parts/plan-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="239" column="47" selection-start-line="239" selection-start-column="47" selection-end-line="239" selection-end-column="47" />
+            <state relative-caret-position="456">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
-                <element signature="e#2#174#0#HTML" expanded="false" />
-                <element signature="e#775#10849#0#HTML" expanded="false" />
-                <element signature="e#11002#11029#0#HTML" expanded="true" />
-                <marker date="1468472946733" expanded="true" signature="418:468" ph="SELECT * FRO... DataCollection" />
-                <marker date="1468472946733" expanded="true" signature="10902:10921" ph="..." />
+                <element signature="e#603#815#0#HTML" expanded="false" />
+                <element signature="e#816#10890#0#HTML" expanded="false" />
+                <element signature="e#11043#11070#0#HTML" expanded="true" />
+                <marker date="1468473156659" expanded="true" signature="245:295" ph="SELECT * FRO... DataCollection" />
+                <marker date="1468473156659" expanded="true" signature="10943:10962" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="false" />
                 <element signature="n#fieldset#0;n#div#0;n#!!top" expanded="false" />
@@ -333,12 +333,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1464453294066</updated>
-      <workItem from="1468378203616" duration="20152000" />
+      <workItem from="1468378203616" duration="20332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20152000" />
+    <option name="totallyTimeSpent" value="20332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -762,9 +762,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#!!top" expanded="false" />
+            <element signature="n#fieldset#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#fieldset#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#1;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#2;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#fieldset#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#fieldset#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#1;n#fieldset#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#fieldset#4;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#fieldset#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#fieldset#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="628">
           <caret line="411" column="24" selection-start-line="411" selection-start-column="19" selection-end-line="411" selection-end-column="24" />
           <folding>
             <marker date="1468450999220" expanded="true" signature="329:379" ph="SELECT * FRO..DataCollection..." />
@@ -790,36 +812,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/plan-content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="239" column="47" selection-start-line="239" selection-start-column="47" selection-end-line="239" selection-end-column="47" />
+        <state relative-caret-position="456">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
-            <element signature="e#2#174#0#HTML" expanded="false" />
-            <element signature="e#775#10849#0#HTML" expanded="false" />
-            <element signature="e#11002#11029#0#HTML" expanded="true" />
-            <marker date="1468472946733" expanded="true" signature="418:468" ph="SELECT * FRO... DataCollection" />
-            <marker date="1468472946733" expanded="true" signature="10902:10921" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#1;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#2;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#fieldset#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#fieldset#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#1;n#fieldset#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#fieldset#4;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#fieldset#4;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#fieldset#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#603#815#0#HTML" expanded="false" />
+            <element signature="e#816#10890#0#HTML" expanded="false" />
+            <element signature="e#11043#11070#0#HTML" expanded="true" />
+            <marker date="1468473156659" expanded="true" signature="245:295" ph="SELECT * FRO... DataCollection" />
+            <marker date="1468473156659" expanded="true" signature="10943:10962" ph="..." />
           </folding>
         </state>
       </provider>
