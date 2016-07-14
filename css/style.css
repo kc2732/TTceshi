@@ -368,8 +368,8 @@ fieldset{
     margin-bottom: 15px!important;
 }
 legend{
-    font-size: 18px !important;
-    margin-bottom: 5px!important;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 input[type="text"], input[type="password"]{
     width:100%;

@@ -13,7 +13,7 @@
             <a href="../pages/lecture.php" <?php if($phpself == 'lecture.php') echo "style='font-weight:600'"; ?>>健康讲堂</a>
         </li>
         <li>
-            <a href="#all-footer" <?php if($phpself == 'contact-us.php') echo "style='font-weight:600'"; ?>>联系我们</a>
+            <a href="../pages/contact-us.php" <?php if($phpself == 'contact-us.php') echo "style='font-weight:600'"; ?>>团队介绍</a>
         </li>
         <li>
             <a class="button-submit" href="../pages/signup.php">注册/登录</a>

@@ -65,7 +65,7 @@ if($option == 'insert'){
 } elseif($option == 'update'){
     echo '该站点正在开发中，敬请期待！';
 } elseif($option == 'login'){
-    $login_check = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
+    $login_check = "SELECT * FROM users LEFT JOIN DataCollection ON users.id = DataCollection.userId WHERE username = '$username' and password = '$password'";
     mysql_query("set names utf8");
     $login_query = mysql_query($login_check);
     $res_login_query = mysql_num_rows($login_query);
@@ -82,7 +82,6 @@ if($option == 'insert'){
         echo '<a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>';
     }
 } elseif($option='dataCollection'){
-
     $name = $_POST['name'];
     $gender = $_POST['gender'];
     $age = $_POST['age'];

@@ -562,7 +562,9 @@ if($_SESSION['id']!=null){
 
     }
 } else{
-    echo "请先登录";
+    ?>
+    <h2 style="text-align: center;">请您先登录！</h2>
+    <?php
 
 }
 

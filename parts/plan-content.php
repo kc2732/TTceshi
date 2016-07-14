@@ -1,3 +1,5 @@
+
+
 <div class="slidebar">
     <img src="../images/fit-im.png" >
     <div class="a_plan_div">
@@ -5,6 +7,27 @@
     </div>
 
 </div>
+
+<?php
+$hostname = 'localhost';
+$uname = 'chenkun';
+$pwd = 'chenkun';
+$mysql = mysql_connect($hostname,$uname,$pwd);
+mysql_select_db('tangyisheng',$mysql);
+session_start();
+if($_SESSION['id']!=null){
+$uid = $_SESSION['id'];
+$getInformation = "SELECT * FROM DataCollection WHERE userId = '$uid'";
+mysql_query("set names utf8");
+$res_Information = mysql_query($getInformation) or die(mysql_error());
+while($row = mysql_fetch_assoc($res_Information)){
+    $part2 = $row['part2'];
+    $part3 = $row['part3'];
+    $part4 = $row['part4'];
+    $check_num = $part2+$part3+$part4;
+    if($check_num ==3){
+
+?>
 <div class="container" style="margin-top:20px;">
     <div class="panel-group" id="accordion">
             <div class="panel panel-default">
@@ -205,3 +228,18 @@
 
     </div>
 </div>
+    <?php
+
+    }
+    else{
+        echo "<h2 style='text-align: center;'>很抱歉，您的病例问答还未全部完成，我们的系统会根据您的病例来生成精确的运动处方。</h2>";
+    }
+}
+} else{
+    ?>
+    <h2 style="text-align: center;">请您先登录！</h2>
+    <?php
+
+}
+
+?>
