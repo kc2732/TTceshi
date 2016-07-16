@@ -25,7 +25,7 @@ while($row = mysql_fetch_assoc($res_Information)){
 <div class="slidebar">
             <img src="../images/fit-im.png" >
             <div class="a_plan_div">
-                <a class="a_plan" href="../pages/workout.php">开始运动！</a>
+                <a class="a_plan" href="../pages/ready.php">开始运动！</a>
             </div>
 
         </div>
