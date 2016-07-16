@@ -72,8 +72,12 @@ if($option == 'insert'){
     if($res_login_query == 0){
         echo "您的用户名或密码不正确，请确认后重新输入";
     } else{
+        $checkcomplete;
         while($row = mysql_fetch_assoc($login_query)){
-
+            $checkcomplete=$row['part2']+$row['part3']+$row['part4'];
+            if($checkcomplete == 3){
+                header('Location:../pages/workout.php ');
+            }
             $_SESSION['id'] = $row['id'];
         }
         echo "登录成功！欢迎回来</br>
