@@ -76,7 +76,7 @@ if($option == 'insert'){
         while($row = mysql_fetch_assoc($login_query)){
             $checkcomplete=$row['part2']+$row['part3']+$row['part4'];
             if($checkcomplete == 3){
-                header('Location:../pages/workout.php ');
+                header('Location:../pages/plan.php ');
             }
             $_SESSION['id'] = $row['id'];
         }
