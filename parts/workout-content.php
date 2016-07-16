@@ -7,7 +7,10 @@
             font-family:微软雅黑;
         }
         .banner { width: 100%;}
-        .photo { width: 450px;}
+        @media only screen and (min-width: 768px){
+            .photo { width: 450px;}
+        }
+
         @media only screen and (min-width: 1319px) {
             .container.part1{  width: 1319px; }
         }
