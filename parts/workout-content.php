@@ -48,9 +48,9 @@
         <fieldset>
             <legend class="head-legend">运动处方</legend>
         </fieldset>
-        <fieldset>
-        <legend>热身</legend>
-            <p>快走伴摆臂五分钟</p>
+        <fieldset style="line-height: 48px;font-size:135%;">
+        <legend class="head-legend">热身</legend>
+            快走伴摆臂五分钟
         </fieldset>
         <fieldset>
             <legend class="inner-legend">力量训练</legend>

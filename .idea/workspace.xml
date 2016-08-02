@@ -52,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plan-content.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plan-content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/plan-content.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -113,12 +113,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="653">
+              <caret line="156" column="57" selection-start-line="156" selection-start-column="57" selection-end-line="156" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#fieldset#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#fieldset#2;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#fieldset#3;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#fieldset#4;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#fieldset#4;n#div#0;n#!!top" expanded="false" />
+                <marker date="1470180959036" expanded="false" signature="4732:5098" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,10 +193,10 @@
         <option value="$PROJECT_DIR$/parts/contact-content.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/parts/update.php" />
-        <option value="$PROJECT_DIR$/parts/workout-content.php" />
         <option value="$PROJECT_DIR$/parts/chufang.html" />
         <option value="$PROJECT_DIR$/pages/ready.php" />
         <option value="$PROJECT_DIR$/parts/plan-content.php" />
+        <option value="$PROJECT_DIR$/parts/workout-content.php" />
       </list>
     </option>
   </component>
@@ -202,7 +211,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1080" />
   </component>
@@ -231,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,6 +302,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,18 +379,19 @@
       <workItem from="1469121875214" duration="12000" />
       <workItem from="1469645247923" duration="654000" />
       <workItem from="1469925972558" duration="41000" />
+      <workItem from="1470180630334" duration="334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24450000" />
+    <option name="totallyTimeSpent" value="24784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1080" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="960" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3029661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3029661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -817,9 +826,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="653">
+          <caret line="156" column="57" selection-start-line="156" selection-start-column="57" selection-end-line="156" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#fieldset#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#fieldset#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#fieldset#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#fieldset#4;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#fieldset#4;n#div#0;n#!!top" expanded="false" />
+            <marker date="1470180959036" expanded="false" signature="4732:5098" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
