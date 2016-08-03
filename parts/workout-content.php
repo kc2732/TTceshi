@@ -56,7 +56,7 @@
             <legend class="inner-legend">力量训练</legend>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="photo" src="../images/training/liliang1.JPG" alt="neiceji">
+                    <img class="photo" src="../images/training/liliang1.gif" alt="neiceji">
                 </div>
                 <div class="col-lg-7">
                     <p>
@@ -67,7 +67,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="photo" src="../images/training/liliang2.JPG" alt="waizhan">
+                    <img class="photo" src="../images/training/liliang2.gif" alt="waizhan">
                 </div>
                 <div class="col-lg-7">
                     <p>
@@ -78,7 +78,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="photo" src="../images/training/wotui.jpg" alt="wotui">
+                    <img class="photo" src="../images/training/wotui.gif" alt="wotui">
                 </div>
                 <div class="col-lg-7">
                     <p>
@@ -94,7 +94,7 @@
             <legend class="inner-legend">柔韧性训练</legend>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="photo" src="../images/training/rourenxing.JPG" alt="rourenxing">
+                    <img class="photo" src="../images/training/rourenxing.gif" alt="rourenxing">
                 </div>
                 <div class="col-lg-7">
                     <p>
@@ -108,7 +108,7 @@
             <legend class="inner-legend">平衡训练</legend>
             <div class="row">
                 <div class=" col-lg-5">
-                    <img class="photo" src="../images/training/fangdiejiao.JPG" alt="fangdiejiao1">
+                    <img class="photo" src="../images/training/fangdiejiao.gif" alt="fangdiejiao1">
                 </div>
                 <div class="col-lg-7">
                     <p>
@@ -120,7 +120,7 @@
             </div>
             <div class="row">
                 <div class=" col-lg-5">
-                    <img class="photo" src="../images/training/fangdiejiao2.JPG" alt="fangdiejiao2">
+                    <img class="photo" src="../images/training/fangdiejiao2.gif" alt="fangdiejiao2">
                 </div>
                 <div class="col-lg-7"><p>
                         2.站立位，双手外展抬起与肩水平，
