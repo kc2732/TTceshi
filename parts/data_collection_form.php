@@ -228,7 +228,7 @@ if($_SESSION['id']!=null){
                 <input type="radio" name="question50" id="question502" value="2" <?php if($row['question50']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
                 <!--<h4>你曾经是否有过呼吸短促*</h4>
                 <input type="radio" name="question51" id="question511" value="1"--> <?php //if($row['question51']==1) echo "ng-checked='true'";?> <!--ng-required="part2==1">是-->
-                <input type="radio" name="question51" id="question512" value="2" <?php if($row['question51']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+<!--                <input type="radio" name="question51" id="question512" value="2" --><?php //if($row['question51']==2) echo "ng-checked='true'";?><!-- ng-required="part2==1">否-->
                 <h4>你曾经是否有过心悸？*</h4>
                 <input type="radio" name="question52" id="question521" value="1" <?php if($row['question52']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
                 <input type="radio" name="question52" id="question522" value="2" <?php if($row['question52']==2) echo "ng-checked='true'";?> ng-required="part2==1">否

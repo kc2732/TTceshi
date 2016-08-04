@@ -55,7 +55,7 @@
       <file leaf-file-name="plan-content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/plan-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
+            <state relative-caret-position="475">
               <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding>
                 <marker date="1468635106920" expanded="true" signature="245:295" ph="SELECT * FRO... DataCollection" />
@@ -113,18 +113,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="878">
               <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data-collection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/data-collection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
               <folding>
-                <element signature="n#style#0;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#fieldset#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#fieldset#2;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#fieldset#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#fieldset#5;n#div#0;n#!!top" expanded="false" />
+                <marker date="1470353452961" expanded="true" signature="329:379" ph="SELECT * FRO... DataCollection" />
               </folding>
             </state>
           </provider>
@@ -185,7 +200,6 @@
         <option value="$PROJECT_DIR$/demos/submit.html" />
         <option value="E:/inkkas/app/design/frontend/rwd/inkkas/template/catalog/product/five_form_list.phtml" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/parts/data_collection_form.php" />
         <option value="$PROJECT_DIR$/parts/top-bar.php" />
         <option value="$PROJECT_DIR$/parts/content.html" />
         <option value="$PROJECT_DIR$/parts/contact-content.php" />
@@ -195,6 +209,7 @@
         <option value="$PROJECT_DIR$/pages/ready.php" />
         <option value="$PROJECT_DIR$/parts/plan-content.php" />
         <option value="$PROJECT_DIR$/parts/workout-content.php" />
+        <option value="$PROJECT_DIR$/parts/data_collection_form.php" />
       </list>
     </option>
   </component>
@@ -209,10 +224,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -301,8 +315,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,18 +394,19 @@
       <workItem from="1469645247923" duration="654000" />
       <workItem from="1469925972558" duration="41000" />
       <workItem from="1470180630334" duration="741000" />
+      <workItem from="1470353413321" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25191000" />
+    <option name="totallyTimeSpent" value="25235000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="960" y="0" width="960" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3029661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -698,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="423" column="14" selection-start-line="423" selection-start-column="13" selection-end-line="423" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -730,13 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/data-collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -775,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/plan-content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="475">
           <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
           <folding>
             <marker date="1468635106920" expanded="true" signature="245:295" ph="SELECT * FRO... DataCollection" />
@@ -828,13 +829,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="878">
           <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data-collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
           <folding>
-            <element signature="n#style#0;n#fieldset#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#fieldset#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#fieldset#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#fieldset#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#fieldset#5;n#div#0;n#!!top" expanded="false" />
+            <marker date="1470353452961" expanded="true" signature="329:379" ph="SELECT * FRO... DataCollection" />
           </folding>
         </state>
       </provider>
