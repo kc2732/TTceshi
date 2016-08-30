@@ -244,6 +244,16 @@ if($option == 'insert'){
     $part3 = $_POST['part3'];
     $part4 = $_POST['part4'];
 
+    $yundongqian = $_POST['yundongqian'];
+    $yundonghou = $_POST['yundonghou'];
+    $linshuiqian = $_POST['linshuiqian'];
+    $lingchen2dian = $_POST['lingchen2dian'];
+    $shijiancha = $_POST['shijiancha'];
+    $gaotanshuihuahewu = $_POST['gaotanshuihuahewu'];
+    $zhongtanshuihuahewu = $_POST['zhongtanshuihuahewu'];
+    $ditanshuihuahewu = $_POST['ditanshuihuahewu'];
+    $roushiweizhu = $_POST['roushiweizhu'];
+
     $check_exist = "SELECT * FROM DataCollection WHERE userId='$userId_session'";
     mysql_query("set names utf8");
     $result_check_exist = mysql_query($check_exist);
@@ -258,7 +268,8 @@ if($option == 'insert'){
 '$question75','$question76','$question77','$question78','$question79','$question80','$question81','$question82','$question83','$question84','$question85','$question86','$question87','$question88','$question89','$question90','$question91',
 '$question92','$question93','$question94','$question95','$question96','$question97','$question98','$question99','$question100',
 '$question101','$question102','$question103','$question104','$question105','$question106','$question107','$question1071','$question108','$question109','$question110','$question111','$question112','$question113','$question114','$question115','$question116','$question117','$question118','$question119','$question050','$ershouyan',
-'$TNL','$TNL1','$TNL2','$TNL3','$YDS','$YDS1','$YDS2','$YDS3','$GZSS','$ZWSJBB','$ZZSJBB','$SWMBB','$part2','$part3','$part4'
+'$TNL','$TNL1','$TNL2','$TNL3','$YDS','$YDS1','$YDS2','$YDS3','$GZSS','$ZWSJBB','$ZZSJBB','$SWMBB','$part2','$part3','$part4',
+'$yundongqian','$yundonghou','$linshuiqian','$lingchen2dian','$shijiancha','$gaotanshuihuahewu','$zhongtanshuihuahewu','$ditanshuihuahewu','$roushiweizhu'
 )";
         mysql_query("set names utf8");
         mysql_query($Insert_Data_Collection) or die(mysql_error());
@@ -299,7 +310,18 @@ question107='$question107',question1071='$question1071',question108='$question10
 question110='$question110',question111='$question111',question112='$question112',question113='$question113',
 question114='$question114',question115='$question115',question116='$question116',question117='$question117',
 question118='$question118',question119='$question119',question050='$question050',ershouyan = '$ershouyan',
-TNL='$TNL',TNL1='$TNL1',TNL2='$TNL2',TNL3='$TNL3',YDS='$YDS',YDS1='$YDS1',YDS2='$YDS2',YDS3='$YDS3',GZSS='$GZSS',ZWSJBB='$ZWSJBB',ZZSJBB='$ZZSJBB',SWMBB='$SWMBB',part2='$part2',part3='$part3',part4='$part4' WHERE userId = '$userId_session'";
+TNL='$TNL',TNL1='$TNL1',TNL2='$TNL2',TNL3='$TNL3',YDS='$YDS',YDS1='$YDS1',YDS2='$YDS2',YDS3='$YDS3',GZSS='$GZSS',ZWSJBB='$ZWSJBB',ZZSJBB='$ZZSJBB',SWMBB='$SWMBB',part2='$part2',part3='$part3',part4='$part4',
+     yundongqian = '$yundongqian',
+    yundonghou = '$yundonghou',
+    linshuiqian = '$linshuiqian',
+    lingchen2dian = '$lingchen2dian',
+    shijiancha = '$shijiancha',
+    gaotanshuihuahewu = '$gaotanshuihuahewu',
+    zhongtanshuihuahewu = '$zhongtanshuihuahewu',
+    ditanshuihuahewu = '$ditanshuihuahewu',
+    roushiweizhu = '$roushiweizhu'
+ 
+ WHERE userId = '$userId_session'";
         mysql_query("set names utf8");
         mysql_query($update_Date_Collection) or die(mysql_error());
         echo "您的信息已经成功更新";

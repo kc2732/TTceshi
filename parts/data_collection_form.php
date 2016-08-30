@@ -56,6 +56,16 @@ if($_SESSION['id']!=null){
             <h4>测量糖化血红蛋白[A1C]的测试人的名字或者测试医院的名称</h4>
             <input type="text" name="question78" value="<?php echo $row['question78']; ?>" ng-required="true">
 
+            <h4>运动前血糖值(mmol/L)：</h4>
+            <input type="text" name="yundongqian" value="<?php echo $row['yundongqian'];?>" ng-required="true">
+            <h4>运动后血糖值(mmol/L)：</h4>
+            <input type="text" name="yundonghou" value="<?php echo $row['yundonghou'];?>" ng-required="true">
+            <h4>临睡前血糖值(mmol/L)：</h4>
+            <input type="text" name="linshuiqian" value="<?php echo $row['linshuiqian'];?>" ng-required="true">
+            <h4>凌晨2点血糖值(mmol/L)：</h4>
+            <input type="text" name="lingchen2dian" value="<?php echo $row['lingchen2dian'];?>" ng-required="true">
+
+
             <h4>您是否做过糖耐量实验</h4>
             <input type="radio" name="TNL" ng-model="tnlyes" value="1" <?php if($row['TNL']==1) echo "ng-checked='true'"; ?> ng-required="true">是
             <input type="radio" name="TNL" ng-model="tnlyes" value="2" <?php if($row['TNL']==2) echo "ng-checked='true'"; ?> ng-required="true">否
@@ -82,7 +92,7 @@ if($_SESSION['id']!=null){
                 <input type="text" name="YDS2" value="<?php echo $row['YDS2']; ?>" ng-required="YDS == 1">
                 <h4>每日剂量（IU）</h4>
                 <input type="text" name="YDS3" value="<?php echo $row['YDS3']; ?>" ng-required="YDS == 1">
-                <h4>每天什么时候使用</h4>
+                <h4>每天什么时候使用（比如饭前1小时，饭后两小时，运动前一小时，运动后即刻）</h4>
                 <input type="text" name="YDS4" value="<?php echo $row['YDS4']; ?>" ng-required="YDS == 1">
             </div>
 
@@ -425,7 +435,20 @@ if($_SESSION['id']!=null){
 <!--        <input type="radio" name="question89" id="question891" value="1" --><?php //if($row['question89']==1) echo "ng-checked='true'";?>
 <!--        <input type="radio" name="question89" id="question892" value="2" --><?php //if($row['question89']==2) echo "ng-checked='true'";?>
 
-        <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
+       <h4>运动吃饭的时间差</h4>
+            <input type="text" name="shijiancha" value="<?php echo $row['shijiancha'];?>" ng-required="part4==1">
+       <h4>饮食模式</h4>
+            <input type="radio" name="roushiweizhu" value="1" <?php if($row['roushiweizhu']==1) echo "ng-checked='true'";?> ng-required="part4==1">肉食为主模式
+            <input type="radio" name="roushiweizhu" value="2" <?php if($row['roushiweizhu']==2) echo "ng-checked='true'";?> ng-required="part4==1">主食为主模式
+       <h4>饮食结构</h4>
+            <h5>高碳水化合物</h5>
+            <input type="text" name="gaotanshuihuahewu" value="<?php echo $row['gaotanshuihuahewu'];?>" ng-required="part4==1">
+            <h5>中碳水化合物</h5>
+            <input type="text" name="zhongtanshuihuahewu" value="<?php echo $row['gaotanshuihuahewu'];?>"ng-required="part4==1">
+            <h5>低碳水化合物</h5>
+            <input type="text" name="ditanshuihuahewu" value="<?php echo $row['gaotanshuihuahewu'];?>"ng-required="part4==1">
+
+            <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
         <input type="radio" ng-model="q90" name="question90" id="question901" value="1" <?php if($row['question90']==1) echo "ng-checked='true'";?> ng-required="part4==1">是
         <input type="radio" ng-model="q90" name="question90" id="question902" value="2" <?php if($row['question90']==2) echo "ng-checked='true'";?> ng-required="part4==1">否
         <div ng-if="q90==1">

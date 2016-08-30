@@ -22,26 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parts/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-              <folding>
-                <marker date="1468633468119" expanded="true" signature="740:788" ph="SELECT * FRO..users..." />
-                <marker date="1468633468119" expanded="true" signature="1271:1355" ph="INSERT INTO ..." />
-                <marker date="1468633468119" expanded="true" signature="1545:1591" ph="SELECT * FRO..users..." />
-                <marker date="1468633468119" expanded="true" signature="1914:1962" ph="INSERT INTO ..." />
-                <marker date="1468633468119" expanded="true" signature="2787:2923" ph="SELECT * FRO..users..." />
-                <marker date="1468633468119" expanded="true" signature="3529:3555" ph="..." />
-                <marker date="1468633468119" expanded="true" signature="9649:9708" ph="SELECT * FRO..DataCollection..." />
-                <marker date="1468633468119" expanded="true" signature="9926:12034" ph="INSERT INTO ..." />
-                <marker date="1468633468119" expanded="true" signature="12225:15956" ph="UPDATE DataC..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="plan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/plan.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,7 +96,7 @@
       <file leaf-file-name="workout-content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
+            <state relative-caret-position="876">
               <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
               <folding />
             </state>
@@ -133,13 +113,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data_collection_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
+            <state relative-caret-position="501">
+              <caret line="447" column="27" selection-start-line="447" selection-start-column="27" selection-end-line="447" selection-end-column="27" />
               <folding>
-                <marker date="1470353452961" expanded="true" signature="329:379" ph="SELECT * FRO... DataCollection" />
+                <marker date="1472525303728" expanded="true" signature="329:379" ph="SELECT * FRO... DataCollection" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parts/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1387">
+              <caret line="321" column="34" selection-start-line="321" selection-start-column="34" selection-end-line="321" selection-end-column="34" />
+              <folding>
+                <marker date="1472525448078" expanded="true" signature="740:788" ph="SELECT * FRO... users" />
+                <marker date="1472525448078" expanded="true" signature="1271:1355" ph="INSERT INTO users... " />
+                <marker date="1472525448078" expanded="true" signature="1545:1591" ph="SELECT * FRO... users" />
+                <marker date="1472525448078" expanded="true" signature="1914:1962" ph="INSERT INTO DataCollection... " />
+                <marker date="1472525448078" expanded="true" signature="2787:2923" ph="SELECT * FRO... users" />
+                <marker date="1472525448078" expanded="true" signature="3529:3555" ph="..." />
+                <marker date="1472525448078" expanded="true" signature="10068:10127" ph="SELECT * FRO... DataCollection" />
+                <marker date="1472525448078" expanded="true" signature="10345:12609" ph="INSERT INTO DataCollection... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16519" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16533" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16552" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16565" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16621" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16656" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16695" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16715" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16743" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16790" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16830" ph="UPDATE DataC... " />
+                <marker date="1472525448078" expanded="true" signature="12800:16881" ph="UPDATE DataC... " />
               </folding>
             </state>
           </provider>
@@ -204,12 +215,12 @@
         <option value="$PROJECT_DIR$/parts/content.html" />
         <option value="$PROJECT_DIR$/parts/contact-content.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/parts/update.php" />
         <option value="$PROJECT_DIR$/parts/chufang.html" />
         <option value="$PROJECT_DIR$/pages/ready.php" />
         <option value="$PROJECT_DIR$/parts/plan-content.php" />
         <option value="$PROJECT_DIR$/parts/workout-content.php" />
         <option value="$PROJECT_DIR$/parts/data_collection_form.php" />
+        <option value="$PROJECT_DIR$/parts/update.php" />
       </list>
     </option>
   </component>
@@ -394,15 +405,21 @@
       <workItem from="1469645247923" duration="654000" />
       <workItem from="1469925972558" duration="41000" />
       <workItem from="1470180630334" duration="741000" />
-      <workItem from="1470353413321" duration="44000" />
+      <workItem from="1470353413321" duration="148000" />
+      <workItem from="1471202025667" duration="628000" />
+      <workItem from="1471272526146" duration="2965000" />
+      <workItem from="1471963212980" duration="3913000" />
+      <workItem from="1472176908091" duration="1062000" />
+      <workItem from="1472494972875" duration="6279000" />
+      <workItem from="1472522163083" duration="2183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25235000" />
+    <option name="totallyTimeSpent" value="42369000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1080" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1080" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -678,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parts/index-content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parts/lecture-content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -748,24 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parts/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-          <folding>
-            <marker date="1468633468119" expanded="true" signature="740:788" ph="SELECT * FRO..users..." />
-            <marker date="1468633468119" expanded="true" signature="1271:1355" ph="INSERT INTO ..." />
-            <marker date="1468633468119" expanded="true" signature="1545:1591" ph="SELECT * FRO..users..." />
-            <marker date="1468633468119" expanded="true" signature="1914:1962" ph="INSERT INTO ..." />
-            <marker date="1468633468119" expanded="true" signature="2787:2923" ph="SELECT * FRO..users..." />
-            <marker date="1468633468119" expanded="true" signature="3529:3555" ph="..." />
-            <marker date="1468633468119" expanded="true" signature="9649:9708" ph="SELECT * FRO..DataCollection..." />
-            <marker date="1468633468119" expanded="true" signature="9926:12034" ph="INSERT INTO ..." />
-            <marker date="1468633468119" expanded="true" signature="12225:15956" ph="UPDATE DataC..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/plan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -825,9 +817,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parts/index-content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parts/workout-content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
+        <state relative-caret-position="876">
           <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
           <folding />
         </state>
@@ -843,10 +842,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parts/data_collection_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
+        <state relative-caret-position="501">
+          <caret line="447" column="27" selection-start-line="447" selection-start-column="27" selection-end-line="447" selection-end-column="27" />
           <folding>
-            <marker date="1470353452961" expanded="true" signature="329:379" ph="SELECT * FRO... DataCollection" />
+            <marker date="1472525303728" expanded="true" signature="329:379" ph="SELECT * FRO... DataCollection" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="321" column="34" selection-start-line="321" selection-start-column="34" selection-end-line="321" selection-end-column="34" />
+          <folding>
+            <marker date="1472525448078" expanded="true" signature="740:788" ph="SELECT * FRO... users" />
+            <marker date="1472525448078" expanded="true" signature="1271:1355" ph="INSERT INTO users... " />
+            <marker date="1472525448078" expanded="true" signature="1545:1591" ph="SELECT * FRO... users" />
+            <marker date="1472525448078" expanded="true" signature="1914:1962" ph="INSERT INTO DataCollection... " />
+            <marker date="1472525448078" expanded="true" signature="2787:2923" ph="SELECT * FRO... users" />
+            <marker date="1472525448078" expanded="true" signature="3529:3555" ph="..." />
+            <marker date="1472525448078" expanded="true" signature="10068:10127" ph="SELECT * FRO... DataCollection" />
+            <marker date="1472525448078" expanded="true" signature="10345:12609" ph="INSERT INTO DataCollection... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16519" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16533" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16552" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16565" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16621" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16656" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16695" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16715" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16743" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16790" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16830" ph="UPDATE DataC... " />
+            <marker date="1472525448078" expanded="true" signature="12800:16881" ph="UPDATE DataC... " />
           </folding>
         </state>
       </provider>
