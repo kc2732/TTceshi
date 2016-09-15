@@ -77,7 +77,7 @@ if($_SESSION['id']!=null){
                 <h4>实验一小时后血糖值(mmol/L)</h4>
                 <input type="text" name="TNL2" value="<?php echo $row['TNL2']; ?>" ng-required="tnlyes == 1">
                 <h4>实验两小时后血糖值(mmol/L)</h4>
-                <input type="text" name="TNL3" value="<?php echo $row['TNL']; ?>" ng-required="tnlyes == 1">
+                <input type="text" name="TNL3" value="<?php echo $row['TNL3']; ?>" ng-required="tnlyes == 1">
 
             </fieldset>
 
@@ -296,15 +296,15 @@ if($_SESSION['id']!=null){
                 <input type="radio" ng-model="q10" name="question10" id="question102" value="2"  <?php if($row['question10']==2) echo "ng-checked='true'";?> ng-required="part3==1">否
                 <div ng-if="q10==1">
                     <h4>该患病亲属与你的关系是</h4>*
-                    <input type="checkbox" ng-model="q11" name="question11" id="question11"   <?php if($row['question11']==1) echo "ng-checked='true'";?>>父亲，或者亲哥哥、亲弟弟
+                    <input type="checkbox" ng-model="q11" name="question11" id="question11" value="1"  <?php if($row['question11']==1) echo "ng-checked='true'";?>>父亲，或者亲哥哥、亲弟弟
                     <div ng-if="q11==1">
                         患病年龄*<input type="number" name="question0111" max="100" value="<?php echo $row['question0111'];?>" ng-required="q11==1">
                     </div>
-                    <input type="checkbox" ng-model="q12" name="question12" id="question12"  <?php if($row['question12']==2) echo "ng-checked='true'";?>>母亲，或者亲姐姐、亲妹妹
+                    <input type="checkbox" ng-model="q12" name="question12" id="question12" value="2" <?php if($row['question12']==2) echo "ng-checked='true'";?>>母亲，或者亲姐姐、亲妹妹
                     <div ng-if="q12==1">
                         患病年龄*<input type="number" name="question0112" max="100" value="<?php echo $row['question0112'];?>" ng-required="q12==2">
                     </div>
-                    <input type="checkbox" name="question13" id="question13" <?php if($row['question13']==3) echo "ng-checked='true'";?>>其他亲属
+                    <input type="checkbox" name="question13" id="question13" value="3" <?php if($row['question13']==3) echo "ng-checked='true'";?>>其他亲属
                 </div>
 
                 <h4>家族成员是否有亲属有先天性心脏病*</h4>

@@ -1,0 +1,2 @@
+[12-Sep-2016 14:50:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/chenkun112358/public_html/TTceshi/parts/data_collection_form.php on line 8
+[12-Sep-2016 14:50:44 UTC] PHP Notice:  Undefined index: YDS4 in /home/chenkun112358/public_html/TTceshi/parts/data_collection_form.php on line 96

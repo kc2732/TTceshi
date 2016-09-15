@@ -233,10 +233,6 @@
 
 }
 @media (max-width:767px){
-    .photo{
-        width:100%;
-    }
-
     .content-top{
         height: 40px;
         font-size: 18px;
