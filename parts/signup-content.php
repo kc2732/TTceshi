@@ -77,7 +77,7 @@
                             </p>
                             <fieldset>
 
-                                <input type="checkbox" name="check" required style="margin-left: 15px;">我已阅读并同意<a href="../termsandconditions.pdf">运动处方试用协议</a>.
+                                <input type="checkbox" name="check" required style="margin-left: 15px;">我已阅读并同意<a href="../termsandconditions.pdf" >运动处方试用协议</a>.
 
                             </fieldset>
                             <div class="btn_nav">
@@ -91,7 +91,7 @@
                 </div>
                 <fieldset>
 
-                    已有账号？点击<a id="show-sign-in" href="#">这里</a>登录
+                    已有账号？点击<a id="show-sign-in" href="#" style="color:firebrick">这里</a>登录
 
                 </fieldset>
             </form>
@@ -118,7 +118,7 @@
                 </fieldset>
                 <fieldset>
 
-                    还没有帐号？点击<a id="show-sign-up" href="#">这里</a>登录
+                    还没有帐号？点击<a id="show-sign-up" href="#" style="color:firebrick">这里</a>登录
 
                 </fieldset>
             </form>
