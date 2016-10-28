@@ -11,7 +11,7 @@ include '../parts/head.php';
 include '../parts/top-bar.php';
 ?>
 
-    <fieldset style="font-size:12px;width:80%;margin-left:auto;margin-right:auto;margin-top:40px;">
+    <fieldset style="font-size:18px;width:80%;margin-left:auto;margin-right:auto;margin-top:40px;">
         <legend>
             健康运动准备须知：
         </legend>
@@ -24,8 +24,10 @@ include '../parts/top-bar.php';
         background-color: white;
         padding: 10px 20px;
         border: 1px solid black;
-        line-height: 74px;
-    "><a href="workout.php" style="color:black;">我已经确认完毕以上信息，开始运动！！！</a></span>
+        display:block;
+        margin-top:10px;
+        width:234px;
+    "><a href="workout.php" style="color:black;">确认完毕，开始运动！！！</a></span>
     </fieldset>
 
 <?php

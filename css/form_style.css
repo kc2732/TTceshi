@@ -15,5 +15,6 @@
 .dataCollection input[type=text], .dataCollection input[type=number]{
     width:70%;
     min-width: 200px;
+    margin-bottom:20px;
 
 }

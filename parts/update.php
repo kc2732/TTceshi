@@ -9,6 +9,16 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $password1 = $_POST['password1'];
 $phone = $_POST['phone'];
+$question1 = $_POST['question1'];
+$question2 = $_POST['question2'];
+$question3 = $_POST['question3'];
+$question4 = $_POST['question4'];
+$question5 = $_POST['question5'];
+$question6 = $_POST['question6'];
+$question7 = $_POST['question7'];
+$question8 = $_POST['question8'];
+$status = $question1+$question2+$question3+$question4+$question5+$question6+$question7+$question8;
+
 $option = $_POST['option'];
 $checkbox = $_POST['check'];
 $hostname = 'localhost';
@@ -19,6 +29,7 @@ mysql_select_db('tangyisheng',$mysql);
 $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 $phone = mysql_real_escape_string($phone);
+
 session_start();
 ?>
 <div style="width:60%; margin-top:10%; margin-left: auto; margin-right: auto; text-align: center; font-size: 32px;">
@@ -36,8 +47,7 @@ if($option == 'insert'){
                         if ($phone!="") {
                             if($checkbox!=""){
                                 mysql_query("set names utf8");
-                                $sql = "INSERT INTO users (username,password,phone) VALUES('$username','$password','$phone')";
-
+                                $sql = "INSERT INTO users (username,password,phone,question1,question2,question3,question4,question5,question6,question7,question8,status) VALUES('$username','$password','$phone','$question1','$question2','$question3','$question4','$question5','$question6','$question7','$question8','$status')";
                                 mysql_query($sql) or die(mysql_error());
                                 mysql_query("set names utf8");
                                 $get_currentId = "SELECT * FROM users WHERE username='$username'";
@@ -48,9 +58,15 @@ if($option == 'insert'){
                                     $prework = "INSERT INTO DataCollection(userId)VALUES('$uid')";
                                     mysql_query($prework);
                                 }
-                                echo "您的信息已经成功提交！！！接下来完成我们的问答，专家会根据您的回答来给您带来正确的治疗方案。</br>";
+                                if($status ==0){
+                                    echo "您的信息已经成功提交！！！接下来完成我们的问答，专家会根据您的回答来给您带来正确的治疗方案。</br>";
+                                    echo "<a style=\"width:30%;margin-right:35%\" class=\"button-submit \" href=\"../pages/data-collection.php\">开始问答</a>";
+                                }else{
+                                    echo "由于您的身体状况需要特殊监护，您的注册暂时被我们中止，我们会有特别专人跟您联系来给出最适合您的运动处方</br>";
+                                }
+
                                 ?>
-                                <a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>
+
                             <?php
                             }else echo "您还未同意我们的服务条款，请确认后重新提交";
                         } else echo "请输入您的联系方式";
@@ -74,16 +90,22 @@ if($option == 'insert'){
     } else{
         $checkcomplete;
         while($row = mysql_fetch_assoc($login_query)){
-            $checkcomplete=$row['part2']+$row['part3']+$row['part4'];
-            if($checkcomplete == 3){
-                header('Location:../pages/plan.php ');
-            }
-            $_SESSION['id'] = $row['id'];
-        }
-        echo "登录成功！欢迎回来</br>
+            $current_status = $row['status'];
+            if($current_status == 0){
+                $checkcomplete=$row['part2']+$row['part3']+$row['part4'];
+                if($checkcomplete == 3){
+                    header('Location:../pages/plan.php ');
+                }
+                $_SESSION['id'] = $row['id'];
+                echo "登录成功！欢迎回来</br>
                 您的问题完成度为：";
 
-        echo '<a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>';
+                echo '<a style="width:30%;margin-right:35%" class="button-submit " href="../pages/data-collection.php">开始问答</a>';
+            }else{
+                echo "很抱歉，由于您的身体状况，我们还无法自动为您生成对应的运动处方，敬请等待或者联系我们 support@tangtangyundong.com</br>";
+            }
+        }
+
     }
 } elseif($option='dataCollection'){
     $name = $_POST['name'];

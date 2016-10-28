@@ -37,32 +37,32 @@ while($row = mysql_fetch_assoc($res_Information)){
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">星期一</a>
                 </h4>
             </div>
-            <div id="collapse1" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
-                            力量训练<br>
-                            10 分钟<br>
-                            <img src="../images/strength.png">
-                        </div>
-                        <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
-                            柔韧训练<br>
-                            20 分钟<br>
-                            <img src="../images/flexibility.png">
-                        </div>
-                        <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
-                            平衡训练<br>
-                            15 分钟<br>
-                            <img src="../images/balance.png">
-                        </div>
-                        <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >
-                            有氧训练<br>
-                            20 分钟<br>
-                            <img src="../images/aerobic.png">
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
+                                力量训练<br>
+                                15 分钟<br>
+                                <img src="../images/strength.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
+                                柔韧训练<br>
+                                8~10 分钟<br>
+                                <img src="../images/flexibility.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
+                                平衡训练<br>
+                                10 分钟<br>
+                                <img src="../images/balance.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >
+                                有氧训练<br>
+                                8 分钟<br>
+                                <img src="../images/aerobic.png">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -72,29 +72,8 @@ while($row = mysql_fetch_assoc($res_Information)){
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
                     <div class="panel-body">
-<!--                        今天并没有运动训练计划，好的休息也对康复至关重要！-->
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
-                                力量训练<br>
-                                10 分钟<br>
-                                <img src="../images/strength.png">
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
-                                柔韧训练<br>
-                                20 分钟<br>
-                                <img src="../images/flexibility.png">
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
-                                平衡训练<br>
-                                15 分钟<br>
-                                <img src="../images/balance.png">
-                            </div>
-                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >
-                                有氧训练<br>
-                                20 分钟<br>
-                                <img src="../images/aerobic.png">
-                            </div>
-                        </div>
+                        今天并没有运动训练计划，好的休息也对康复至关重要！
+
                     </div>
                 </div>
             </div>
@@ -109,22 +88,22 @@ while($row = mysql_fetch_assoc($res_Information)){
                         <div class="row">
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
                                 力量训练<br>
-                                10 分钟<br>
+                                15 分钟<br>
                                 <img src="../images/strength.png">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
                                 柔韧训练<br>
-                                20 分钟<br>
+                                8~10 分钟<br>
                                 <img src="../images/flexibility.png">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
                                 平衡训练<br>
-                                15 分钟<br>
+                                10 分钟<br>
                                 <img src="../images/balance.png">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >
                                 有氧训练<br>
-                                20 分钟<br>
+                                8 分钟<br>
                                 <img src="../images/aerobic.png">
                             </div>
                         </div>
@@ -156,22 +135,22 @@ while($row = mysql_fetch_assoc($res_Information)){
                         <div class="row">
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
                                 力量训练<br>
-                                10 分钟<br>
+                                15 分钟<br>
                                 <img src="../images/strength.png">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
                                 柔韧训练<br>
-                                20 分钟<br>
+                             8~10 分钟<br>
                                 <img src="../images/flexibility.png">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
                                 平衡训练<br>
-                                15 分钟<br>
+                                10 分钟<br>
                                 <img src="../images/balance.png">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >
                                 有氧训练<br>
-                                20 分钟<br>
+                                8 分钟<br>
                                 <img src="../images/aerobic.png">
                             </div>
                         </div>
@@ -200,28 +179,28 @@ while($row = mysql_fetch_assoc($res_Information)){
                 </div>
                 <div id="collapse7" class="panel-collapse collapse">
                     <div class="panel-body">
-<!--                        <div class="row">-->
-<!--                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">-->
-<!--                                力量训练<br>-->
-<!--                                10 分钟<br>-->
-<!--                                <img src="../images/strength.png">-->
-<!--                            </div>-->
-<!--                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">-->
-<!--                                柔韧训练<br>-->
-<!--                                20 分钟<br>-->
-<!--                                <img src="../images/flexibility.png">-->
-<!--                            </div>-->
-<!--                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">-->
-<!--                                平衡训练<br>-->
-<!--                                15 分钟<br>-->
-<!--                                <img src="../images/balance.png">-->
-<!--                            </div>-->
-<!--                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >-->
-<!--                                有氧训练<br>-->
-<!--                                20 分钟<br>-->
-<!--                                <img src="../images/aerobic.png">-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
+                                力量训练<br>
+                                15 分钟<br>
+                                <img src="../images/strength.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
+                                柔韧训练<br>
+                                8~10 分钟<br>
+                                <img src="../images/flexibility.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0">
+                                平衡训练<br>
+                                10 分钟<br>
+                                <img src="../images/balance.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-md-push-0 col-lg-3 col-lg-push-0" >
+                                有氧训练<br>
+                                8 分钟<br>
+                                <img src="../images/aerobic.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

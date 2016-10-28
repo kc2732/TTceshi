@@ -27,28 +27,28 @@ if($_SESSION['id']!=null){
             <input type="radio" name="gender" value="1" <?php if($row['gender']==1) echo "ng-checked='true'"; ?> ng-required="true">男
             <input type="radio" name="gender" value="2" <?php if($row['gender']==2) echo "ng-checked='true'"; ?> ng-required="true">女
             <h4>年龄</h4>*
-            <input type="number" name="age" max="100" value="<?php echo $row['age']; ?>" ng-required="true">
+            <input type="number" name="age" max="100" value="<?php echo $row['age']; ?>" ng-required="true"  step="any">
             <h4>联系方式</h4>*
             <input type="text" name="phone" value="<?php echo $row['phone']; ?>" ng-required="true">
             <h4>身高(cm)</h4>*
-            <input type="number" name="height" max="250" value="<?php echo $row['height']; ?>" ng-required="true" >
+            <input type="number" name="height" max="250" value="<?php echo $row['height']; ?>" ng-required="true"  step="any">
             <h4>体重(kg)</h4>*
-            <input type="number" name="weight" max="500" value="<?php echo $row['weight']; ?>" ng-required="true">
+            <input type="number" name="weight" max="500" value="<?php echo $row['weight']; ?>" ng-required="true"  step="any">
             <h4>腰围(cm)</h4>*
-            <input type="number" name="waist" max="500" value="<?php echo $row['waist']; ?>" ng-required="true">
+            <input type="number" name="waist" max="500" value="<?php echo $row['waist']; ?>" ng-required="true"  step="any">
 
         </fieldset>
-        <fieldset >
+        <fieldset>
             <legend>个人历史数据</legend>
             <h4>血糖值(1mmol/L = 18mg/dL)</h4>
             <h4>餐前30分钟的血糖水平(mmol/L)：</h4>
-            <input type="text" name="question72" value="<?php echo $row['question72']; ?>" ng-required="true">
+            <input type="number" name="question72" value="<?php echo $row['question72']; ?>" ng-required="true" step="any">
             <h4>餐后两小时的血糖水平(mmol/L)：</h4>
-            <input type="text" name="question73" value="<?php echo $row['question73']; ?>" ng-required="true">
+            <input type="number" name="question73" value="<?php echo $row['question73']; ?>" ng-required="true" step="any">
             <h4>空腹血糖的血糖水平(mmol/L)：</h4>
-            <input type="text" name="question74" value="<?php echo $row['question74']; ?>" ng-required="true">
+            <input type="number" name="question74" value="<?php echo $row['question74']; ?>" ng-required="true" step="any">
             <h4>血糖测量地点：</h4>
-            <input type="text" name="question75" value="<?php echo $row['question75']; ?>" ng-required="true">
+            <input type="text" name="question75" value="<?php echo $row['question75']; ?>" ng-required="true" >
             <h4>血糖测量人：</h4>
             <input type="text" name="question76" value="<?php echo $row['question76']; ?>" ng-required="true">
             <h4>糖化血红蛋白[A1C]（%）：</h4>
@@ -56,15 +56,14 @@ if($_SESSION['id']!=null){
             <h4>测量糖化血红蛋白[A1C]的测试人的名字或者测试医院的名称</h4>
             <input type="text" name="question78" value="<?php echo $row['question78']; ?>" ng-required="true">
 
-            <h4>运动前血糖值(mmol/L)：</h4>
-            <input type="text" name="yundongqian" value="<?php echo $row['yundongqian'];?>" ng-required="true">
-            <h4>运动后血糖值(mmol/L)：</h4>
-            <input type="text" name="yundonghou" value="<?php echo $row['yundonghou'];?>" ng-required="true">
-            <h4>临睡前血糖值(mmol/L)：</h4>
-            <input type="text" name="linshuiqian" value="<?php echo $row['linshuiqian'];?>" ng-required="true">
-            <h4>凌晨2点血糖值(mmol/L)：</h4>
-            <input type="text" name="lingchen2dian" value="<?php echo $row['lingchen2dian'];?>" ng-required="true">
-
+<!--            <h4>运动前血糖值(mmol/L)：</h4>-->
+<!--            <input type="number" name="yundongqian" value="--><?php //echo $row['yundongqian'];?><!--" ng-required="true" step="any">-->
+<!--            <h4>运动后血糖值(mmol/L)：</h4>-->
+<!--            <input type="number" name="yundonghou" value="--><?php //echo $row['yundonghou'];?><!--" ng-required="true" step="any">-->
+<!--            <h4>临睡前血糖值(mmol/L)：</h4>-->
+<!--            <input type="number" name="linshuiqian" value="--><?php //echo $row['linshuiqian'];?><!--" ng-required="true" step="any">-->
+<!--            <h4>凌晨2点血糖值(mmol/L)：</h4>-->
+<!--            <input type="number" name="lingchen2dian" value="--><?php //echo $row['lingchen2dian'];?><!--" ng-required="true" step="any">-->
 
             <h4>您是否做过糖耐量实验</h4>
             <input type="radio" name="TNL" ng-model="tnlyes" value="1" <?php if($row['TNL']==1) echo "ng-checked='true'"; ?> ng-required="true">是
@@ -73,11 +72,11 @@ if($_SESSION['id']!=null){
 
                 <legend>糖耐量实验</legend>
                 <h4>餐前血糖值 (mmol/L)</h4>
-                <input type="text" name="TNL1" value="<?php echo $row['TNL1']; ?>" ng-required="tnlyes == 1">
+                <input type="number" name="TNL1" value="<?php echo $row['TNL1']; ?>" ng-required="tnlyes == 1" step="any">
                 <h4>实验一小时后血糖值(mmol/L)</h4>
-                <input type="text" name="TNL2" value="<?php echo $row['TNL2']; ?>" ng-required="tnlyes == 1">
+                <input type="number" name="TNL2" value="<?php echo $row['TNL2']; ?>" ng-required="tnlyes == 1" step="any">
                 <h4>实验两小时后血糖值(mmol/L)</h4>
-                <input type="text" name="TNL3" value="<?php echo $row['TNL3']; ?>" ng-required="tnlyes == 1">
+                <input type="number" name="TNL3" value="<?php echo $row['TNL3']; ?>" ng-required="tnlyes == 1" step="any">
 
             </fieldset>
 
@@ -91,7 +90,7 @@ if($_SESSION['id']!=null){
                 <h4>品牌</h4>
                 <input type="text" name="YDS2" value="<?php echo $row['YDS2']; ?>" ng-required="YDS == 1">
                 <h4>每日剂量（IU）</h4>
-                <input type="text" name="YDS3" value="<?php echo $row['YDS3']; ?>" ng-required="YDS == 1">
+                <input type="number" name="YDS3" value="<?php echo $row['YDS3']; ?>" ng-required="YDS == 1" step="any">
                 <h4>每天什么时候使用（比如饭前1小时，饭后两小时，运动前一小时，运动后即刻）</h4>
                 <input type="text" name="YDS4" value="<?php echo $row['YDS4']; ?>" ng-required="YDS == 1">
             </div>
@@ -105,9 +104,9 @@ if($_SESSION['id']!=null){
                 <h4>测试人的姓名或者测试医院的名称*</h4>
                 <input type="text" name="question68" value="<?php echo $row['question68'];?>" ng-required="q67==1">
                 <h4>收缩压（高压） mmhg：*</h4>
-                <input type="text" name="question69" value="<?php echo $row['question69'];?>" ng-required="q67==1">
+                <input type="number" name="question69" value="<?php echo $row['question69'];?>" ng-required="q67==1" step="any">
                 <h4>舒张压（低压） mmhg：*</h4>
-                <input type="text" name="question70" value="<?php echo $row['question70'];?>" ng-required="q67==1">
+                <input type="number" name="question70" value="<?php echo $row['question70'];?>" ng-required="q67==1" step="any">
             </div>
 
             <h4>你是否测过你的胆固醇水平*</h4>
@@ -115,15 +114,15 @@ if($_SESSION['id']!=null){
             <input type="radio" ng-model="q61" name="question61" id="question612" value="2" <?php if($row['question61']==2) echo "ng-checked='true'";?>  ng-required="true">否
             <div ng-if="q61==1">
                 <h4>测试人的姓名或者测试医院的名称*</h4>
-                <input type="text" name="question62" value="<?php echo $row['question62'];?>" ng-required="q61==1">
+                <input type="text" name="question62" value="<?php echo $row['question62'];?>" ng-required="q61==1" >
                 <h4>总胆固醇(TC)水平具体数值（mmol/L）：*</h4>
-                <input type="text" name="question63" value="<?php echo $row['question63'];?>" ng-required="q61==1">
+                <input type="number" name="question63" value="<?php echo $row['question63'];?>" ng-required="q61==1" step="any">
                 <h4>甘油三酯(TG)具体数值（mmol/L）：*</h4>
-                <input type="text" name="question64" value="<?php echo $row['question64'];?>" ng-required="q61==1">
+                <input type="number" name="question64" value="<?php echo $row['question64'];?>" ng-required="q61==1" step="any">
                 <h4>高密度脂蛋白（HDL）具体数值（mmol/L）：*</h4>
-                <input type="text" name="question65" value="<?php echo $row['question65'];?>" ng-required="q61==1">
+                <input type="number" name="question65" value="<?php echo $row['question65'];?>" ng-required="q61==1" step="any">
                 <h4>低密度脂蛋白(LDL)具体数值（mmol/L）：*</h4>
-                <input type="text" name="question66" value="<?php echo $row['question66'];?>" ng-required="q61==1">
+                <input type="text" name="question66" value="<?php echo $row['question66'];?>" ng-required="q61==1" step="any">
             </div>
 
 
@@ -153,7 +152,7 @@ if($_SESSION['id']!=null){
                 <input type="text" name="question87" value="<?php echo $row['question87'];?>" ng-required="q84==1">
             </div>
 
-            <h4>您是否曾经做过任何心血管测试</h4>*
+            <h4>您是否曾经做过任何心血管测试*</h4>
             <input type="radio" ng-model="q8" name="question8" id="question81" value="1" <?php if($row['question8']==1) echo "ng-checked='true'";?> ng-required="true" >是
             <input type="radio" ng-model="q8" name="question8" id="question82" value="2" <?php if($row['question8']==2) echo "ng-checked='true'";?> ng-required="true">否
             <div ng-if="q8=='1'">
@@ -162,11 +161,7 @@ if($_SESSION['id']!=null){
             </div>
             <h4>您其他已经确诊的疾病和担心的地方</h4>
             <input type="text" name="question88" value="<?php echo $row['question88'];?>">
-
-
         </fieldset>
-
-
         <h4 ng-if="part2!=1">个人史，开始作答！</h4>
         <h4 ng-if="part2==1">个人史，放弃作答！（只有当您完成了所有问题，我们的专家才能够给您得出精确的诊断结果和治疗方案）</h4>
         <input type="checkbox" name="part2" ng-model="part2" value="1" <?php if($row['part2']==1) echo "ng-checked='true'";?>>
@@ -208,7 +203,6 @@ if($_SESSION['id']!=null){
             <input type="radio" name="question49" id="question491" value="1" <?php if($row['question49']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
             <input type="radio" name="question49" id="question492" value="2" <?php if($row['question49']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
 
-
             <h4>你曾经是否有过骨质疏松和关节炎</h4>
             <input type="radio" name="GZSS" value="1" <?php if($row['GZSS']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
             <input type="radio" name="GZSS" value="2" <?php if($row['GZSS']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
@@ -224,8 +218,6 @@ if($_SESSION['id']!=null){
             <h4>视网膜病变</h4>
             <input type="radio" name="SWMBB" value="1" <?php if($row['SWMBB']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
             <input type="radio" name="SWMBB" value="2" <?php if($row['SWMBB']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
-
-
 
 
             <h4>你是否有过除以上列出疾病之外的疾病，如果有，请列出</h4>
@@ -272,11 +264,9 @@ if($_SESSION['id']!=null){
                 <input type="radio" name="question60" id="question602" value="2" <?php if($row['question60']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
                 <h4>你曾经是否有过除以上列出症状之外的不适症状，如果有是哪种不适症状？</h4>
                 <input type="text" name="question601" value="<?php echo $row['question601'];?>">
-
             </fieldset>
 
         </fieldset>
-
 
         <h4 ng-if="part3!=1">家族史，开始作答！</h4>
         <h4 ng-if="part3==1">家族史，放弃作答！（只有当您完成了所有问题，我们的专家才能够给您得出精确的诊断结果和治疗方案）</h4>
@@ -435,18 +425,18 @@ if($_SESSION['id']!=null){
 <!--        <input type="radio" name="question89" id="question891" value="1" --><?php //if($row['question89']==1) echo "ng-checked='true'";?>
 <!--        <input type="radio" name="question89" id="question892" value="2" --><?php //if($row['question89']==2) echo "ng-checked='true'";?>
 
-       <h4>运动吃饭的时间差</h4>
-            <input type="text" name="shijiancha" value="<?php echo $row['shijiancha'];?>" ng-required="part4==1">
-       <h4>饮食模式</h4>
-            <input type="radio" name="roushiweizhu" value="1" <?php if($row['roushiweizhu']==1) echo "ng-checked='true'";?> ng-required="part4==1">肉食为主模式
-            <input type="radio" name="roushiweizhu" value="2" <?php if($row['roushiweizhu']==2) echo "ng-checked='true'";?> ng-required="part4==1">主食为主模式
-       <h4>饮食结构</h4>
-            <h5>高碳水化合物</h5>
-            <input type="text" name="gaotanshuihuahewu" value="<?php echo $row['gaotanshuihuahewu'];?>" ng-required="part4==1">
-            <h5>中碳水化合物</h5>
-            <input type="text" name="zhongtanshuihuahewu" value="<?php echo $row['gaotanshuihuahewu'];?>"ng-required="part4==1">
-            <h5>低碳水化合物</h5>
-            <input type="text" name="ditanshuihuahewu" value="<?php echo $row['gaotanshuihuahewu'];?>"ng-required="part4==1">
+<!--       <h4>运动吃饭的时间差</h4>-->
+<!--            <input type="text" name="shijiancha" value="--><?php //echo $row['shijiancha'];?><!--" ng-required="part4==1">-->
+<!--       <h4>饮食模式</h4>-->
+<!--            <input type="radio" name="roushiweizhu" value="1" --><?php //if($row['roushiweizhu']==1) echo "ng-checked='true'";?><!-- ng-required="part4==1">肉食为主模式-->
+<!--            <input type="radio" name="roushiweizhu" value="2" --><?php //if($row['roushiweizhu']==2) echo "ng-checked='true'";?><!-- ng-required="part4==1">主食为主模式-->
+<!--       <h4>饮食结构</h4>-->
+<!--            <h5>高碳水化合物（如：葡萄糖，白面包，蜂蜜）</h5>-->
+<!--            <input type="text" name="gaotanshuihuahewu" value="--><?php //echo $row['gaotanshuihuahewu'];?><!--" ng-required="part4==1">-->
+<!--            <h5>中碳水化合物（如：全麦面包，黑、白米）</h5>-->
+<!--            <input type="text" name="zhongtanshuihuahewu" value="--><?php //echo $row['zhongtanshuihuahewu'];?><!--"ng-required="part4==1">-->
+<!--            <h5>低碳水化合物（如：牛奶，酸奶，苹果，菜豆）</h5>-->
+<!--            <input type="text" name="ditanshuihuahewu" value="--><?php //echo $row['ditanshuihuahewu'];?><!--"ng-required="part4==1">-->
 
             <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>
         <input type="radio" ng-model="q90" name="question90" id="question901" value="1" <?php if($row['question90']==1) echo "ng-checked='true'";?> ng-required="part4==1">是

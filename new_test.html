@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset='utf-8' />
+        <title>糖糖运动医生</title>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel='stylesheet' href='lib/cupertino/jquery-ui.min.css' />
+        <link href='fullcalendar.css' rel='stylesheet' />
+        <link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/responsive.css" rel="stylesheet" />
+        <link href="css/form_style.css" rel="stylesheet"/>
+        <script src='lib/moment.min.js'></script>
+        <script src='lib/jquery.min.js'></script>
+        <script src='fullcalendar.min.js'></script>
+        <script src='lang-all.js'></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/polyfill.js"></script>
+        <script src="js/script.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/jquery.validate.min.js"></script>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/scroll.js"></script>
+</head>
+<body>
+<style type="text/css">
+
+    ul{
+        list-style: none;
+    }
+</style>
+
+<form action="../pages/success.php" method="post" class="ws-validate"  id="sign-up-main">
+    <div id="wizard">
+        <ul id="status">
+            <li class="active"><strong>1.</strong>创建账户</li>
+            <li><strong>2.</strong>填写联系信息</li>
+            <li><strong>3.</strong>完成</li>
+        </ul>
+
+        <div class="items">
+            <div class="page">
+                <h3>创建一个账户<br/><em>请填写您的注册账户信息，用于登录。</em></h3>
+                <p><label>用户名：</label><input type="text" class="input" id="user" name="username" required="required"/></p>
+                <p><label>密码：</label><input type="password" class="input" id="pass" name="password" required="required"/></p>
+                <p><label>确认密码：</label><input type="password" class="input" id="pass1" name="password1" required="required"/></p>
+
+                <div class="btn_nav">
+                    <input type="button" class="next right" value="下一步&raquo;" />
+                </div>
+            </div>
+            <div class="page">
+                <h3>填写联系信息<br/><em>请告诉我们您的联系方式。</em></h3>
+                <p><label>E-mail：</label><input type="text" class="input" name="email" required="required"/></p>
+                <div class="btn_nav">
+                    <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                    <input type="button" class="next right" value="下一步&raquo;" />
+                </div>
+            </div>
+            <div class="page">
+                <h3 style="margin-top:20px;">完成注册</h3>
+                <p>请点击“确定”按钮完成注册。</p>
+                <br/>
+                (请注意，为了保证服务质量，只有做完全部选择的用户才可以注册)
+                <br/>
+                <div class="btn_nav">
+                    <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                    <input type="submit" class="next right" id="sub" value="确定" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    webshim.setOptions('forms', {
+        lazyCustomMessages: true
+    });
+
+    //start polyfilling
+    webshim.polyfill('forms');
+
+
+</script>
+<script type="text/javascript">
+    $(function(){
+        $("#wizard").scrollable({
+            onSeek: function(event,i){
+                $("#status li").removeClass("active").eq(i).addClass("active");
+            }
+        });
+    });
+</script>
+</body>
+</html>

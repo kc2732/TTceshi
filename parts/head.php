@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app>
-<head >
+<head>
     <meta charset='utf-8' />
     <title>糖糖运动医生</title>
     <meta name="viewport" content="width=device-width" />
@@ -21,6 +21,7 @@
     <script src="../js/script.js"></script>
     <script src="../lib/angular.min.js"></script>
     <script src="../lib/jquery.validate.min.js"></script>
+    <script src="../js/scroll.js"></script>
 </head>
 <?php
 function php_self(){
