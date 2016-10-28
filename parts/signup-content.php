@@ -17,6 +17,11 @@
         <div class="sign_up_form">
 
             <form action="../pages/success.php" method="post" class="ws-validate"  id="sign-up-main">
+                <fieldset>
+
+                    已有账号？点击<a id="show-sign-in" href="#" style="color:firebrick">这里</a>登录
+
+                </fieldset>
                 <div id="wizard">
                     <ul id="status">
                         <li class="active"><strong>1.</strong>创建账户</li>
@@ -89,15 +94,16 @@
 
                     </div>
                 </div>
-                <fieldset>
 
-                    已有账号？点击<a id="show-sign-in" href="#" style="color:firebrick">这里</a>登录
-
-                </fieldset>
             </form>
 
 
             <form action="../pages/success.php" method="post" class="ws-validate" id="sign-in-main">
+                <fieldset>
+
+                    还没有帐号？点击<a id="show-sign-up" href="#" style="color:firebrick">这里</a>登录
+
+                </fieldset>
                 <fieldset>
                     <legend>
                         <strong>用户名</strong>
@@ -116,11 +122,7 @@
                 <fieldset>
                     <input class="button-submit button-register" type="submit" name="submit" value="登录">
                 </fieldset>
-                <fieldset>
 
-                    还没有帐号？点击<a id="show-sign-up" href="#" style="color:firebrick">这里</a>登录
-
-                </fieldset>
             </form>
         </div>
     </div>
