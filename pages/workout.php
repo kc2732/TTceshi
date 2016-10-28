@@ -16,6 +16,8 @@ $pwd = 'chenkun';
 $mysql = mysql_connect($hostname,$uname,$pwd);
 mysql_select_db('tangyisheng',$mysql);
 session_start();
+$high;
+$status;
 if($_SESSION['id']!=null) {
     $uid = $_SESSION['id'];
     $getInformation = "SELECT * FROM users LEFT JOIN DataCollection ON users.id = DataCollection.userId WHERE userId = '$uid'";
@@ -163,16 +165,7 @@ if($_SESSION['id']!=null) {
 //        echo "糖耐量";
         }
 //    echo $Totalpoint;
-
-        ?>
-
-
-        <?php
-
     }
-
-    ?>
-    <?php
     if ($status == 0) {
         if($high >0){
             if ($Totalpoint < 2) {
