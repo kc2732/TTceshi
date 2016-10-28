@@ -261,11 +261,11 @@ if($_SESSION['id']!=null){
 
                 <h4>你曾经是否有过骨科问题？*</h4>
                 <input type="radio" name="question60" id="question601" value="1" <?php if($row['question60']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question60" id="question602" value="2" <?php if($row['question60']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question60" id="question602" value="0" <?php if($row['question60']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
 
                 <h4>你是否有过踝部水肿？*</h4>
                 <input type="radio" name="question89" id="question891" value="1" <?php if($row['question89']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question89" id="question892" value="2" <?php if($row['question89']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question89" id="question892" value="0" <?php if($row['question89']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
 
                 <h4>你曾经是否有过除以上列出症状之外的不适症状，如果有是哪种不适症状？</h4>
                 <input type="text" name="question601" value="<?php echo $row['question601'];?>">
