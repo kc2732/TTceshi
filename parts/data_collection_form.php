@@ -225,43 +225,48 @@ if($_SESSION['id']!=null){
 
             <fieldset>
                 <legend>症状</legend>
-                <h4>你曾经是否有过胸部疼痛？*</h4>
+                <h4>可能是由于局部缺血造成的疼痛（感觉闷）或不适在胸部，颈部，下颌，手臂或其他地区？*</h4>
                 <input type="radio" name="question50" id="question501" value="1" <?php if($row['question50']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question50" id="question502" value="2" <?php if($row['question50']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
-                <!--<h4>你曾经是否有过呼吸短促*</h4>
-                <input type="radio" name="question51" id="question511" value="1"--> <?php //if($row['question51']==1) echo "ng-checked='true'";?> <!--ng-required="part2==1">是-->
-<!--                <input type="radio" name="question51" id="question512" value="2" --><?php //if($row['question51']==2) echo "ng-checked='true'";?><!-- ng-required="part2==1">否-->
-                <h4>你曾经是否有过心悸？*</h4>
+                <input type="radio" name="question50" id="question502" value="0" <?php if($row['question50']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <h4>呼吸急促或呼吸困难在休息或轻度用力（或是端坐呼吸困难）*</h4>
+                <input type="radio" name="question51" id="question511" value="1" <?php if($row['question51']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
+                <input type="radio" name="question51" id="question512" value="0" <?php if($row['question51']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <h4>你曾经是否有过心悸或心动过速？*</h4>
                 <input type="radio" name="question52" id="question521" value="1" <?php if($row['question52']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question52" id="question522" value="2" <?php if($row['question52']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question52" id="question522" value="0" <?php if($row['question52']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
                 <h4>你曾经是否有过心律不齐?*</h4>
                 <input type="radio" name="question53" id="question531" value="1" <?php if($row['question53']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question53" id="question532" value="2" <?php if($row['question53']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question53" id="question532" value="0" <?php if($row['question53']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
 
                 <h4>你曾经是否有过心脏杂音？*</h4>
                 <input type="radio" name="question54" id="question541" value="1" <?php if($row['question54']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question54" id="question542" value="2" <?php if($row['question54']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
-                <h4>你曾经是否有过间歇性腿部疼痛？*</h4>
+                <input type="radio" name="question54" id="question542" value="0" <?php if($row['question54']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <h4>你曾经是否有过间歇性跛行（疼痛感，或与功血不足有关的下肢痉挛）？*</h4>
                 <input type="radio" name="question55" id="question551" value="1" <?php if($row['question55']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question55" id="question552" value="2" <?php if($row['question55']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question55" id="question552" value="0" <?php if($row['question55']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
 
-                <h4>你曾经是否有过眩晕或者昏倒？*</h4>
+                <h4>你曾经是否有过由大脑供血不足引起头晕或晕厥？*</h4>
                 <input type="radio" name="question56" id="question561" value="1" <?php if($row['question56']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question56" id="question562" value="2" <?php if($row['question56']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
-                <h4>你曾经是否在日常生活中易感到疲倦？*</h4>
+                <input type="radio" name="question56" id="question562" value="0" <?php if($row['question56']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <h4>你曾经是否在日常生活中易感到异常疲倦或者呼吸困难？*</h4>
                 <input type="radio" name="question57" id="question571" value="1" <?php if($row['question57']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question57" id="question572" value="2" <?php if($row['question57']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question57" id="question572" value="0" <?php if($row['question57']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
 
                 <h4>你曾经是否有过睡眠时打鼾的情况？*</h4>
                 <input type="radio" name="question58" id="question581" value="1" <?php if($row['question58']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question58" id="question582" value="2" <?php if($row['question58']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question58" id="question582" value="0" <?php if($row['question58']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
                 <h4>你曾经是否有过背部疼痛问题？*</h4>
                 <input type="radio" name="question59" id="question591" value="1" <?php if($row['question59']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question59" id="question592" value="2" <?php if($row['question59']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question59" id="question592" value="0" <?php if($row['question59']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
 
                 <h4>你曾经是否有过骨科问题？*</h4>
                 <input type="radio" name="question60" id="question601" value="1" <?php if($row['question60']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
-                <input type="radio" name="question60" id="question602" value="2" <?php if($row['question60']==2) echo "ng-checked='true'";?> ng-required="part2==1">否
+                <input type="radio" name="question60" id="question602" value="2" <?php if($row['question60']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+
+                <h4>你是否有过踝部水肿？*</h4>
+                <input type="radio" name="question89" id="question891" value="1" <?php if($row['question89']==1) echo "ng-checked='true'";?> ng-required="part2==1">是
+                <input type="radio" name="question89" id="question892" value="2" <?php if($row['question89']==0) echo "ng-checked='true'";?> ng-required="part2==1">否
+
                 <h4>你曾经是否有过除以上列出症状之外的不适症状，如果有是哪种不适症状？</h4>
                 <input type="text" name="question601" value="<?php echo $row['question601'];?>">
             </fieldset>
@@ -421,9 +426,6 @@ if($_SESSION['id']!=null){
             <?php
             }
             ?>
-<!--        <h4>你是否曾经在做运动或者在日常活动的时候，有不舒服和呼吸短促的症状？*</h4>-->
-<!--        <input type="radio" name="question89" id="question891" value="1" --><?php //if($row['question89']==1) echo "ng-checked='true'";?>
-<!--        <input type="radio" name="question89" id="question892" value="2" --><?php //if($row['question89']==2) echo "ng-checked='true'";?>
 
 <!--       <h4>运动吃饭的时间差</h4>-->
 <!--            <input type="text" name="shijiancha" value="--><?php //echo $row['shijiancha'];?><!--" ng-required="part4==1">-->

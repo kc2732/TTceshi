@@ -163,6 +163,72 @@
                 结束慢跑后不要立刻停下来，再走2分钟，过程中慢慢调整自己的心跳和呼吸（靶心率维持在60%以上，80%以下。VO2max从40%开始，逐渐进入50%到60%。运动时要观察心率、血压、心电图、血糖变化、自我感受。）
             </p>
         </fieldset>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(document).ready(function(){
+
+                $("#jquery_jplayer_1").jPlayer({
+                    ready: function () {
+                        $(this).jPlayer("setMedia", {
+                            title: "高强度处方",
+                            m4v: "../videos/lowRisk.mp4",
+//				ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+                            webmv: "../videos/lowRisk.webm"
+//				poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+                        });
+                    },
+                    play: function() { // To avoid multiple jPlayers playing together.
+                        $(this).jPlayer("pauseOthers");
+                    },
+                    swfPath: "../../dist/jplayer",
+                    supplied: "m4v,webmv",
+                    globalVolume: true,
+                    useStateClassSkin: true,
+                    autoBlur: false,
+                    smoothPlayBar: true,
+                    keyEnabled: true,
+                    loop:true
+                });
+
+            });
+            //]]>
+        </script>
+    <fieldset>
+        <legend class="inner-legend">运动指导（请跟随视频开始运动！）</legend>
+        <div id="jp_container_1" class="jp-video jp-video-270p" style="margin:auto" role="application" aria-label="media player">
+            <div class="jp-type-playlist">
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                <div class="jp-gui">
+                    <!--<div class="jp-video-play">-->
+                    <!--<button class="jp-video-play-icon" role="button" tabindex="0">play</button>-->
+                    <!--</div>-->
+                    <div class="jp-interface">
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                        <div class="jp-details">
+                            <div class="jp-title" aria-label="title">&nbsp;</div>
+                        </div>
+                        <div class="jp-controls-holder">
+                            <div class="jp-volume-controls">
+                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                <div class="jp-volume-bar">
+                                    <div class="jp-volume-bar-value"></div>
+                                </div>
+                            </div>
+                            <div class="jp-controls">
+                                <button class="jp-play" role="button" tabindex="0">play</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                </div>
+            </div>
+        </div>
+        </fieldset>
         <?php
     }else {
         ?>

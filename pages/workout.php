@@ -24,6 +24,7 @@ if($_SESSION['id']!=null) {
     $Totalpoint = 0;
     while ($row = mysql_fetch_assoc($res_Information)) {
 #NianLing Q1 #Feipang Q5
+        $high = $row["question50"]+$row["question51"]+$row["question52"]+$row["question54"]+$row["question55"]+$row["question56"]+$row["question57"]+$row["question89"];
         $status = $row['status'];
         $age = $row['age'];//gender = 2 and age<45 & gender = 1 and age > 55 them 1
         $gender = $row['gender'];
@@ -162,6 +163,7 @@ if($_SESSION['id']!=null) {
 //        echo "糖耐量";
         }
 //    echo $Totalpoint;
+
         ?>
 
 
@@ -172,20 +174,25 @@ if($_SESSION['id']!=null) {
     ?>
     <?php
     if ($status == 0) {
-        if ($Totalpoint < 2) {
-            include '../parts/Workout/workout-content-low.php';
-        } else if ($Totalpoint >= 2) {
-            include '../parts/Workout/workout-content-mid.php';
+        if($high >0){
+            if ($Totalpoint < 2) {
+                include '../parts/Workout/workout-content-low.php';
+            } else if ($Totalpoint >= 2) {
+                include '../parts/Workout/workout-content-mid.php';
+            }
+        }else{
+            include '../parts/Workout/workout-content-high.php';
         }
 
 
-    } else {
+
+    } else{
+        echo "很抱歉，您所在的用户群并不能生成对应的处方，请与我们的医师联系：support@tangtangyundong.com";
+    }
+}else {
         ?>
         <h2 style="text-align: center;">请您先登录！</h2>
         <?php
-    }
-} else{
-    echo "很抱歉，您所在的用户群并不能生成对应的处方，请与我们的医师联系：support@tangtangyundong.com";
 }
 include '../parts/footer.php';
 ?>

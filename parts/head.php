@@ -22,6 +22,8 @@
     <script src="../lib/angular.min.js"></script>
     <script src="../lib/jquery.validate.min.js"></script>
     <script src="../js/scroll.js"></script>
+    <script src="../js/jplayer/jquery.jplayer.min.js"></script>
+    <link href="../js/jplayer/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
 </head>
 <?php
 function php_self(){

@@ -141,6 +141,7 @@
 .jp-video .jp-type-playlist .jp-controls {
 	width: 134px;
 	margin-left: 172px;
+	margin-top:13px;
 }
 .jp-video .jp-controls {
 	float: left;
@@ -265,6 +266,7 @@
 .jp-video .jp-volume-controls {
 	top:12px;
 	left:50px;
+	margin-top:13px;
 }
 
 .jp-volume-controls button {
