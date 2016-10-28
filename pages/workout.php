@@ -49,13 +49,13 @@ if($_SESSION['id']!=null) {
             if ($gender == 1) {
                 if ($waist > 102) {
                     $Totalpoint += 1;
-                echo "腰围不合格";
+//                echo "腰围不合格";
                 }
             }
             if ($gender == 2) {
                 if ($waist > 88) {
                     $Totalpoint += 1;
-                echo "腰围不合格";
+//                echo "腰围不合格";
                 }
             }
         }
@@ -65,7 +65,7 @@ if($_SESSION['id']!=null) {
         $liugeyue = $row['question941']; // 1 yan or
         if ($ershouyan == 1 or $jieyan == 1 or $liugeyue == 1) {
             $Totalpoint += 1;
-        echo "烟";
+//        echo "烟";
         }
         #Gaoxueya Q6
         $weicexueya = $row['question67'];
@@ -74,7 +74,7 @@ if($_SESSION['id']!=null) {
 
         if ($weicexueya == 2 or $gaoya >= 140 or $diya <= 90) {
             $Totalpoint += 1;
-        echo "血压";
+//        echo "血压";
         }
         #JiazuShi Q2
         $FCS = $row['question351']; // 55
@@ -92,7 +92,7 @@ if($_SESSION['id']!=null) {
             or ($MGZ != 0 and $MGZ <= 65)
         ) {
             $Totalpoint += 1;
-        echo "家族史";
+//        echo "家族史";
         }
 
         #Q3 yundongxiguan
@@ -109,31 +109,31 @@ if($_SESSION['id']!=null) {
         if ($zuozhe == 1) {
             $Totalpoint += 1;
             $addedsign = 1;
-        echo "习惯1";
+//        echo "习惯1";
         }
         if ($jvlie == 2 and $addedsign == 0) {
             $Totalpoint += 1;
             $addedsign = 1;
-        echo "习惯2";
+//        echo "习惯2";
         }
         if (($jvliepinlv < 3 or $jvlieshijian == 1 or $jvlieshijian == 2)
             and $addedsign == 0
         ) {
             $Totalpoint += 1;
             $addedsign = 1;
-        echo "习惯3";
+//        echo "习惯3";
         }
         if ($xiuxian == 2 and $addedsign == 0) {
             $Totalpoint += 1;
             $addedsign = 1;
-        echo "习惯4";
+//        echo "习惯4";
         }
         if (($xiuxianpinlv < 3 or $xiuxianshijian == 1 or $xiuxianshijian == 2)
             and $addedsign == 0
         ) {
             $Totalpoint += 1;
             $addedsign = 1;
-        echo "习惯5";
+//        echo "习惯5";
         }
         #Xuezhi Q7
         $dimidu = $row['question66'];
@@ -142,7 +142,7 @@ if($_SESSION['id']!=null) {
 
         if ($dimidu >= 3.37 or $gaomidu <= 1.04 or $zongduanguchun >= 5.18) {
             $Totalpoint += 1;
-        echo "血脂";
+//        echo "血脂";
         }
         #Qianqu Q8
         $qianqusign = 0;
@@ -150,19 +150,19 @@ if($_SESSION['id']!=null) {
         if ($kongfu >= 5.55 and $kongfu <= 6.94) {
             $Totalpoint += 1;
             $qianqusign = 1;
-        echo "前驱";
+//        echo "前驱";
         }
         $tangnailiang = $row['TNL'];
         if ($tangnailiang == 2 and $qianqusign == 0) {
             $Totalpoint += 1;
             $qianqusign = 1;
-        echo "糖耐量";
+//        echo "糖耐量";
         }
         $liangxiaoshi = $row['TNL3'];
         if ($liangxiaoshi >= 7.77 and $liangxiaoshi <= 11.04 and $qianqusign == 0) {
             $Totalpoint += 1;
             $qianqusign = 1;
-        echo "糖耐量";
+//        echo "糖耐量";
         }
     echo $Totalpoint;
     }

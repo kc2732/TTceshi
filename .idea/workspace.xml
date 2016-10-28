@@ -59,10 +59,10 @@
       <file leaf-file-name="workout.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/workout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+            <state relative-caret-position="-1353">
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               <folding>
-                <marker date="1477678349432" expanded="true" signature="425:527" ph="SELECT * FRO... users" />
+                <marker date="1477679143133" expanded="true" signature="425:527" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -436,12 +436,12 @@
       <workItem from="1477590489059" duration="8219000" />
       <workItem from="1477610014722" duration="10288000" />
       <workItem from="1477625723945" duration="592000" />
-      <workItem from="1477664804720" duration="7999000" />
+      <workItem from="1477664804720" duration="8485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142338000" />
+    <option name="totallyTimeSpent" value="142824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1080" extended-state="0" />
@@ -871,10 +871,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/workout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+        <state relative-caret-position="-1353">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding>
-            <marker date="1477678349432" expanded="true" signature="425:527" ph="SELECT * FRO... users" />
+            <marker date="1477679143133" expanded="true" signature="425:527" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
