@@ -27,7 +27,6 @@ if($_SESSION['id']!=null) {
     while ($row = mysql_fetch_assoc($res_Information)) {
 #NianLing Q1 #Feipang Q5
         $high = $row["question50"]+$row["question51"]+$row["question52"]+$row["question54"]+$row["question55"]+$row["question56"]+$row["question57"]+$row["question89"];
-        echo $high;
         $status = $row['status'];
         $age = $row['age'];//gender = 2 and age<45 & gender = 1 and age > 55 them 1
         $gender = $row['gender'];
@@ -168,7 +167,7 @@ if($_SESSION['id']!=null) {
 //    echo $Totalpoint;
     }
     if ($status == 0) {
-        if($high >0){
+        if($high == 0){
             if ($Totalpoint < 2) {
                 include '../parts/Workout/workout-content-low.php';
             } else if ($Totalpoint >= 2) {
