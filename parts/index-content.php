@@ -263,7 +263,27 @@
 
         </div> </div></section>
 
-<section class="testimonial" id="testimonials"><div class="container"><div class="section-header"><h2 class="white-text">获得奖项</h2></div><div class="row" data-scrollreveal="enter right after 0s over 1s"><div class="col-md-12"><div id="client-feedbacks" class="owl-carousel owl-theme  ">
+<section class="testimonial" id="testimonials"><div class="container"><div class="section-header"><h2 class="white-text">获得奖项</h2></div>
+        <div class="row" data-scrollreveal="enter right after 0s over 1s">
+            <div class="col-md-12">
+                <div id="client-feedbacks" class="owl-carousel owl-theme  ">
+
+                    <div class="feedback-box">
+
+                        <div class="feedback-box">
+                            <div class="client-info">
+
+                                第十一届“春晖杯”中国留学人员创新创业大赛一等奖
+
+                            </div>
+                            <div class="message">
+
+                                <img src="../images/chunhui.jpg" style="width:50%; margin-left:25%;">
+
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="feedback-box">
 
                         <div class="client-info">
@@ -277,30 +297,8 @@
                             
                         </div>
 
-
                     </div> <!-- / END SINGLE FEEDBACK BOX-->
 
-
-                    <div class="feedback-box">
-
-                        <!-- MESSAGE OF THE CLIENT -->
-
-                    <div class="message">
-                            第十一届“春晖杯”中国留学人员创新创业大赛入围项目
-                        <div class="client">
-                            <div class="quote red-text">
-
-                                <i class="icon-fontawesome-webfont-294"></i>
-
-                            </div>
-
-                        </div>
-                        <!-- / END CLIENT INFORMATION-->
-
-                    </div> <!-- / END SINGLE FEEDBACK BOX-->
-
-
-                </div>
                 </div>
             </div>
         </div>
