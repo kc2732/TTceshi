@@ -216,9 +216,8 @@ while($row = mysql_fetch_assoc($res_Information)){
     }
 }
 } else{
-    ?>
-    <h2 style="text-align: center;">请您先登录！</h2>
-    <?php
+    
+    include 'description.php';
 
 }
 
