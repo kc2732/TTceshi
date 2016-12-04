@@ -37,9 +37,9 @@
         </br> 
         糖糖运动医生的创始人正是由美国的物理治疗师，中国体育科学研究所，哈佛大学进修归来的教授，中国体育医学和康复的权威组成的。我们希望把最先进的美国康复技术应用到中国。
          </br>
-        糖尿病康复，如果看过我之前的讲堂，就知道运动营养处方是治疗的大头，每天注射胰岛素的感觉和瘾君子一样让人痛苦，相关文章也可参考：
+        糖尿病康复，如果看过我之前的讲堂，就知道运动营养处方是治疗的大头，每天注射胰岛素的感觉和瘾君子一样让人痛苦，相关文章也可参考<a href="https://mp.weixin.qq.com/s?__biz=MzI0MjAwNTQzOA==&mid=2649884499&idx=1&sn=61e27f82a1ef00914e7317f247fcb21f&scene=1&srcid=0803Z3lEYV1esfxNna3OIYT4&from=groupmessage&isappinstalled=0&pass_ticket=e9hsob%2Bmij6Ij%2BZBMM%2F5BKU09rdUxaODW0A7fog5A2jk2sgxN7ljqxPFwN%2BcqsCM">这里</a>
          </br>
-        https://mp.weixin.qq.com/s?__biz=MzI0MjAwNTQzOA==&mid=2649884499&idx=1&sn=61e27f82a1ef00914e7317f247fcb21f&scene=1&srcid=0803Z3lEYV1esfxNna3OIYT4&from=groupmessage&isappinstalled=0&pass_ticket=e9hsob%2Bmij6Ij%2BZBMM%2F5BKU09rdUxaODW0A7fog5A2jk2sgxN7ljqxPFwN%2BcqsCM
+        
 
     </fieldset>
 
