@@ -30,7 +30,7 @@ function php_self(){
     $php_self = substr($_SERVER['PHP_SELF'],strrpos($_SERVER['PHP_SELF'], '/')+1);
     $sUrl = $_SERVER['SERVER_NAME'];
     if($sUrl != 'www.tangtangyundong.com'){
-        header("Location:../shengming.php");
+        header("Location:../pages/shengming.php");
     }
     return $php_self;
 }
