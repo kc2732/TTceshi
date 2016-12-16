@@ -10,5 +10,5 @@ include '../parts/head.php';
 </div>
 
 <?php
-include '../parts/update.php';
+include '../parts/footer.php';
 ?>
