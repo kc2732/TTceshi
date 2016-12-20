@@ -6740,13 +6740,7 @@ body {
     font-size:30px;
 }
 
-#sign-in-main{
-    display: none;
-}
 
-#sign-up-main{
-    display: inline;
-}
 
 label { display: block; }
 label.error {
