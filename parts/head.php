@@ -17,7 +17,6 @@
     <script src='../fullcalendar.min.js'></script>
     <script src='../lang-all.js'></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/polyfill.js"></script>
     <script src="../js/script.js"></script>
     <script src="../lib/angular.min.js"></script>
     <script src="../lib/jquery.validate.min.js"></script>
