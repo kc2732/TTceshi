@@ -53,17 +53,6 @@
         });
     });
 </script>
-<script>
-
-    webshim.setOptions('forms', {
-        lazyCustomMessages: true
-    });
-
-    //start polyfilling
-    webshim.polyfill('forms');
-
-
-</script>
 
 
 
