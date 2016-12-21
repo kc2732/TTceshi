@@ -1,8 +1,4 @@
-    <link rel="stylesheet" type="text/css" href="../css/form.css" media="all" />
-    <script type="text/javascript" src="../js/jquery.form.js"></script>
-    <script type="text/javascript" src="../js/application.js"></script>
-    <script type="text/javascript" src="../js/jquery.inputfocus-0.9.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.main.js"></script>
+
 <div class="content-top">
 
    创建您的运动医生账户
