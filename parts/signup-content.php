@@ -15,7 +15,7 @@
     <div class="col-sm-5 col-md-5 col-lg-4 content-right" style="">
         <div class="sign_up_form">
 
-            <form action="../pages/success.php" method="post" class="ws-validate" id="sign-in-main">
+            <form action="../pages/success.php" method="post">
                 <fieldset>
 
                     还没有帐号？点击<a id="show-sign-up" href="../pages/zhuce.php" style="color:firebrick">这里</a>注册
