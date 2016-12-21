@@ -24,12 +24,10 @@
     <script src="../js/scroll.js"></script>
     <script src="../js/jplayer/jquery.jplayer.min.js"></script>
     <link href="../js/jplayer/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-    <script src="../js/jquery-1.8.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/form.css" media="all" />
     <script type="text/javascript" src="../js/jquery.form.js"></script>
     <script type="text/javascript" src="../js/application.js"></script>
     <script type="text/javascript" src="../js/jquery.inputfocus-0.9.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../js/jquery.main.js"></script>
 </head>
 <?php
